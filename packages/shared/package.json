@@ -1,0 +1,61 @@
+{
+  "name": "@shiba-ui/shared",
+  "version": "0.1.0",
+  "description": "Shared design tokens, types, and utilities (platform agnostic)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./tokens": {
+      "types": "./dist/tokens/index.d.ts",
+      "import": "./dist/tokens/index.mjs",
+      "require": "./dist/tokens/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js"
+    },
+    "./tailwind-preset": {
+      "types": "./dist/tailwind-preset/index.d.ts",
+      "import": "./dist/tailwind-preset/index.mjs",
+      "require": "./dist/tailwind-preset/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "keywords": [
+    "design-system",
+    "tokens",
+    "types",
+    "shared"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}
+
