@@ -55,8 +55,8 @@ export const VariantItem = ({ variant }: IVariantItem) => {
         </TabsList>
 
         <TabsContent value="example">
-          <div className="border border-border rounded-lg p-6 bg-background">
-            {variant.component()}
+          <div className="border border-border rounded-lg bg-background overflow-hidden">
+            <div className="p-6 overflow-x-auto">{variant.component()}</div>
           </div>
         </TabsContent>
 

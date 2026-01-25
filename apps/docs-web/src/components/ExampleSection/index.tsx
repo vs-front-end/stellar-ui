@@ -29,8 +29,10 @@ export function ExampleSection({
         </TabsList>
 
         <TabsContent value="example">
-          <div className="border border-border rounded-lg p-6 bg-background">
-            {exampleComponent ? exampleComponent() : null}
+          <div className="border border-border rounded-lg bg-background overflow-hidden">
+            <div className="p-6 overflow-x-auto">
+              {exampleComponent ? exampleComponent() : null}
+            </div>
           </div>
         </TabsContent>
 
