@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationMap": true,
+    "types": ["react", "react-native", "nativewind/types"],
+    "baseUrl": ".",
+    "paths": {
+      "@stellar-ui/shared": ["../shared/src/index.ts"],
+      "@stellar-ui/shared/*": ["../shared/src/*"]
+    }
+  },
+  "include": ["src/**/*", "src/nativewind-env.d.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
+}
