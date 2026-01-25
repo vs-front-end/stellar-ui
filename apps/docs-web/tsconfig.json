@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["react", "react-dom", "vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@stellar-ui/shared": ["../../packages/shared/src/index.ts"],
+      "@stellar-ui/shared/*": ["../../packages/shared/src/*"],
+      "@stellar-ui/web": ["../../packages/web/src/index.ts"],
+      "@stellar-ui/web/*": ["../../packages/web/src/*"],
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/contexts/*": ["./src/contexts/*"],
+      "@/layouts/*": ["./src/layouts/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/router/*": ["./src/router/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
