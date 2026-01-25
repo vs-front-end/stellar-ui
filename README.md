@@ -1,13 +1,40 @@
-# Shiba UI - Design System Monorepo
+# Stellar UI - Design System Monorepo
+
+[![npm version](https://img.shields.io/npm/v/@stellar-ui/web.svg)](https://www.npmjs.com/package/@stellar-ui/web)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Cross-platform UI library for React.js and React Native built with Turborepo.
+
+📖 **[Documentation](https://stellar-ui.vercel.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues) | 💬 [Discussions](https://github.com/vs-front-end/stellar-ui/discussions)
+
+## Published Packages
+
+- **[@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web)** - React DOM UI components (48 components)
+- **[@stellar-ui/shared](https://www.npmjs.com/package/@stellar-ui/shared)** - Design tokens, types, and utilities
+
+## Installation
+
+```bash
+# Install web components
+npm install @stellar-ui/web
+
+# Install shared utilities (if needed)
+npm install @stellar-ui/shared
+```
+
+### Peer Dependencies
+
+```bash
+npm install react react-dom
+```
 
 ## Structure
 
 ```
-shiba-ui/
+stellar-ui/
 ├── apps/
-│   └── docs/          # Vite + React (Documentation & Playground)
+│   ├── docs-web/      # Vite + React (Documentation & Playground)
+│   └── docs-mobile/   # React Native (Documentation)
 ├── packages/
 │   ├── shared/        # Design Tokens, Types, Utils (Platform Agnostic)
 │   ├── web/           # React DOM Library (Radix UI + Tailwind)
@@ -23,7 +50,7 @@ shiba-ui/
 - **Build**: tsup (esbuild)
 - **TypeScript**: 5.7+
 
-## Getting Started
+## Getting Started (Development)
 
 ```bash
 # Install dependencies
@@ -33,7 +60,7 @@ npm install
 npm run build
 
 # Start docs app
-npm run docs:dev
+npm run start:web
 
 # Type check
 npm run type-check
@@ -51,3 +78,10 @@ All packages use compatible versions to prevent peer dependency conflicts:
 - React Native: ^0.76.0
 - TypeScript: ^5.7.2
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+## License
+
+MIT © [Stellar UI](LICENSE)
