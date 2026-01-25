@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Entry point for Tailwind CSS build process.
+ * This file is processed by the build:css script to generate dist/styles.css
+ * which contains all Tailwind utilities used by the components.
+ */
