@@ -1,5 +1,5 @@
 {
-  "name": "@shiba-ui/shared",
+  "name": "@stellar-ui/shared",
   "version": "0.1.0",
   "description": "Shared design tokens, types, and utilities (platform agnostic)",
   "main": "./dist/index.js",
@@ -30,10 +30,11 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "clean": "rm -rf dist",
+    "clean": "node -e \"require('fs').rmSync('dist', {recursive: true, force: true})\"",
     "type-check": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx"
   },
@@ -43,13 +44,25 @@
     "types",
     "shared"
   ],
-  "author": "",
+  "author": "Stellar UI",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vs-front-end/stellar-ui.git",
+    "directory": "packages/shared"
+  },
+  "homepage": "https://stellar-ui.vercel.app",
+  "bugs": {
+    "url": "https://github.com/vs-front-end/stellar-ui/issues"
+  },
   "dependencies": {
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^9.15.0",
     "tailwindcss": "^3.4.17",
     "tsup": "^8.3.0",
     "typescript": "^5.7.2"
@@ -58,4 +71,3 @@
     "react": "^18.0.0"
   }
 }
-

@@ -15,4 +15,3 @@ export default defineConfig({
   treeshake: true,
   external: ['react', 'clsx', 'tailwind-merge'],
 });
-

@@ -21,16 +21,16 @@ export const COMMON_THEME = {
 } as const;
 
 export const LIGHT_THEME = {
-  background: '#f8fafc',
+  background: '#fafafa',
   surface: '#ffffff',
-  border: '#a5a5a5',
+  border: '#CCCCCC',
   foreground: '#000000',
   muted: '#555555',
 } as const;
 
 export const DARK_THEME = {
-  background: '#121212',
-  surface: '#1e1e1e',
+  background: '#171717',
+  surface: '#1f1f1f',
   border: '#3f3f46',
   foreground: '#f1f5f9',
   muted: '#aaaab3',
