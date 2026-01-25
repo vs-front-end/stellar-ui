@@ -5,7 +5,7 @@
 
 Cross-platform UI library for React.js and React Native built with Turborepo.
 
-📖 **[Documentation](https://stellar-ui.vercel.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues) | 💬 [Discussions](https://github.com/vs-front-end/stellar-ui/discussions)
+📖 **[Documentation](https://stellar-ui-one.vercel.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues)
 
 ## Published Packages
 

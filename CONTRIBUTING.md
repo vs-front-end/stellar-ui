@@ -195,9 +195,8 @@ When adding/modifying components:
 
 ## Questions?
 
-- Open a [Discussion](https://github.com/vs-front-end/stellar-ui/discussions)
 - Check existing [Issues](https://github.com/vs-front-end/stellar-ui/issues)
-- Read the [Documentation](https://stellar-ui.vercel.app)
+- Read the [Documentation](https://stellar-ui-one.vercel.app)
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "@stellar-ui/shared",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Shared design tokens, types, and utilities (platform agnostic)",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -51,7 +51,7 @@
     "url": "https://github.com/vs-front-end/stellar-ui.git",
     "directory": "packages/shared"
   },
-  "homepage": "https://stellar-ui.vercel.app",
+  "homepage": "https://stellar-ui-one.vercel.app",
   "bugs": {
     "url": "https://github.com/vs-front-end/stellar-ui/issues"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@stellar-ui/web",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React DOM UI components library - Stellar UI",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -40,7 +40,7 @@
     "url": "https://github.com/vs-front-end/stellar-ui.git",
     "directory": "packages/web"
   },
-  "homepage": "https://stellar-ui.vercel.app",
+  "homepage": "https://stellar-ui-one.vercel.app",
   "bugs": {
     "url": "https://github.com/vs-front-end/stellar-ui/issues"
   },

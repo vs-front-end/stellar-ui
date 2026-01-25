@@ -195,7 +195,6 @@ Contributions are welcome! This package is in early stages and we'd love help bu
 
 ## Support
 
-- 📖 [Documentation](https://stellar-ui.vercel.app)
+- 📖 [Documentation](https://stellar-ui-one.vercel.app)
 - 🐛 [Issue Tracker](https://github.com/vs-front-end/stellar-ui/issues)
-- 💬 [Discussions](https://github.com/vs-front-end/stellar-ui/discussions)
 
