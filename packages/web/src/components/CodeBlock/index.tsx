@@ -145,7 +145,7 @@ export function CodeBlock({
 
   return (
     <div
-      className={`relative rounded-lg border border-border bg-background overflow-hidden ${className}`}
+      className={`relative rounded-lg border border-border bg-background/80 overflow-hidden ${className}`}
     >
       {(filename || language) && (
         <div
