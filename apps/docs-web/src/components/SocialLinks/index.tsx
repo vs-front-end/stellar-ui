@@ -48,7 +48,11 @@ export const SocialLinks = () => {
             </a>
           </TooltipTrigger>
 
-          <TooltipContent className="bg-primary-soft text-primary-text font-semibold">
+          <TooltipContent
+            side="bottom"
+            className="bg-primary-soft text-primary-text font-semibold"
+            arrowClassName="bg-primary-soft fill-primary-soft"
+          >
             <p>{label}</p>
           </TooltipContent>
         </Tooltip>

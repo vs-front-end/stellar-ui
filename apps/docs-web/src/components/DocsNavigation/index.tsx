@@ -47,6 +47,7 @@ export const DocsNavigation = ({ currentSlug }: DocsNavigationProps) => {
               <TooltipContent
                 side="bottom"
                 className="bg-primary-soft text-primary-text font-semibold"
+                arrowClassName="bg-primary-soft fill-primary-soft"
               >
                 {previousDoc.name}
               </TooltipContent>
@@ -70,6 +71,7 @@ export const DocsNavigation = ({ currentSlug }: DocsNavigationProps) => {
               <TooltipContent
                 side="bottom"
                 className="bg-primary-soft text-primary-text font-semibold"
+                arrowClassName="bg-primary-soft fill-primary-soft"
               >
                 {nextDoc.name}
               </TooltipContent>

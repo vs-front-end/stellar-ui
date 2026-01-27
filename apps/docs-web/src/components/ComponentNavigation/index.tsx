@@ -50,6 +50,7 @@ export const ComponentNavigation = ({
               <TooltipContent
                 side="bottom"
                 className="bg-primary-soft text-primary-text font-semibold"
+                arrowClassName="bg-primary-soft fill-primary-soft"
               >
                 {previousComponent.name}
               </TooltipContent>
@@ -73,6 +74,7 @@ export const ComponentNavigation = ({
               <TooltipContent
                 side="bottom"
                 className="bg-primary-soft text-primary-text font-semibold"
+                arrowClassName="bg-primary-soft fill-primary-soft"
               >
                 {nextComponent.name}
               </TooltipContent>
