@@ -1,5 +1,6 @@
 import type { ThemeVariant } from '@stellar-ui/shared';
-import { ThemeProvider as UIThemeProvider, Toaster } from '@stellar-ui/web';
+import { ThemeProvider as WebThemeProvider, Toaster } from '@stellar-ui/web';
+import { ThemeProvider as MobileThemeProvider } from '@stellar-ui/mobile';
 import { useState, createContext, ReactNode, useMemo, useEffect } from 'react';
 
 interface IThemeContext {
@@ -54,10 +55,10 @@ export const ThemeProvider = ({ children }: IThemeProvider) => {
 
   return (
     <ThemeContext.Provider value={value}>
-      <UIThemeProvider variant={theme}>
-        {children}
+      <WebThemeProvider variant={theme}>
+        <MobileThemeProvider variant={theme}>{children}</MobileThemeProvider>
         <Toaster variant={theme} />
-      </UIThemeProvider>
+      </WebThemeProvider>
     </ThemeContext.Provider>
   );
 };
