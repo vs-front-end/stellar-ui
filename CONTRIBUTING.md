@@ -33,15 +33,17 @@ Thank you for considering contributing to Stellar UI! We welcome contributions f
 
 5. Start the documentation site:
    ```bash
-   npm run start:web
+   npm run start
    ```
+   For mobile documentation, run the dev script from `apps/docs-mobile`.
 
 ## Project Structure
 
 ```
 stellar-ui/
 ├── apps/
-│   └── docs-web/        # Documentation website
+│   ├── docs-web/        # Web documentation & playground (Vite + React)
+│   └── docs-mobile/     # Mobile documentation (React Native)
 ├── packages/
 │   ├── shared/          # Shared tokens and utilities
 │   ├── web/             # React web components
@@ -67,7 +69,9 @@ stellar-ui/
 
 3. Make your changes in `src/components/`
 
-4. Test in the docs app by importing your component
+4. Test in the docs app by importing your component:
+   - Web components: use `apps/docs-web`
+   - Mobile components: use `apps/docs-mobile`
 
 ### Code Quality
 
@@ -89,30 +93,31 @@ npm run format
 
 ### Creating a New Component
 
+**Web (`packages/web`):**
+
 1. Create a new directory in `packages/web/src/components/ComponentName/`
 
-2. Create `index.tsx`:
-
-   ```tsx
-   import * as React from 'react';
-   import { cn } from '@stellar-ui/shared';
-
-   interface ComponentNameProps {
-     // Your props
-   }
-
-   export function ComponentName({ ...props }: ComponentNameProps) {
-     return <div {...props}>Component</div>;
-   }
-   ```
+2. Create `index.tsx` (use Radix UI primitives and `cn` from `@stellar-ui/shared` as in existing components).
 
 3. Export from `packages/web/src/components/index.ts`:
-
    ```tsx
    export * from './ComponentName';
    ```
 
-4. Add documentation in `apps/docs-web/src/pages/Preview/components/ComponentName/`
+4. Add documentation in `apps/docs-web`.
+
+**Mobile (`packages/mobile`):**
+
+1. Create a new directory in `packages/mobile/src/components/ComponentName/`
+
+2. Create `index.tsx` (use NativeWind, `cn` from `@stellar-ui/shared`, and @rn-primitives where applicable).
+
+3. Export from `packages/mobile/src/components/index.ts`:
+   ```tsx
+   export * from './ComponentName';
+   ```
+
+4. Add documentation in `apps/docs-mobile`.
 
 ## Commit Guidelines
 

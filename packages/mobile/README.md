@@ -5,8 +5,6 @@ React Native component library for Stellar UI - Built with NativeWind v4.
 [![npm version](https://img.shields.io/npm/v/@stellar-ui/mobile.svg)](https://www.npmjs.com/package/@stellar-ui/mobile)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-> ⚠️ **Early Development**: This package is in early development. API may change frequently. More components coming soon.
-
 ## Features
 
 - 📱 **React Native** - Native mobile components
@@ -14,6 +12,7 @@ React Native component library for Stellar UI - Built with NativeWind v4.
 - 🎭 **Theme Support** - Light and dark modes
 - 🎯 **TypeScript** - Full type safety
 - 🔧 **Expo Compatible** - Works with Expo SDK 51+
+- ♿ **Accessible** - Built on @rn-primitives where applicable
 
 ## Installation
 
@@ -25,16 +24,27 @@ npm install @stellar-ui/mobile
 
 ```bash
 npm install react react-native react-native-safe-area-context react-native-svg
+# Plus @rn-primitives/* packages and lucide-react-native as required by the components you use
 ```
 
 ## Available Components
 
-Currently available:
-
+- Alert, AlertDialog
+- Avatar, Badge
 - Button
+- Checkbox
+- Input, InputCounter, InputOTP, InputPassword, InputSearch, InputText
+- Label
+- PasswordStrength
+- Progress
+- RadioGroup
+- Select
+- Separator
+- Skeleton
+- Switch
+- Tabs
 - Text
-
-More components coming soon! We're working on bringing feature parity with `@stellar-ui/web`.
+- TextArea
 
 ## Quick Start
 
@@ -147,19 +157,12 @@ const MyButton: React.FC<ButtonProps> = (props) => {
 };
 ```
 
-## Roadmap
+## Documentation
 
-We're actively working on bringing more components to mobile:
+Web and mobile documentation are shared at [stellar-ui-one.vercel.app](https://stellar-ui-one.vercel.app). The repo includes:
 
-- [ ] Input
-- [ ] Card
-- [ ] Modal/Dialog
-- [ ] Select/Picker
-- [ ] Checkbox
-- [ ] Switch
-- [ ] Avatar
-- [ ] Badge
-- [ ] And more...
+- `apps/docs-web` – web documentation and playground
+- `apps/docs-mobile` – React Native documentation app
 
 ## Compatibility
 

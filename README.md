@@ -10,6 +10,7 @@ Cross-platform UI library for React.js and React Native built with Turborepo.
 ## Published Packages
 
 - **[@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web)** - React DOM UI components (48 components)
+- **[@stellar-ui/mobile](https://www.npmjs.com/package/@stellar-ui/mobile)** - React Native UI components
 - **[@stellar-ui/shared](https://www.npmjs.com/package/@stellar-ui/shared)** - Design tokens, types, and utilities
 
 ## Installation
@@ -18,14 +19,24 @@ Cross-platform UI library for React.js and React Native built with Turborepo.
 # Install web components
 npm install @stellar-ui/web
 
+# Install mobile components (React Native)
+npm install @stellar-ui/mobile
+
 # Install shared utilities (if needed)
 npm install @stellar-ui/shared
 ```
 
 ### Peer Dependencies
 
+**Web:**
 ```bash
 npm install react react-dom
+```
+
+**Mobile:**
+```bash
+npm install react react-native react-native-safe-area-context react-native-svg
+# Plus @rn-primitives/* and lucide-react-native as required by @stellar-ui/mobile
 ```
 
 ## Structure
@@ -59,8 +70,8 @@ npm install
 # Build all packages
 npm run build
 
-# Start docs app
-npm run start:web
+# Start documentation (web)
+npm run start
 
 # Type check
 npm run type-check
@@ -68,6 +79,8 @@ npm run type-check
 # Lint
 npm run lint
 ```
+
+To run the mobile documentation app, use the dev script from `apps/docs-mobile`.
 
 ## Package Versions
 

@@ -28,10 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### @stellar-ui/mobile
 
-- Initial React Native package structure
-- Button and Text components
-- NativeWind v4 integration
-- Foundation for future mobile components
+- React Native UI library (RN-Primitives + NativeWind v4)
+- Components: Alert, AlertDialog, Avatar, Badge, Button, Checkbox, Input, InputCounter, InputOTP, InputPassword, InputSearch, InputText, Label, PasswordStrength, Progress, RadioGroup, Select, Separator, Skeleton, Switch, Tabs, Text, TextArea
+- Theme support (ThemeProvider, useTheme)
+- Documentation app in `apps/docs-mobile`; shared docs at stellar-ui-one.vercel.app
 
 ### Infrastructure
 
@@ -39,6 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript strict mode enabled
 - Prettier code formatting
 - Build pipeline with tsup (esbuild)
-- Documentation website with interactive examples
+- Web documentation (apps/docs-web) and mobile documentation (apps/docs-mobile) with shared doc site
 
 [0.1.0]: https://github.com/vs-front-end/stellar-ui/releases/tag/v0.1.0
