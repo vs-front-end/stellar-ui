@@ -66,11 +66,7 @@ Wrap your app with the ThemeProvider:
 import { ThemeProvider } from '@stellar-ui/web';
 
 function App() {
-  return (
-    <ThemeProvider variant="light">
-      {/* Your app */}
-    </ThemeProvider>
-  );
+  return <ThemeProvider variant="light">{/* Your app */}</ThemeProvider>;
 }
 ```
 
@@ -92,12 +88,14 @@ function MyComponent() {
 ## Available Components
 
 ### Layout & Structure
+
 - Card
 - Separator
 - ScrollArea
 - Tabs
 
 ### Forms & Inputs
+
 - Button, ButtonGroup
 - Input, InputText, InputSearch, InputPassword, InputCounter, InputOTP
 - TextArea
@@ -111,6 +109,7 @@ function MyComponent() {
 - DatePicker, Calendar
 
 ### Feedback
+
 - Alert
 - Progress, CircularProgress
 - Spinner
@@ -121,6 +120,7 @@ function MyComponent() {
 - Rating
 
 ### Overlays
+
 - Dialog
 - Drawer
 - Popover
@@ -130,6 +130,7 @@ function MyComponent() {
 - Command
 
 ### Data Display
+
 - Avatar
 - Badge
 - Breadcrumb
@@ -138,12 +139,14 @@ function MyComponent() {
 - TextEditor
 
 ### Interactive
+
 - Accordion
 - Collapsible
 
 ## Documentation
 
 Visit our [documentation site](https://stellar-ui-one.vercel.app) for:
+
 - Interactive component previews
 - API reference
 - Usage examples
@@ -172,15 +175,15 @@ import { Input, Label, Button } from '@stellar-ui/web';
 <form>
   <div>
     <Label htmlFor="email">Email</Label>
-    <Input 
-      id="email" 
-      type="email" 
+    <Input
+      id="email"
+      type="email"
       placeholder="you@example.com"
       aria-invalid={hasError}
     />
   </div>
   <Button type="submit">Submit</Button>
-</form>
+</form>;
 ```
 
 ### Dark Mode Toggle
@@ -191,11 +194,9 @@ import { useTheme } from '@stellar-ui/web';
 
 function ThemeToggle() {
   const { variant, setVariant } = useTheme();
-  
+
   return (
-    <Button 
-      onClick={() => setVariant(variant === 'light' ? 'dark' : 'light')}
-    >
+    <Button onClick={() => setVariant(variant === 'light' ? 'dark' : 'light')}>
       Toggle Theme
     </Button>
   );
@@ -213,7 +214,7 @@ import { Button } from '@stellar-ui/web';
 <Button>
   <Search />
   Search
-</Button>
+</Button>;
 ```
 
 ## Customization
@@ -221,9 +222,7 @@ import { Button } from '@stellar-ui/web';
 Components use Tailwind CSS classes and can be customized via className:
 
 ```tsx
-<Button className="rounded-full px-8">
-  Custom Button
-</Button>
+<Button className="rounded-full px-8">Custom Button</Button>
 ```
 
 ## TypeScript
@@ -257,4 +256,3 @@ Contributions are welcome! Please read our [contributing guide](https://github.c
 
 - 📖 [Documentation](https://stellar-ui-one.vercel.app)
 - 🐛 [Issue Tracker](https://github.com/vs-front-end/stellar-ui/issues)
-

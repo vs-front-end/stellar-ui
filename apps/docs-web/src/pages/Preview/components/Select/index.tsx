@@ -36,9 +36,15 @@ export const SelectExampleMobile = () => (
     </MobileSelectTrigger>
 
     <MobileSelectContent>
-      <MobileSelectItem value="light" label="Light">Light</MobileSelectItem>
-      <MobileSelectItem value="dark" label="Dark">Dark</MobileSelectItem>
-      <MobileSelectItem value="system" label="System">System</MobileSelectItem>
+      <MobileSelectItem value="light" label="Light">
+        Light
+      </MobileSelectItem>
+      <MobileSelectItem value="dark" label="Dark">
+        Dark
+      </MobileSelectItem>
+      <MobileSelectItem value="system" label="System">
+        System
+      </MobileSelectItem>
     </MobileSelectContent>
   </MobileSelect>
 );

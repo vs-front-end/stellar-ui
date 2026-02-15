@@ -77,7 +77,8 @@ export const PopoverDocs: IComponentUsage = {
       name: 'modal',
       type: 'boolean',
       default: 'false',
-      description: 'When true, prevents interaction with content outside the popover.',
+      description:
+        'When true, prevents interaction with content outside the popover.',
     },
   ],
 };

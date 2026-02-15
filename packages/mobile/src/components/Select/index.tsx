@@ -19,7 +19,12 @@ const RootComponent = SelectPrimitive.Root;
 const SelectGroup = SelectPrimitive.Group;
 const hasPrimitive = typeof RootComponent !== 'undefined';
 
-type TriggerRect = { top: number; left: number; width: number; height: number } | null;
+type TriggerRect = {
+  top: number;
+  left: number;
+  width: number;
+  height: number;
+} | null;
 
 type SelectFallbackContextValue = {
   value: string | undefined;
@@ -32,9 +37,7 @@ type SelectFallbackContextValue = {
   setTriggerRect: (rect: TriggerRect) => void;
 };
 
-function getValueAsString(
-  v: string | Option | undefined
-): string | undefined {
+function getValueAsString(v: string | Option | undefined): string | undefined {
   if (v == null) return undefined;
   return typeof v === 'string' ? v : (v as { value: string }).value;
 }
@@ -51,7 +54,9 @@ function Select(props: SelectRootProps) {
     const [value, setValue] = React.useState<string | undefined>(() =>
       getValueAsString(props.defaultValue as string | Option | undefined)
     );
-    const [selectedLabel, setSelectedLabel] = React.useState<string | undefined>();
+    const [selectedLabel, setSelectedLabel] = React.useState<
+      string | undefined
+    >();
     const [open, setOpen] = React.useState(false);
     const isControlled = props.value !== undefined;
     const resolvedValue = isControlled
@@ -61,7 +66,11 @@ function Select(props: SelectRootProps) {
       (v: string, label?: React.ReactNode) => {
         if (!isControlled) setValue(v);
         setSelectedLabel(
-          typeof label === 'string' ? label : label != null ? String(label) : undefined
+          typeof label === 'string'
+            ? label
+            : label != null
+              ? String(label)
+              : undefined
         );
         (props.onValueChange as ((v: string) => void) | undefined)?.(v);
         setOpen(false);
@@ -150,8 +159,9 @@ function SelectTrigger({
   const setRef = React.useCallback(
     (node: unknown) => {
       if (fallbackContext?.triggerRef) {
-        (fallbackContext.triggerRef as React.MutableRefObject<unknown>).current =
-          node;
+        (
+          fallbackContext.triggerRef as React.MutableRefObject<unknown>
+        ).current = node;
       }
       if (ref) {
         if (typeof ref === 'function') (ref as (n: unknown) => void)(node);
@@ -171,8 +181,16 @@ function SelectTrigger({
         )}
         onPress={() => {
           if (!fallbackContext.open) {
-            type Rect = { top: number; left: number; bottom: number; width: number; height: number };
-            const el = fallbackContext.triggerRef?.current as { getBoundingClientRect?: () => Rect } | null;
+            type Rect = {
+              top: number;
+              left: number;
+              bottom: number;
+              width: number;
+              height: number;
+            };
+            const el = fallbackContext.triggerRef?.current as {
+              getBoundingClientRect?: () => Rect;
+            } | null;
             if (el && typeof el.getBoundingClientRect === 'function') {
               const rect = el.getBoundingClientRect();
               fallbackContext.setTriggerRect({
@@ -244,12 +262,12 @@ function SelectContent({
     const triggerRect = fallbackContext.triggerRect;
     const dropdownStyle =
       Platform.OS === 'web' && triggerRect
-        ? {
+        ? ({
             position: 'fixed' as 'absolute',
             top: triggerRect.top + 4,
             left: triggerRect.left,
             minWidth: Math.max(triggerRect.width, 128),
-          } as React.ComponentProps<typeof View>['style']
+          } as React.ComponentProps<typeof View>['style'])
         : undefined;
     const overlayContent = (
       <>
@@ -264,7 +282,8 @@ function SelectContent({
           className={cn(
             'z-50 rounded-md border border-border bg-surface p-1 shadow-md',
             Platform.OS === 'web' && 'max-h-52 overflow-y-auto',
-            !dropdownStyle && 'absolute top-full left-0 right-0 mt-1 min-w-[8rem]',
+            !dropdownStyle &&
+              'absolute top-full left-0 right-0 mt-1 min-w-[8rem]',
             className
           )}
           style={dropdownStyle}
@@ -353,8 +372,7 @@ function SelectContent({
 function SelectLabel({
   className,
   ...props
-}: SelectPrimitive.LabelProps &
-  React.RefAttributes<SelectPrimitive.LabelRef>) {
+}: SelectPrimitive.LabelProps & React.RefAttributes<SelectPrimitive.LabelRef>) {
   if (!hasPrimitive) {
     return null;
   }
@@ -372,8 +390,7 @@ function SelectItem({
   value: itemValue,
   disabled,
   ...props
-}: SelectPrimitive.ItemProps &
-  React.RefAttributes<SelectPrimitive.ItemRef>) {
+}: SelectPrimitive.ItemProps & React.RefAttributes<SelectPrimitive.ItemRef>) {
   const fallbackContext = React.useContext(SelectFallbackContext);
   if (!hasPrimitive && fallbackContext) {
     const isSelected = fallbackContext.value === itemValue;
@@ -393,9 +410,7 @@ function SelectItem({
         }}
       >
         <View className="absolute right-2 flex size-3.5 items-center justify-center">
-          {isSelected ? (
-            <Check size={16} className="text-foreground" />
-          ) : null}
+          {isSelected ? <Check size={16} className="text-foreground" /> : null}
         </View>
         <Text className="text-foreground select-none text-sm">
           {typeof children === 'function' ? null : children}
@@ -459,7 +474,10 @@ function SelectScrollUpButton({
   }
   return (
     <SelectPrimitive.ScrollUpButton
-      className={cn('flex cursor-default items-center justify-center py-1', className)}
+      className={cn(
+        'flex cursor-default items-center justify-center py-1',
+        className
+      )}
       {...props}
     >
       <ChevronUp size={16} className="text-muted" />
@@ -476,7 +494,10 @@ function SelectScrollDownButton({
   }
   return (
     <SelectPrimitive.ScrollDownButton
-      className={cn('flex cursor-default items-center justify-center py-1', className)}
+      className={cn(
+        'flex cursor-default items-center justify-center py-1',
+        className
+      )}
       {...props}
     >
       <ChevronDown size={16} className="text-muted" />

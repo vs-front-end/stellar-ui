@@ -16,8 +16,7 @@ function Label({
   children,
   ref,
   ..._rest
-}: LabelPrimitive.TextProps &
-  React.RefAttributes<LabelPrimitive.TextRef>) {
+}: LabelPrimitive.TextProps & React.RefAttributes<LabelPrimitive.TextRef>) {
   void _rest;
   const rootClass = cn(
     'flex flex-row items-center gap-2 text-sm font-medium leading-none text-foreground select-none',
@@ -27,7 +26,10 @@ function Label({
     className
   );
 
-  const textClass = cn('text-foreground text-sm font-medium leading-none', className);
+  const textClass = cn(
+    'text-foreground text-sm font-medium leading-none',
+    className
+  );
 
   const wrapText = (node: React.ReactNode) =>
     typeof node === 'string' || typeof node === 'number' ? (

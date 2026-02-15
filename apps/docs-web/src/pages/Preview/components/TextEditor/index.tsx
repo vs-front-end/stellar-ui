@@ -7,7 +7,7 @@ export const TextEditorExample = () => (
     <TextEditor
       label="Rich Text Editor"
       placeholder="Start typing..."
-      onChange={(html: string) => console.log(html)}
+      onChange={(html: string) => console.warn(html)}
     />
   </div>
 );
@@ -18,7 +18,7 @@ export const TextEditorDocs: IComponentUsage = {
   usageCode: `<TextEditor
   label="Editor"
   placeholder="Start typing..."
-  onChange={(html) => console.log(html)}
+  onChange={(html) => console.warn(html)}
 />`,
 
   exampleCode: `import { TextEditor } from '@stellar-ui/web';
@@ -27,7 +27,7 @@ export const TextEditorDocs: IComponentUsage = {
   <TextEditor
     label="Rich Text Editor"
     placeholder="Start typing..."
-    onChange={(html: string) => console.log(html)}
+    onChange={(html: string) => console.warn(html)}
   />
 </div>`,
 

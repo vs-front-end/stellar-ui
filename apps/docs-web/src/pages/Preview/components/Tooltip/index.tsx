@@ -140,7 +140,8 @@ export const TooltipDocs: IComponentUsage = {
       name: 'side',
       type: '"top" | "right" | "bottom" | "left"',
       default: '"top"',
-      description: 'The side of the trigger to display the tooltip (TooltipContent).',
+      description:
+        'The side of the trigger to display the tooltip (TooltipContent).',
     },
   ],
 };

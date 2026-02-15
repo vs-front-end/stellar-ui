@@ -67,7 +67,7 @@ function InputText({
           {required && <span className="text-error ml-1">*</span>}
         </Label>
       )}
-      
+
       <div className="relative">
         {StartIcon && (
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 text-muted peer-disabled:opacity-50">
@@ -93,7 +93,8 @@ function InputText({
           className={cn(
             StartIcon && 'pl-9',
             EndIcon && 'pr-9',
-            hasError && 'peer border-error focus-visible:border-error focus-visible:ring-error/50',
+            hasError &&
+              'peer border-error focus-visible:border-error focus-visible:ring-error/50',
             className
           )}
         />
@@ -115,4 +116,3 @@ function InputText({
 }
 
 export { InputText };
-

@@ -1,229 +1,229 @@
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-  Alert,
-  AlertDescription,
-  AlertTitle,
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-  Badge,
-  Breadcrumb,
-  BreadcrumbEllipsis,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-  Button,
-  ButtonGroup,
-  ButtonGroupSeparator,
-  ButtonGroupText,
-  Calendar,
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-  Checkbox,
-  CircularProgress,
-  CodeBlock,
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-  Combobox,
-  Command,
-  CommandDialog,
-  ContextMenu,
-  ContextMenuCheckboxItem,
-  ContextMenuContent,
-  ContextMenuItem,
-  ContextMenuLabel,
-  ContextMenuRadioGroup,
-  ContextMenuRadioItem,
-  ContextMenuSeparator,
-  ContextMenuShortcut,
-  ContextMenuSub,
-  ContextMenuSubContent,
-  ContextMenuSubTrigger,
-  ContextMenuTrigger,
-  CommandEmpty,
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut,
-  DatePicker,
-  DatePickerRange,
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyMedia,
-  EmptyTitle,
-  DrawerDescription,
-  Menubar,
-  MenubarCheckboxItem,
-  MenubarContent,
-  MenubarGroup,
-  MenubarItem,
-  MenubarLabel,
-  MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-  MultiSelect,
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuLink,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-  Input,
-  InputCounter,
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSeparator,
-  InputOTPSlot,
-  InputPassword,
-  InputSearch,
-  InputText,
-  Label,
-  PasswordStrength,
-  Progress,
-  RadioGroup,
-  RadioGroupItem,
-  Rating,
-  ScrollArea,
-  ScrollBar,
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectScrollDownButton,
-  SelectScrollUpButton,
-  SelectSeparator,
-  SelectTrigger,
-  SelectValue,
-  Separator,
-  Skeleton,
-  Slider,
-  Spinner,
-  Switch,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  Text,
-  TextArea,
-  TextEditor,
-  Toggle,
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
+Accordion,
+AccordionContent,
+AccordionItem,
+AccordionTrigger,
+Alert,
+AlertDescription,
+AlertTitle,
+Avatar,
+AvatarFallback,
+AvatarImage,
+Badge,
+Breadcrumb,
+BreadcrumbEllipsis,
+BreadcrumbItem,
+BreadcrumbLink,
+BreadcrumbList,
+BreadcrumbPage,
+BreadcrumbSeparator,
+Button,
+ButtonGroup,
+ButtonGroupSeparator,
+ButtonGroupText,
+Calendar,
+Card,
+CardAction,
+CardContent,
+CardDescription,
+CardFooter,
+CardHeader,
+CardTitle,
+Checkbox,
+CircularProgress,
+CodeBlock,
+Collapsible,
+CollapsibleContent,
+CollapsibleTrigger,
+Combobox,
+Command,
+CommandDialog,
+ContextMenu,
+ContextMenuCheckboxItem,
+ContextMenuContent,
+ContextMenuItem,
+ContextMenuLabel,
+ContextMenuRadioGroup,
+ContextMenuRadioItem,
+ContextMenuSeparator,
+ContextMenuShortcut,
+ContextMenuSub,
+ContextMenuSubContent,
+ContextMenuSubTrigger,
+ContextMenuTrigger,
+CommandEmpty,
+DropdownMenu,
+DropdownMenuCheckboxItem,
+DropdownMenuContent,
+DropdownMenuGroup,
+DropdownMenuItem,
+DropdownMenuLabel,
+DropdownMenuPortal,
+DropdownMenuRadioGroup,
+DropdownMenuRadioItem,
+DropdownMenuSeparator,
+DropdownMenuShortcut,
+DropdownMenuSub,
+DropdownMenuSubContent,
+DropdownMenuSubTrigger,
+DropdownMenuTrigger,
+CommandGroup,
+CommandInput,
+CommandItem,
+CommandList,
+CommandSeparator,
+CommandShortcut,
+DatePicker,
+DatePickerRange,
+Dialog,
+DialogClose,
+DialogContent,
+DialogDescription,
+DialogFooter,
+DialogHeader,
+DialogTitle,
+DialogTrigger,
+Drawer,
+DrawerClose,
+DrawerContent,
+Empty,
+EmptyContent,
+EmptyDescription,
+EmptyHeader,
+EmptyMedia,
+EmptyTitle,
+DrawerDescription,
+Menubar,
+MenubarCheckboxItem,
+MenubarContent,
+MenubarGroup,
+MenubarItem,
+MenubarLabel,
+MenubarMenu,
+MenubarRadioGroup,
+MenubarRadioItem,
+MenubarSeparator,
+MenubarShortcut,
+MenubarSub,
+MenubarSubContent,
+MenubarSubTrigger,
+MenubarTrigger,
+MultiSelect,
+NavigationMenu,
+NavigationMenuContent,
+NavigationMenuIndicator,
+NavigationMenuLink,
+NavigationMenuItem,
+NavigationMenuList,
+NavigationMenuTrigger,
+NavigationMenuViewport,
+DrawerFooter,
+DrawerHeader,
+DrawerTitle,
+DrawerTrigger,
+Input,
+InputCounter,
+InputOTP,
+InputOTPGroup,
+InputOTPSeparator,
+InputOTPSlot,
+InputPassword,
+InputSearch,
+InputText,
+Label,
+PasswordStrength,
+Progress,
+RadioGroup,
+RadioGroupItem,
+Rating,
+ScrollArea,
+ScrollBar,
+Select,
+SelectContent,
+SelectGroup,
+SelectItem,
+SelectLabel,
+SelectScrollDownButton,
+SelectScrollUpButton,
+SelectSeparator,
+SelectTrigger,
+SelectValue,
+Separator,
+Skeleton,
+Slider,
+Spinner,
+Switch,
+Tabs,
+TabsContent,
+TabsList,
+TabsTrigger,
+Text,
+TextArea,
+TextEditor,
+Toggle,
+Tooltip,
+TooltipContent,
+TooltipProvider,
+TooltipTrigger,
 } from '@stellar-ui/web';
 import type { ThemeVariant } from '@stellar-ui/shared';
 import { cn } from '@stellar-ui/shared';
 import { useState } from 'react';
 import {
-  AlertCircleIcon,
-  CalendarIcon,
-  CheckCircleIcon,
-  ChevronDownIcon,
-  FileIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-  SettingsIcon,
-  XCircleIcon,
-  CheckIcon,
-  LockIcon,
-  MailIcon,
-  SearchIcon,
-  TrashIcon,
-  UserIcon,
-  BoldIcon,
-  ItalicIcon,
-  UnderlineIcon,
+AlertCircleIcon,
+CalendarIcon,
+CheckCircleIcon,
+ChevronDownIcon,
+FileIcon,
+InfoIcon,
+MoreHorizontalIcon,
+SettingsIcon,
+XCircleIcon,
+CheckIcon,
+LockIcon,
+MailIcon,
+SearchIcon,
+TrashIcon,
+UserIcon,
+BoldIcon,
+ItalicIcon,
+UnderlineIcon,
 } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface HomeProps {
-  theme: ThemeVariant;
-  setTheme: (theme: ThemeVariant) => void;
+theme: ThemeVariant;
+setTheme: (theme: ThemeVariant) => void;
 }
 
 export function Home({ theme, setTheme }: HomeProps) {
-  const [password, setPassword] = useState('');
+const [password, setPassword] = useState('');
 
-  return (
-    <div className="flex flex-col gap-4 p-4 bg-background flex-1">
-      <div className="flex items-center justify-between border-b border-border pb-4">
-        <Text as="h1">Home</Text>
-        <div className="flex items-center gap-2">
-          <label htmlFor="theme-select" className="text-sm text-foreground">
-            Theme:
-          </label>
-          <select
-            id="theme-select"
-            value={theme}
-            onChange={(e) => setTheme(e.target.value as ThemeVariant)}
-            className={cn(
-              'rounded-md border border-border bg-surface px-3 py-1.5 text-sm text-foreground',
-              'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
-              'hover:bg-surface/80 transition-colors'
-            )}
-          >
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="ocean">Ocean</option>
-          </select>
-        </div>
-      </div>
-      <Button>Click me</Button>
+return (
+
+<div className="flex flex-col gap-4 p-4 bg-background flex-1">
+<div className="flex items-center justify-between border-b border-border pb-4">
+<Text as="h1">Home</Text>
+<div className="flex items-center gap-2">
+<label htmlFor="theme-select" className="text-sm text-foreground">
+Theme:
+</label>
+<select
+id="theme-select"
+value={theme}
+onChange={(e) => setTheme(e.target.value as ThemeVariant)}
+className={cn(
+'rounded-md border border-border bg-surface px-3 py-1.5 text-sm text-foreground',
+'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
+'hover:bg-surface/80 transition-colors'
+)} >
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+<option value="ocean">Ocean</option>
+</select>
+</div>
+</div>
+<Button>Click me</Button>
 
       <div className="flex flex-col gap-4">
         <Text as="h2">ButtonGroup</Text>
@@ -1397,57 +1397,62 @@ export function Home({ theme, setTheme }: HomeProps) {
             code={`import { Toaster } from 'sonner';
 
 export default function RootLayout({
-  children,
+children,
 }: {
-  children: React.ReactNode;
+children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        {children}
-        <Toaster />
-      </body>
-    </html>
-  );
+return (
+
+<html lang="en">
+<body>
+{children}
+<Toaster />
+</body>
+</html>
+);
 }`}
-            filename="layout.tsx"
-            language="tsx"
-          />
+filename="layout.tsx"
+language="tsx"
+/>
 
           <CodeBlock
             code={`function greet(name: string) {
-  return \`Hello, \${name}!\`;
+
+return \`Hello, \${name}!\`;
 }
 
 const message = greet('World');
 console.log(message);`}
-            language="typescript"
-            showLineNumbers
-          />
+language="typescript"
+showLineNumbers
+/>
 
           <CodeBlock
             code={`const data = {
-  name: 'Shiba UI',
-  version: '1.0.0',
-  features: ['Accessible', 'Customizable', 'Modern']
+
+name: 'Shiba UI',
+version: '1.0.0',
+features: ['Accessible', 'Customizable', 'Modern']
 };
 
 console.log(JSON.stringify(data, null, 2));`}
-            language="javascript"
-            highlightLines={[2, 4]}
-            showLineNumbers
-          />
+language="javascript"
+highlightLines={[2, 4]}
+showLineNumbers
+/>
 
           <CodeBlock
             code={`// This is a comment
+
 const value = "string value";
 const number = 42;
 const isActive = true;`}
-            language="typescript"
-            copyable={false}
-          />
-        </div>
-      </div>
+language="typescript"
+copyable={false}
+/>
+
+</div>
+</div>
 
       <div className="flex flex-col gap-4">
         <Text as="h2">InputCounter</Text>
@@ -1456,11 +1461,11 @@ const isActive = true;`}
           <InputCounter label="Input with plus/minus buttons" defaultValue={1024} min={0} />
           <InputCounter label="Counter with limits" defaultValue={5} min={0} max={10} step={1} />
           <InputCounter label="Disabled counter" defaultValue={3} disabled />
-          <InputCounter 
-            label="Counter with error" 
-            defaultValue={15} 
-            min={0} 
-            max={10} 
+          <InputCounter
+            label="Counter with error"
+            defaultValue={15}
+            min={0}
+            max={10}
             error="Value must be between 0 and 10"
             aria-invalid
           />
@@ -1504,7 +1509,7 @@ const isActive = true;`}
 
           <div className="flex flex-col gap-2">
             <Label>OTP Input with error</Label>
-            <InputOTP 
+            <InputOTP
               maxLength={6}
               error="Invalid OTP code"
               aria-invalid
@@ -2429,5 +2434,6 @@ const isActive = true;`}
         </div>
       </div>
     </div>
-  );
+
+);
 }

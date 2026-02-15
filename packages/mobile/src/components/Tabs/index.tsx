@@ -46,8 +46,17 @@ interface TabsRootProps {
   children?: React.ReactNode;
 }
 
-function Tabs({ className, defaultValue, value, onValueChange, children, ...props }: TabsRootProps) {
-  const [uncontrolledValue, setUncontrolledValue] = React.useState(defaultValue ?? '');
+function Tabs({
+  className,
+  defaultValue,
+  value,
+  onValueChange,
+  children,
+  ...props
+}: TabsRootProps) {
+  const [uncontrolledValue, setUncontrolledValue] = React.useState(
+    defaultValue ?? ''
+  );
   const isControlled = value !== undefined;
   const currentValue = isControlled ? value : uncontrolledValue;
   const handleValueChange = React.useCallback(
@@ -110,13 +119,21 @@ interface TabsTriggerProps {
   children?: React.ReactNode;
 }
 
-function TabsTrigger({ className, value, disabled, children, ...props }: TabsTriggerProps) {
+function TabsTrigger({
+  className,
+  value,
+  disabled,
+  children,
+  ...props
+}: TabsTriggerProps) {
   const fallbackContext = React.useContext(FallbackTabsContext);
 
   if (hasPrimitive && typeof useRootContext === 'function') {
     const PrimitiveTabsTrigger = () => {
       const { value: rootValue } = useRootContext();
-      const { value: _omit, ...triggerRest } = props as React.ComponentProps<typeof TriggerComponent>;
+      const { value: _omit, ...triggerRest } = props as React.ComponentProps<
+        typeof TriggerComponent
+      >;
       return (
         <TextClassContext.Provider
           value={cn(
@@ -125,7 +142,10 @@ function TabsTrigger({ className, value, disabled, children, ...props }: TabsTri
           )}
         >
           <TriggerComponent
-            className={cn(triggerClassName(rootValue === value, disabled), className)}
+            className={cn(
+              triggerClassName(rootValue === value, disabled),
+              className
+            )}
             value={value}
             disabled={disabled}
             {...triggerRest}
@@ -164,14 +184,24 @@ interface TabsContentProps {
   children?: React.ReactNode;
 }
 
-function TabsContent({ className, value, children, ...props }: TabsContentProps) {
+function TabsContent({
+  className,
+  value,
+  children,
+  ...props
+}: TabsContentProps) {
   const fallbackContext = React.useContext(FallbackTabsContext);
 
   if (hasPrimitive) {
-    const { value: _omit, ...contentRest } = props as React.ComponentProps<typeof ContentComponent>;
+    const { value: _omit, ...contentRest } = props as React.ComponentProps<
+      typeof ContentComponent
+    >;
     return (
       <ContentComponent
-        className={cn(Platform.select({ web: 'flex-1 outline-none' }), className)}
+        className={cn(
+          Platform.select({ web: 'flex-1 outline-none' }),
+          className
+        )}
         value={value}
         {...contentRest}
       >
@@ -182,7 +212,9 @@ function TabsContent({ className, value, children, ...props }: TabsContentProps)
 
   if (!fallbackContext || fallbackContext.value !== value) return null;
   return (
-    <View className={cn(Platform.select({ web: 'flex-1 outline-none' }), className)}>
+    <View
+      className={cn(Platform.select({ web: 'flex-1 outline-none' }), className)}
+    >
       {children}
     </View>
   );

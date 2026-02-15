@@ -88,7 +88,8 @@ function InputCounter({
         className={cn(
           'relative flex h-9 w-full min-w-0 flex-row items-center overflow-hidden rounded-md border border-border bg-surface shadow-xs',
           'focus-within:border-primary focus-within:ring-primary/50 focus-within:ring-[3px]',
-          hasError && 'border-error focus-within:border-error focus-within:ring-error/50',
+          hasError &&
+            'border-error focus-within:border-error focus-within:ring-error/50',
           disabled && 'opacity-50',
           className
         )}

@@ -21,7 +21,19 @@ export function ThemeCustomization() {
           <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
             variant
           </code>{' '}
-          prop on the ThemeProvider:
+          prop on the ThemeProvider. Use{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            ThemeProvider
+          </code>{' '}
+          from{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            @stellar-ui/web
+          </code>{' '}
+          on web and from{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            @stellar-ui/mobile
+          </code>{' '}
+          on React Native:
         </Text>
         <CodeBlock
           code={`import { ThemeProvider } from '@stellar-ui/web';
@@ -73,11 +85,12 @@ function App() {
 
       <section className="space-y-4">
         <Text as="h2" className="text-2xl font-semibold">
-          Customizing Colors with CSS Variables
+          Web: Customizing Colors with CSS Variables
         </Text>
         <Text as="p" className="text-muted">
-          You can override theme colors by setting CSS custom properties. The
-          ThemeProvider sets these variables on the document root:
+          On web, you can override theme colors by setting CSS custom
+          properties. The ThemeProvider sets these variables on the document
+          root:
         </Text>
         <CodeBlock
           code={`:root {
@@ -104,10 +117,10 @@ function App() {
 
       <section className="space-y-4">
         <Text as="h2" className="text-2xl font-semibold">
-          Creating Custom Themes
+          Web: Creating Custom Themes
         </Text>
         <Text as="p" className="text-muted">
-          To create a completely custom theme, you can override all CSS
+          On web, to create a completely custom theme, you can override all CSS
           variables after the ThemeProvider initializes:
         </Text>
         <CodeBlock
@@ -138,11 +151,11 @@ function CustomThemeProvider({ children }) {
 
       <section className="space-y-4">
         <Text as="h2" className="text-2xl font-semibold">
-          Using Theme Classes
+          Web: Using Theme Classes
         </Text>
         <Text as="p" className="text-muted">
-          The ThemeProvider adds theme classes (light, dark, ocean) to the
-          document root. You can use these for theme-specific styling:
+          On web, the ThemeProvider adds theme classes (light, dark, ocean) to
+          the document root. You can use these for theme-specific styling:
         </Text>
         <CodeBlock
           code={`/* Theme-specific styles with custom CSS */
@@ -167,16 +180,53 @@ function CustomThemeProvider({ children }) {
         />
       </section>
 
+      <section className="space-y-4 border-t border-border pt-8">
+        <Text as="h2" className="text-2xl font-semibold">
+          Mobile: Customizing with customTheme
+        </Text>
+        <Text as="p" className="text-muted">
+          On React Native there is no document or CSS variables. Use the{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            customTheme
+          </code>{' '}
+          prop on ThemeProvider to override theme tokens. Values are merged over
+          the base theme (same token names as web: background, surface, primary,
+          primary-soft, primary-text, etc.):
+        </Text>
+        <CodeBlock
+          code={`import { ThemeProvider } from '@stellar-ui/mobile';
+
+const customTheme = {
+  primary: '#your-hex',
+  'primary-soft': '#your-soft-hex',
+  'primary-text': '#your-text-hex',
+  background: '#f5f5f5',
+};
+
+export default function App() {
+  return (
+    <ThemeProvider variant="light" customTheme={customTheme}>
+      {/* Your app content */}
+    </ThemeProvider>
+  );
+}`}
+          language="tsx"
+          copyable
+        />
+      </section>
+
       <section className="space-y-4">
         <Text as="h2" className="text-2xl font-semibold">
           Component-Level Theme Overrides
         </Text>
         <Text as="p" className="text-muted">
-          You can override theme colors for specific components using inline
-          styles or className:
+          <strong>Web:</strong> override colors with inline styles or Tailwind
+          className. <strong>Mobile:</strong> use Tailwind/NativeWind classes
+          (e.g. <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">className="bg-[#custom]"</code>) or style prop.
         </Text>
         <CodeBlock
-          code={`import { Button } from '@stellar-ui/web';
+          code={`// Web
+import { Button } from '@stellar-ui/web';
 
 function CustomButton() {
   return (
@@ -191,14 +241,14 @@ function CustomButton() {
   );
 }
 
-// Or with Tailwind classes
-function CustomButton() {
-  return (
-    <Button className="bg-[#custom-color] text-[#custom-text]">
-      Custom Styled Button
-    </Button>
-  );
-}`}
+// Or with Tailwind (web)
+<Button className="bg-[#custom-color] text-[#custom-text]">
+  Custom Styled Button
+</Button>
+
+// Mobile: use className (NativeWind) or style
+import { Button } from '@stellar-ui/mobile';
+<Button className="bg-[#custom-color]">Custom</Button>`}
           language="tsx"
           copyable
         />

@@ -61,7 +61,10 @@ export default defineConfig({
         '../../packages/shared/src'
       ),
       '@stellar-ui/web': path.resolve(__dirname, '../../packages/web/src'),
-      '@stellar-ui/mobile': path.resolve(__dirname, '../../packages/mobile/src'),
+      '@stellar-ui/mobile': path.resolve(
+        __dirname,
+        '../../packages/mobile/src'
+      ),
       '@': path.resolve(__dirname, './src'),
       '@/components': path.resolve(__dirname, './src/components'),
       '@/hooks': path.resolve(__dirname, './src/hooks'),

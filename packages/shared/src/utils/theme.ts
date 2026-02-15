@@ -22,10 +22,9 @@ export function mergeTheme(
 ): ThemeTokens {
   const merged = { ...base };
 
-  for (const key in override) {
-    if (override[key] !== undefined) {
-      merged[key] = override[key]!;
-    }
+  for (const key of Object.keys(override) as (keyof ThemeTokens)[]) {
+    const v = override[key];
+    if (v !== undefined) merged[key] = v;
   }
 
   return merged;

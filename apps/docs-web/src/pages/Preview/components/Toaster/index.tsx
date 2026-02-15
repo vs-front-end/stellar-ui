@@ -70,7 +70,7 @@ export const ToasterExample = () => (
             description: 'Friday, February 10, 2024 at 5:57 PM',
             action: {
               label: 'Undo',
-              onClick: () => console.log('Undo'),
+              onClick: () => console.warn('Undo'),
             },
           })
         }
@@ -113,7 +113,7 @@ toast('Event created', {
   description: 'Friday, February 10, 2024 at 5:57 PM',
   action: {
     label: 'Undo',
-    onClick: () => console.log('Undo'),
+    onClick: () => console.warn('Undo'),
   },
 });
 
@@ -199,7 +199,7 @@ import { toast } from 'sonner';
           description: 'Friday, February 10, 2024 at 5:57 PM',
           action: {
             label: 'Undo',
-            onClick: () => console.log('Undo'),
+            onClick: () => console.warn('Undo'),
           },
         })
       }

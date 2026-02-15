@@ -87,7 +87,8 @@ function InputPassword({
           className={cn(
             StartIcon && 'pl-9',
             'pr-9',
-            hasError && 'peer border-error focus-visible:border-error focus-visible:ring-error/50',
+            hasError &&
+              'peer border-error focus-visible:border-error focus-visible:ring-error/50',
             className
           )}
         />
@@ -100,8 +101,14 @@ function InputPassword({
           aria-label={isVisible ? 'Hide password' : 'Show password'}
           className="text-muted focus-visible:ring-primary/50 absolute inset-y-0 right-0 rounded-l-none hover:bg-transparent"
         >
-          {isVisible ? <EyeOffIcon className="size-4" /> : <EyeIcon className="size-4" />}
-          <span className="sr-only">{isVisible ? 'Hide password' : 'Show password'}</span>
+          {isVisible ? (
+            <EyeOffIcon className="size-4" />
+          ) : (
+            <EyeIcon className="size-4" />
+          )}
+          <span className="sr-only">
+            {isVisible ? 'Hide password' : 'Show password'}
+          </span>
         </Button>
       </div>
       {error && (

@@ -35,17 +35,12 @@ function AvatarImage({
   className,
   src,
   ...props
-}: AvatarPrimitive.ImageProps &
-  React.RefAttributes<AvatarPrimitive.ImageRef>) {
+}: AvatarPrimitive.ImageProps & React.RefAttributes<AvatarPrimitive.ImageRef>) {
   const imageClass = cn('aspect-square size-full', className);
   if (!ImageComponent) {
     if (!src) return <View className={imageClass} />;
     return (
-      <Image
-        source={{ uri: src }}
-        className={imageClass}
-        resizeMode="cover"
-      />
+      <Image source={{ uri: src }} className={imageClass} resizeMode="cover" />
     );
   }
   return <ImageComponent className={imageClass} src={src} {...props} />;

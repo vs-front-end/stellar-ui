@@ -13,17 +13,20 @@ Thank you for considering contributing to Stellar UI! We welcome contributions f
 
 1. Fork the repository
 2. Clone your fork:
+
    ```bash
    git clone https://github.com/vs-front-end/stellar-ui.git
    cd stellar-ui
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    ```
 
 4. Build all packages:
+
    ```bash
    npm run build
    ```
@@ -51,11 +54,13 @@ stellar-ui/
 ### Working on Components
 
 1. Navigate to the appropriate package:
+
    ```bash
    cd packages/web  # or packages/mobile
    ```
 
 2. Start development mode:
+
    ```bash
    npm run dev
    ```
@@ -87,20 +92,22 @@ npm run format
 1. Create a new directory in `packages/web/src/components/ComponentName/`
 
 2. Create `index.tsx`:
+
    ```tsx
    import * as React from 'react';
    import { cn } from '@stellar-ui/shared';
-   
+
    interface ComponentNameProps {
      // Your props
    }
-   
+
    export function ComponentName({ ...props }: ComponentNameProps) {
      return <div {...props}>Component</div>;
    }
    ```
 
 3. Export from `packages/web/src/components/index.ts`:
+
    ```tsx
    export * from './ComponentName';
    ```
@@ -120,6 +127,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 - `chore:` Maintenance tasks
 
 Examples:
+
 ```
 feat(web): add Dropdown component
 fix(shared): resolve theme switching bug
@@ -129,6 +137,7 @@ docs: update installation guide
 ## Pull Request Process
 
 1. Create a feature branch:
+
    ```bash
    git checkout -b feat/your-feature-name
    ```
@@ -138,6 +147,7 @@ docs: update installation guide
 3. Commit with conventional commit messages
 
 4. Push to your fork:
+
    ```bash
    git push origin feat/your-feature-name
    ```
@@ -201,4 +211,3 @@ When adding/modifying components:
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
-

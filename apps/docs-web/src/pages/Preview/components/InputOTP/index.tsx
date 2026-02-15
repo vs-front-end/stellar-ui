@@ -1,11 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import {
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSlot,
-  Label,
-} from '@stellar-ui/web';
+import { InputOTP, InputOTPGroup, InputOTPSlot, Label } from '@stellar-ui/web';
 import {
   InputOTP as MobileInputOTP,
   InputOTPGroup as MobileInputOTPGroup,

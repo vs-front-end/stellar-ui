@@ -8,18 +8,15 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "turbo run build",
     "clean": "turbo run clean && node -e \"require('fs').rmSync('node_modules', {recursive: true, force: true})\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint -- --fix",
     "type-check": "turbo run type-check",
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
-    "start:web": "turbo run dev --filter=docs",
-    "build:web": "turbo run build --filter=docs",
-    "preview:web": "cd apps/docs-web && npm run preview",
-    "build:mobile": "turbo run build --filter=mobile",
-    "start:mobile": "turbo run start --filter=mobile"
+    "start": "turbo run dev --filter=docs",
+    "preview": "cd apps/docs-web && npm run preview",
+    "build": "turbo run build"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

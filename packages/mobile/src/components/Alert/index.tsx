@@ -3,7 +3,12 @@ import * as React from 'react';
 import { View, type ViewProps } from 'react-native';
 import { Text, TextClassContext } from '../Text';
 
-type AlertVariant = 'default' | 'destructive' | 'success' | 'warning' | 'informative';
+type AlertVariant =
+  | 'default'
+  | 'destructive'
+  | 'success'
+  | 'warning'
+  | 'informative';
 
 const AlertVariantContext = React.createContext<AlertVariant>('default');
 
@@ -60,7 +65,9 @@ function Alert({
           {...props}
         >
           {icon != null && (
-            <View className={cn('absolute left-3.5 top-3 size-4', iconClassName)}>
+            <View
+              className={cn('absolute left-3.5 top-3 size-4', iconClassName)}
+            >
               {icon}
             </View>
           )}

@@ -9,7 +9,8 @@ const separatorVariants = cva(
   {
     variants: {
       variant: {
-        dashed: 'border-border border-dashed data-[orientation=horizontal]:border-t data-[orientation=vertical]:border-l',
+        dashed:
+          'border-border border-dashed data-[orientation=horizontal]:border-t data-[orientation=vertical]:border-l',
         solid: 'bg-border',
       },
     },
@@ -20,7 +21,8 @@ const separatorVariants = cva(
 );
 
 export interface SeparatorProps
-  extends React.ComponentProps<typeof SeparatorPrimitive.Root>,
+  extends
+    React.ComponentProps<typeof SeparatorPrimitive.Root>,
     VariantProps<typeof separatorVariants> {}
 
 function Separator({

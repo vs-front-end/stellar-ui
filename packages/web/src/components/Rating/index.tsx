@@ -72,11 +72,15 @@ function Rating({
       handleClick(starValue);
     } else if (e.key === 'ArrowRight' && starValue < max) {
       e.preventDefault();
-      const nextStar = document.getElementById(`${ratingId}-star-${starValue + 1}`);
+      const nextStar = document.getElementById(
+        `${ratingId}-star-${starValue + 1}`
+      );
       nextStar?.focus();
     } else if (e.key === 'ArrowLeft' && starValue > 1) {
       e.preventDefault();
-      const prevStar = document.getElementById(`${ratingId}-star-${starValue - 1}`);
+      const prevStar = document.getElementById(
+        `${ratingId}-star-${starValue - 1}`
+      );
       prevStar?.focus();
     }
   };
@@ -108,8 +112,16 @@ function Rating({
             role={isInteractive ? 'radio' : undefined}
             aria-checked={isInteractive ? displayValue >= starValue : undefined}
             aria-valuenow={isInteractive ? starValue : undefined}
-            aria-label={isInteractive ? `${starValue} out of ${max} stars` : undefined}
-            tabIndex={isInteractive && !disabled ? (displayValue >= starValue ? 0 : -1) : undefined}
+            aria-label={
+              isInteractive ? `${starValue} out of ${max} stars` : undefined
+            }
+            tabIndex={
+              isInteractive && !disabled
+                ? displayValue >= starValue
+                  ? 0
+                  : -1
+                : undefined
+            }
             disabled={disabled}
             onClick={() => handleClick(starValue)}
             onMouseEnter={() => handleMouseEnter(starValue)}
@@ -134,7 +146,10 @@ function Rating({
               )}
             />
             {isHalfFilled && (
-              <div className="absolute inset-0 overflow-hidden" style={{ width: '50%' }}>
+              <div
+                className="absolute inset-0 overflow-hidden"
+                style={{ width: '50%' }}
+              >
                 <StarIcon className="text-primary fill-primary" />
               </div>
             )}
@@ -158,4 +173,3 @@ function Rating({
 }
 
 export { Rating };
-

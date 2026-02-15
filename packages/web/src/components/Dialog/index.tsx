@@ -70,7 +70,7 @@ function DialogContent({
             data-slot="dialog-close"
             className="absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-primary-soft data-[state=open]:text-muted [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
           >
-            <XIcon className="size-4 text-muted"/>
+            <XIcon className="size-4 text-muted" />
             <span className="sr-only">Close</span>
           </DialogPrimitive.Close>
         )}
@@ -79,10 +79,7 @@ function DialogContent({
   );
 }
 
-function DialogHeader({
-  className,
-  ...props
-}: React.ComponentProps<'div'>) {
+function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="dialog-header"
@@ -92,10 +89,7 @@ function DialogHeader({
   );
 }
 
-function DialogFooter({
-  className,
-  ...props
-}: React.ComponentProps<'div'>) {
+function DialogFooter({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="dialog-footer"
@@ -115,7 +109,10 @@ function DialogTitle({
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn('text-lg font-semibold leading-none text-foreground', className)}
+      className={cn(
+        'text-lg font-semibold leading-none text-foreground',
+        className
+      )}
       {...props}
     />
   );

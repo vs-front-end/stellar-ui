@@ -27,7 +27,8 @@ function TextArea({
       disabled={disabled}
       className={cn(
         'min-h-16 py-2',
-        hasError && 'border-error focus-visible:border-error focus-visible:ring-error/50',
+        hasError &&
+          'border-error focus-visible:border-error focus-visible:ring-error/50',
         className
       )}
       {...props}

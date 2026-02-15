@@ -43,11 +43,15 @@ export function Icons() {
           Usage
         </Text>
         <Text as="p" className="text-muted">
-          Lucide React is already included as a dependency in{' '}
+          On <strong>web</strong>, Lucide React is included in{' '}
           <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
             @stellar-ui/web
           </code>
-          . Simply import the icons you need:
+          . On <strong>mobile</strong>, install{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            lucide-react-native
+          </code>{' '}
+          if you need icons. Import the icons you need:
         </Text>
         <CodeBlock
           code={`import { Home, Settings, User, Search } from 'lucide-react';

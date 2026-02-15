@@ -1,6 +1,12 @@
 import type { IComponentUsage } from '@/types';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger, Text } from '@stellar-ui/web';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+  Text,
+} from '@stellar-ui/web';
 import {
   Tabs as MobileTabs,
   TabsContent as MobileTabsContent,

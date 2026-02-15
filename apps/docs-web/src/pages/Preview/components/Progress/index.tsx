@@ -1,7 +1,10 @@
 import type { IComponentUsage } from '@/types';
 
 import { Label, Progress } from '@stellar-ui/web';
-import { Label as MobileLabel, Progress as MobileProgress } from '@stellar-ui/mobile';
+import {
+  Label as MobileLabel,
+  Progress as MobileProgress,
+} from '@stellar-ui/mobile';
 
 export const ProgressExample = () => (
   <div className="flex flex-col gap-2">

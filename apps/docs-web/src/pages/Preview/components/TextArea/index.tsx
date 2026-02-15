@@ -1,7 +1,10 @@
 import type { IComponentUsage } from '@/types';
 
 import { Label, TextArea } from '@stellar-ui/web';
-import { Label as MobileLabel, TextArea as MobileTextArea } from '@stellar-ui/mobile';
+import {
+  Label as MobileLabel,
+  TextArea as MobileTextArea,
+} from '@stellar-ui/mobile';
 
 export const TextAreaExample = () => (
   <div className="flex flex-col gap-4 max-w-md">

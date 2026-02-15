@@ -5,7 +5,8 @@ import { Platform, Pressable, View } from 'react-native';
 
 const RootComponent = SwitchPrimitive?.Root;
 const ThumbComponent = SwitchPrimitive?.Thumb;
-const hasPrimitive = typeof RootComponent !== 'undefined' && typeof ThumbComponent !== 'undefined';
+const hasPrimitive =
+  typeof RootComponent !== 'undefined' && typeof ThumbComponent !== 'undefined';
 
 type SwitchProps = Omit<
   SwitchPrimitive.RootProps,
@@ -43,7 +44,9 @@ function Switch({
 
   const thumbClass = cn(
     'size-4 rounded-full',
-    Platform.select({ web: 'pointer-events-none block ring-0 transition-transform' }),
+    Platform.select({
+      web: 'pointer-events-none block ring-0 transition-transform',
+    }),
     resolvedChecked ? 'translate-x-3.5 bg-white' : 'translate-x-0 bg-white'
   );
 

@@ -10,7 +10,7 @@ export const MultiSelectExample = () => (
       { value: 'angular', label: 'Angular' },
       { value: 'svelte', label: 'Svelte' },
     ]}
-    onValueChange={(values) => console.log(values)}
+    onValueChange={(values) => console.warn(values)}
     placeholder="Select frameworks..."
   />
 );
@@ -35,7 +35,7 @@ export const MultiSelectDocs: IComponentUsage = {
     { value: 'angular', label: 'Angular' },
     { value: 'svelte', label: 'Svelte' },
   ]}
-  onValueChange={(values) => console.log(values)}
+  onValueChange={(values) => console.warn(values)}
   placeholder="Select frameworks..."
 />`,
 

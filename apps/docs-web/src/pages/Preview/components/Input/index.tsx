@@ -12,11 +12,7 @@ export const InputExample = () => (
 
     <div className="flex flex-col gap-2">
       <Label htmlFor="input-disabled">Disabled Input</Label>
-      <Input
-        id="input-disabled"
-        placeholder="Disabled input"
-        disabled
-      />
+      <Input id="input-disabled" placeholder="Disabled input" disabled />
     </div>
   </div>
 );

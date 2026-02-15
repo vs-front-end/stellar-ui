@@ -130,7 +130,7 @@ const variant: ThemeVariant = 'light' | 'dark' | 'ocean';
 ### Themes
 
 - `light` - Default light theme
-- `dark` - Default dark theme  
+- `dark` - Default dark theme
 - `ocean` - Ocean blue theme (custom)
 
 ## Utilities
@@ -169,7 +169,7 @@ import { cn } from '@stellar-ui/shared';
 
 function Button({ className, variant }) {
   return (
-    <button 
+    <button
       className={cn(
         'px-4 py-2 rounded',
         variant === 'primary' && 'bg-primary text-white',
@@ -186,10 +186,9 @@ function Button({ className, variant }) {
 import { colors } from '@stellar-ui/shared/tokens';
 
 function Button({ variant }) {
-  const backgroundColor = variant === 'dark' 
-    ? colors.dark.primary 
-    : colors.light.primary;
-    
+  const backgroundColor =
+    variant === 'dark' ? colors.dark.primary : colors.light.primary;
+
   return (
     <View style={{ backgroundColor }}>
       <Text>Button</Text>
@@ -210,4 +209,3 @@ MIT © Stellar UI
 
 - [@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web) - React web components
 - [@stellar-ui/mobile](https://www.npmjs.com/package/@stellar-ui/mobile) - React Native components
-

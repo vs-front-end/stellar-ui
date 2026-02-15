@@ -247,7 +247,8 @@ import { Button } from '@stellar-ui/mobile';
       name: 'modal',
       type: 'boolean',
       default: 'true',
-      description: 'When true, prevents interaction with content outside the dialog.',
+      description:
+        'When true, prevents interaction with content outside the dialog.',
     },
   ],
 };

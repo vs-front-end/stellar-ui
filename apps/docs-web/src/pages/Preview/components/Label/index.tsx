@@ -1,7 +1,10 @@
 import type { IComponentUsage } from '@/types';
 
 import { Input, Label, Switch } from '@stellar-ui/web';
-import { Checkbox as MobileCheckbox, Label as MobileLabel } from '@stellar-ui/mobile';
+import {
+  Checkbox as MobileCheckbox,
+  Label as MobileLabel,
+} from '@stellar-ui/mobile';
 
 export const LabelExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -20,12 +23,22 @@ export const LabelExample = () => (
 export const LabelExampleMobile = () => (
   <div className="flex flex-col gap-4 max-w-md">
     <div className="flex items-center gap-2">
-      <MobileCheckbox disabled id="label-checkbox" checked={false} onCheckedChange={() => {}} />
+      <MobileCheckbox
+        disabled
+        id="label-checkbox"
+        checked={false}
+        onCheckedChange={() => {}}
+      />
       <MobileLabel htmlFor="label-checkbox">Label for Checkbox</MobileLabel>
     </div>
 
     <div className="flex items-center gap-2">
-      <MobileCheckbox disabled id="label-checkbox-2" checked={false} onCheckedChange={() => {}} />
+      <MobileCheckbox
+        disabled
+        id="label-checkbox-2"
+        checked={false}
+        onCheckedChange={() => {}}
+      />
       <MobileLabel htmlFor="label-checkbox-2">Label for Checkbox</MobileLabel>
     </div>
   </div>

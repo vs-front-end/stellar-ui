@@ -7,16 +7,16 @@ interface TextareaProps extends React.ComponentProps<'textarea'> {
   containerClassName?: string;
 }
 
-function TextArea({ 
-  className, 
+function TextArea({
+  className,
   error,
   containerClassName,
   'aria-invalid': ariaInvalid,
-  ...props 
+  ...props
 }: TextareaProps) {
   const hasError = !!error || ariaInvalid;
   const needsWrapper = !!error || !!containerClassName;
-  
+
   const textareaElement = (
     <textarea
       data-slot="textarea"
@@ -25,7 +25,8 @@ function TextArea({
         'flex min-h-16 w-full rounded-md border border-border bg-surface px-3 py-2 text-base text-foreground shadow-xs transition-[color,box-shadow] outline-none',
         'placeholder:text-muted',
         'focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px]',
-        hasError && 'border-error focus-visible:border-error focus-visible:ring-error/50',
+        hasError &&
+          'border-error focus-visible:border-error focus-visible:ring-error/50',
         'disabled:cursor-not-allowed disabled:opacity-50',
         'md:text-sm',
         'field-sizing-content',
@@ -34,11 +35,11 @@ function TextArea({
       {...props}
     />
   );
-  
+
   if (!needsWrapper) {
     return textareaElement;
   }
-  
+
   return (
     <div className={cn('w-full max-w-xs space-y-2', containerClassName)}>
       {textareaElement}

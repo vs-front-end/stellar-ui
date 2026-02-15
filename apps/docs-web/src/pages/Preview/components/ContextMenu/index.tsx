@@ -88,7 +88,8 @@ export const ContextMenuDocs: IComponentUsage = {
       name: 'modal',
       type: 'boolean',
       default: 'true',
-      description: 'When true, prevents interaction with content outside the menu.',
+      description:
+        'When true, prevents interaction with content outside the menu.',
     },
   ],
 };

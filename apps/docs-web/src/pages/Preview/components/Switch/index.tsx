@@ -1,7 +1,10 @@
 import type { IComponentUsage } from '@/types';
 
 import { Switch } from '@stellar-ui/web';
-import { Label as MobileLabel, Switch as MobileSwitch } from '@stellar-ui/mobile';
+import {
+  Label as MobileLabel,
+  Switch as MobileSwitch,
+} from '@stellar-ui/mobile';
 
 export const SwitchExample = () => (
   <div className="flex flex-col gap-4">

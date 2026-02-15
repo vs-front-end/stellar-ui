@@ -20,21 +20,24 @@ function InputOTP({
 }: InputOTPProps) {
   const hasError = !!error || ariaInvalid;
   const needsWrapper = !!error;
-  
+
   const otpElement = (
     <OTPInput
       data-slot="input-otp"
       aria-invalid={hasError}
-      containerClassName={cn('flex items-center gap-2 has-disabled:opacity-50', containerClassName)}
+      containerClassName={cn(
+        'flex items-center gap-2 has-disabled:opacity-50',
+        containerClassName
+      )}
       className={cn('disabled:cursor-not-allowed', className)}
       {...props}
     />
   );
-  
+
   if (!needsWrapper) {
     return otpElement;
   }
-  
+
   return (
     <div className="w-full max-w-xs space-y-2">
       {otpElement}
@@ -47,10 +50,7 @@ function InputOTP({
   );
 }
 
-function InputOTPGroup({
-  className,
-  ...props
-}: React.ComponentProps<'div'>) {
+function InputOTPGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       data-slot="input-otp-group"
@@ -94,9 +94,7 @@ function InputOTPSlot({
   );
 }
 
-function InputOTPSeparator({
-  ...props
-}: React.ComponentProps<'div'>) {
+function InputOTPSeparator({ ...props }: React.ComponentProps<'div'>) {
   return (
     <div data-slot="input-otp-separator" role="separator" {...props}>
       <MinusIcon className="text-muted" />

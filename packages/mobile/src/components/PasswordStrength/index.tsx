@@ -108,7 +108,10 @@ function PasswordStrength({
                 <X className="text-muted" size={16} />
               )}
               <Text
-                className={cn('text-xs', req.met ? 'text-success' : 'text-muted')}
+                className={cn(
+                  'text-xs',
+                  req.met ? 'text-success' : 'text-muted'
+                )}
               >
                 {req.text}
               </Text>

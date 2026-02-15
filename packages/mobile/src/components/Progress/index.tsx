@@ -5,7 +5,9 @@ import { Platform, View } from 'react-native';
 
 const RootComponent = ProgressPrimitive?.Root;
 const IndicatorComponent = ProgressPrimitive?.Indicator;
-const hasPrimitive = typeof RootComponent !== 'undefined' && typeof IndicatorComponent !== 'undefined';
+const hasPrimitive =
+  typeof RootComponent !== 'undefined' &&
+  typeof IndicatorComponent !== 'undefined';
 
 function clamp(value: number | undefined | null): number {
   const n = value ?? 0;
@@ -41,10 +43,7 @@ function Progress({
   }
 
   return (
-    <RootComponent
-      className={rootClass}
-      {...props}
-    >
+    <RootComponent className={rootClass} {...props}>
       <Indicator value={value} className={indicatorClassName} />
     </RootComponent>
   );
@@ -70,7 +69,10 @@ function WebIndicator({ value, className }: IndicatorProps) {
 
   return (
     <IndicatorComponent
-      className={cn('h-full w-full flex-1 bg-primary transition-all', className)}
+      className={cn(
+        'h-full w-full flex-1 bg-primary transition-all',
+        className
+      )}
       style={{ transform: `translateX(-${100 - clamp(value)}%)` }}
     />
   );

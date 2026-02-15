@@ -32,7 +32,7 @@ function Checkbox({
   const rootClass = cn(
     'peer size-4 shrink-0 rounded-[4px] border border-border bg-surface shadow-xs',
     'data-[state=checked]:bg-primary data-[state=checked]:border-primary data-[state=checked]:text-white',
-    (!hasPrimitive && resolvedChecked) && 'border-primary bg-primary',
+    !hasPrimitive && resolvedChecked && 'border-primary bg-primary',
     'focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px]',
     'aria-invalid:border-error aria-invalid:ring-error/20',
     disabled && 'opacity-50',
