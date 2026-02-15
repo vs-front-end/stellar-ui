@@ -91,12 +91,12 @@ export const Preview = () => {
         </div>
 
         {hasMobile && (
-          <Select
-            value={platform}
-            onValueChange={setPlatform}
-            aria-label="Platform"
-          >
-            <SelectTrigger className="w-32" size="default">
+          <Select value={platform} onValueChange={setPlatform}>
+            <SelectTrigger
+              className="w-32"
+              size="default"
+              aria-label="Platform"
+            >
               <SelectValue placeholder="Platform" />
             </SelectTrigger>
 
