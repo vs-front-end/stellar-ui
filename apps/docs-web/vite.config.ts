@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import { rnw } from 'vite-plugin-rnw';
 import path from 'path';
 import { createRequire } from 'node:module';
@@ -32,6 +33,7 @@ function rnwClassNameMerge() {
 
 export default defineConfig({
   plugins: [
+    nodePolyfills({ include: ['buffer'] }),
     rnwClassNameMerge(),
     rnw({
       jsxImportSource: 'nativewind',
