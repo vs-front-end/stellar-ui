@@ -2,6 +2,12 @@ import { Info, XCircle, CheckCircle, AlertCircle } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@stellar-ui/web';
 import type { IComponentUsage, IComponentVariant } from '@/types';
 
+import {
+  Alert as MobileAlert,
+  AlertDescription as MobileAlertDescription,
+  AlertTitle as MobileAlertTitle,
+} from '@stellar-ui/mobile';
+
 type AlertVariant =
   | 'default'
   | 'destructive'
@@ -92,6 +98,15 @@ export const AlertVariants: IComponentVariant[] = [
 
 export const AlertExample = AlertVariants[0].component;
 
+export const AlertExampleMobile = () => (
+  <MobileAlert variant="default" icon={<Info className="size-4" />}>
+    <MobileAlertTitle>Alert Title</MobileAlertTitle>
+    <MobileAlertDescription>
+      This is an alert with a title and description.
+    </MobileAlertDescription>
+  </MobileAlert>
+);
+
 export const AlertDocs: IComponentUsage = {
   importCode: `import {
   Alert,
@@ -114,6 +129,24 @@ import {
 
 <Alert variant="default">
   <InfoIcon />
+  <AlertTitle>Alert Title</AlertTitle>
+  <AlertDescription>
+    This is an alert with a title and description.
+  </AlertDescription>
+</Alert>`,
+
+  importCodeMobile: `import { Alert, AlertTitle, AlertDescription } from '@stellar-ui/mobile';
+import { Info } from 'lucide-react';`,
+
+  usageCodeMobile: `<Alert variant="default" icon={<Info className="size-4" />}>
+  <AlertTitle>Alert Title</AlertTitle>
+  <AlertDescription>Alert description</AlertDescription>
+</Alert>`,
+
+  exampleCodeMobile: `import { Alert, AlertTitle, AlertDescription } from '@stellar-ui/mobile';
+import { Info } from 'lucide-react';
+
+<Alert variant="default" icon={<Info className="size-4" />}>
   <AlertTitle>Alert Title</AlertTitle>
   <AlertDescription>
     This is an alert with a title and description.

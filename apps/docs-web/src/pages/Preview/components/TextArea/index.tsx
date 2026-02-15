@@ -1,6 +1,7 @@
 import type { IComponentUsage } from '@/types';
 
 import { Label, TextArea } from '@stellar-ui/web';
+import { Label as MobileLabel, TextArea as MobileTextArea } from '@stellar-ui/mobile';
 
 export const TextAreaExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -18,6 +19,19 @@ export const TextAreaExample = () => (
         placeholder="Disabled textarea"
         disabled
       />
+    </div>
+  </div>
+);
+
+export const TextAreaExampleMobile = () => (
+  <div className="flex flex-col gap-4 max-w-md">
+    <div className="flex flex-col gap-2">
+      <MobileLabel>Default Textarea</MobileLabel>
+      <MobileTextArea placeholder="Enter your message here..." />
+    </div>
+    <div className="flex flex-col gap-2">
+      <MobileLabel>Disabled Textarea</MobileLabel>
+      <MobileTextArea placeholder="Disabled textarea" disabled />
     </div>
   </div>
 );
@@ -47,6 +61,26 @@ export const TextAreaDocs: IComponentUsage = {
       placeholder="Disabled textarea"
       disabled
     />
+  </div>
+</div>`,
+
+  importCodeMobile: `import { Label, TextArea } from '@stellar-ui/mobile';`,
+
+  usageCodeMobile: `<div className="flex flex-col gap-2">
+  <Label>Label</Label>
+  <TextArea placeholder="Enter text..." />
+</div>`,
+
+  exampleCodeMobile: `import { Label, TextArea } from '@stellar-ui/mobile';
+
+<div className="flex flex-col gap-4 max-w-md">
+  <div className="flex flex-col gap-2">
+    <Label>Default Textarea</Label>
+    <TextArea placeholder="Enter your message here..." />
+  </div>
+  <div className="flex flex-col gap-2">
+    <Label>Disabled Textarea</Label>
+    <TextArea placeholder="Disabled textarea" disabled />
   </div>
 </div>`,
 

@@ -1,6 +1,7 @@
 import type { IComponentUsage } from '@/types';
 
 import { Switch } from '@stellar-ui/web';
+import { Label as MobileLabel, Switch as MobileSwitch } from '@stellar-ui/mobile';
 
 export const SwitchExample = () => (
   <div className="flex flex-col gap-4">
@@ -23,6 +24,23 @@ export const SwitchExample = () => (
       <label htmlFor="switch-disabled" className="text-sm text-foreground">
         Disabled Switch
       </label>
+    </div>
+  </div>
+);
+
+export const SwitchExampleMobile = () => (
+  <div className="flex flex-col gap-4">
+    <div className="flex items-center gap-2">
+      <MobileSwitch id="switch-default" />
+      <MobileLabel htmlFor="switch-default">Default Switch</MobileLabel>
+    </div>
+    <div className="flex items-center gap-2">
+      <MobileSwitch id="switch-checked" defaultChecked />
+      <MobileLabel htmlFor="switch-checked">Checked Switch</MobileLabel>
+    </div>
+    <div className="flex items-center gap-2">
+      <MobileSwitch id="switch-disabled" disabled />
+      <MobileLabel htmlFor="switch-disabled">Disabled Switch</MobileLabel>
     </div>
   </div>
 );
@@ -63,6 +81,32 @@ export const SwitchDocs: IComponentUsage = {
     >
       Disabled Switch
     </label>
+  </div>
+</div>`,
+
+  importCodeMobile: `import { Label, Switch } from '@stellar-ui/mobile';`,
+
+  usageCodeMobile: `<div className="flex items-center gap-2">
+  <Switch id="switch" />
+  <Label htmlFor="switch">Label</Label>
+</div>`,
+
+  exampleCodeMobile: `import { Label, Switch } from '@stellar-ui/mobile';
+
+<div className="flex flex-col gap-4">
+  <div className="flex items-center gap-2">
+    <Switch id="switch-default" />
+    <Label htmlFor="switch-default">Default Switch</Label>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <Switch id="switch-checked" defaultChecked />
+    <Label htmlFor="switch-checked">Checked Switch</Label>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <Switch id="switch-disabled" disabled />
+    <Label htmlFor="switch-disabled">Disabled Switch</Label>
   </div>
 </div>`,
 

@@ -1,8 +1,15 @@
+export type DocPlatform = 'web' | 'mobile';
+
+export const PLATFORM_PARAM = 'platform';
+export const PLATFORM_WEB = 'web';
+export const PLATFORM_MOBILE = 'mobile';
+
 export interface INavComponent {
   name: string;
   description: string;
   importName: string;
   slug: string;
+  platforms?: DocPlatform[];
 }
 
 export const components: INavComponent[] = [
@@ -18,18 +25,21 @@ export const components: INavComponent[] = [
     description: 'Displays a callout for user attention.',
     importName: 'Alert',
     slug: 'alert',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Avatar',
     description: 'An image element with a fallback for representing the user.',
     importName: 'Avatar',
     slug: 'avatar',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Badge',
     description: 'Displays a badge or a component that looks like a badge.',
     importName: 'Badge',
     slug: 'badge',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Breadcrumb',
@@ -43,6 +53,7 @@ export const components: INavComponent[] = [
     description: 'Displays a button or a component that looks like a button.',
     importName: 'Button',
     slug: 'button',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'ButtonGroup',
@@ -69,6 +80,7 @@ export const components: INavComponent[] = [
       'A control that allows the user to toggle between checked and unchecked states.',
     importName: 'Checkbox',
     slug: 'checkbox',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'CircularProgress',
@@ -115,6 +127,7 @@ export const components: INavComponent[] = [
       'A window overlaid on either the primary window or another dialog window.',
     importName: 'Dialog',
     slug: 'dialog',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Drawer',
@@ -143,42 +156,49 @@ export const components: INavComponent[] = [
       'Displays a form input field or a component that looks like an input field.',
     importName: 'Input',
     slug: 'input',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'InputCounter',
     description: 'An input field with a character counter.',
     importName: 'InputCounter',
     slug: 'input-counter',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'InputOTP',
     description: 'An input field for one-time password codes.',
     importName: 'InputOTP',
     slug: 'input-otp',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'InputPassword',
     description: 'An input field for passwords with show/hide toggle.',
     importName: 'InputPassword',
     slug: 'input-password',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'InputSearch',
     description: 'An input field optimized for search with a search icon.',
     importName: 'InputSearch',
     slug: 'input-search',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'InputText',
     description: 'A basic text input field.',
     importName: 'InputText',
     slug: 'input-text',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Label',
     description: 'Renders an accessible label associated with controls.',
     importName: 'Label',
     slug: 'label',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'MultiSelect',
@@ -191,6 +211,7 @@ export const components: INavComponent[] = [
     description: 'A component that displays password strength indicators.',
     importName: 'PasswordStrength',
     slug: 'password-strength',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Popover',
@@ -204,6 +225,7 @@ export const components: INavComponent[] = [
       'Displays an indicator showing the completion progress of a task.',
     importName: 'Progress',
     slug: 'progress',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'RadioGroup',
@@ -211,6 +233,7 @@ export const components: INavComponent[] = [
       'A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.',
     importName: 'RadioGroup',
     slug: 'radio-group',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Rating',
@@ -231,18 +254,21 @@ export const components: INavComponent[] = [
       'Displays a list of options for the user to pick from—triggered by a button.',
     importName: 'Select',
     slug: 'select',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Separator',
     description: 'Visually or semantically separates content.',
     importName: 'Separator',
     slug: 'separator',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Skeleton',
     description: 'Use to show a placeholder while content is loading.',
     importName: 'Skeleton',
     slug: 'skeleton',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Slider',
@@ -263,6 +289,7 @@ export const components: INavComponent[] = [
       'A control that allows the user to toggle between checked and unchecked states.',
     importName: 'Switch',
     slug: 'switch',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Tabs',
@@ -270,6 +297,7 @@ export const components: INavComponent[] = [
       'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
     importName: 'Tabs',
     slug: 'tabs',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'Text',
@@ -277,6 +305,7 @@ export const components: INavComponent[] = [
       'A flexible text component that can render as different HTML elements.',
     importName: 'Text',
     slug: 'text',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'TextArea',
@@ -284,6 +313,7 @@ export const components: INavComponent[] = [
       'Displays a form textarea or a component that looks like a textarea.',
     importName: 'TextArea',
     slug: 'textarea',
+    platforms: ['web', 'mobile'],
   },
   {
     name: 'TextEditor',

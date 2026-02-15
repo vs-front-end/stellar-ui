@@ -40,7 +40,7 @@ export const PropsSection = ({ props }: IPropsSectionProps) => {
                   }
                 >
                   <td className="py-3 px-4">
-                    <code className="px-1.5 py-0.5 rounded bg-primary-soft font-semibold text-primary-text text-sm font-mono">
+                    <code className="px-1.5 py-0.5 rounded bg-primary-soft font-medium text-primary-text text-xs">
                       {prop.name}
                     </code>
                   </td>

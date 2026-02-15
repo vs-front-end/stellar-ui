@@ -1,5 +1,11 @@
+import { useState } from 'react';
 import type { IComponentUsage } from '@/types';
 import { Checkbox, Label } from '@stellar-ui/web';
+
+import {
+  Checkbox as MobileCheckbox,
+  Label as MobileLabel,
+} from '@stellar-ui/mobile';
 
 export const CheckboxExample = () => (
   <div className="flex flex-col gap-4">
@@ -20,6 +26,44 @@ export const CheckboxExample = () => (
   </div>
 );
 
+export const CheckboxExampleMobile = () => {
+  const [defaultChecked, setDefaultChecked] = useState(false);
+  const [checkedChecked, setCheckedChecked] = useState(true);
+  const [disabledChecked, setDisabledChecked] = useState(false);
+
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center gap-2">
+        <MobileCheckbox
+          id="checkbox-default"
+          checked={defaultChecked}
+          onCheckedChange={setDefaultChecked}
+        />
+        <MobileLabel htmlFor="checkbox-default">Default Checkbox</MobileLabel>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <MobileCheckbox
+          id="checkbox-checked"
+          checked={checkedChecked}
+          onCheckedChange={setCheckedChecked}
+        />
+        <MobileLabel htmlFor="checkbox-checked">Checked Checkbox</MobileLabel>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <MobileCheckbox
+          id="checkbox-disabled"
+          checked={disabledChecked}
+          onCheckedChange={setDisabledChecked}
+          disabled
+        />
+        <MobileLabel htmlFor="checkbox-disabled">Disabled Checkbox</MobileLabel>
+      </div>
+    </div>
+  );
+};
+
 export const CheckboxDocs: IComponentUsage = {
   importCode: `import { Checkbox, Label } from '@stellar-ui/web';`,
 
@@ -29,6 +73,32 @@ export const CheckboxDocs: IComponentUsage = {
 </div>`,
 
   exampleCode: `import { Checkbox, Label } from '@stellar-ui/web';
+
+<div className="flex flex-col gap-4">
+  <div className="flex items-center gap-2">
+    <Checkbox id="checkbox-default" />
+    <Label htmlFor="checkbox-default">Default Checkbox</Label>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <Checkbox id="checkbox-checked" defaultChecked />
+    <Label htmlFor="checkbox-checked">Checked Checkbox</Label>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <Checkbox id="checkbox-disabled" disabled />
+    <Label htmlFor="checkbox-disabled">Disabled Checkbox</Label>
+  </div>
+</div>`,
+
+  importCodeMobile: `import { Checkbox, Label } from '@stellar-ui/mobile';`,
+
+  usageCodeMobile: `<div className="flex items-center gap-2">
+  <Checkbox id="checkbox" />
+  <Label htmlFor="checkbox">Label</Label>
+</div>`,
+
+  exampleCodeMobile: `import { Checkbox, Label } from '@stellar-ui/mobile';
 
 <div className="flex flex-col gap-4">
   <div className="flex items-center gap-2">

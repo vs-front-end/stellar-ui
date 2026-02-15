@@ -2,6 +2,10 @@ import type { IComponentUsage } from '@/types';
 import { useState } from 'react';
 
 import { InputPassword, PasswordStrength } from '@stellar-ui/web';
+import {
+  InputPassword as MobileInputPassword,
+  PasswordStrength as MobilePasswordStrength,
+} from '@stellar-ui/mobile';
 
 export const PasswordStrengthExample = () => {
   const [password, setPassword] = useState('');
@@ -15,6 +19,22 @@ export const PasswordStrengthExample = () => {
         onChange={setPassword}
       />
       <PasswordStrength password={password} />
+    </div>
+  );
+};
+
+export const PasswordStrengthExampleMobile = () => {
+  const [password, setPassword] = useState('');
+
+  return (
+    <div className="flex flex-col gap-4 max-w-xs">
+      <MobileInputPassword
+        label="Password"
+        placeholder="Enter password"
+        value={password}
+        onChangeText={setPassword}
+      />
+      <MobilePasswordStrength password={password} />
     </div>
   );
 };
@@ -40,6 +60,29 @@ function Example() {
       />
       <PasswordStrength password={password} />
     </div>
+  );
+}`,
+
+  importCodeMobile: `import { InputPassword, PasswordStrength } from '@stellar-ui/mobile';`,
+
+  usageCodeMobile: `<PasswordStrength password={password} />`,
+
+  exampleCodeMobile: `import { InputPassword, PasswordStrength } from '@stellar-ui/mobile';
+import { useState } from 'react';
+
+function Example() {
+  const [password, setPassword] = useState('');
+
+  return (
+    <>
+      <InputPassword
+        label="Password"
+        placeholder="Enter password"
+        value={password}
+        onChangeText={setPassword}
+      />
+      <PasswordStrength password={password} />
+    </>
   );
 }`,
 

@@ -1,5 +1,6 @@
 import type { IComponentUsage, IComponentVariant } from '@/types';
 import { Badge } from '@stellar-ui/web';
+import { Badge as MobileBadge } from '@stellar-ui/mobile';
 
 import {
   CheckIcon,
@@ -101,6 +102,8 @@ export const BadgeVariants: IComponentVariant[] = [
 
 export const BadgeExample = BadgeVariants[0].component;
 
+export const BadgeExampleMobile = () => <MobileBadge>Default</MobileBadge>;
+
 export const BadgeDocs: IComponentUsage = {
   importCode: `import { Badge } from '@stellar-ui/web';`,
 
@@ -116,6 +119,14 @@ export const BadgeDocs: IComponentUsage = {
   <Badge variant="success">Success</Badge>
   <Badge variant="warning">Warning</Badge>
 </div>`,
+
+  importCodeMobile: `import { Badge } from '@stellar-ui/mobile';`,
+
+  usageCodeMobile: `<Badge>Default</Badge>`,
+
+  exampleCodeMobile: `import { Badge } from '@stellar-ui/mobile';
+
+<Badge>Default</Badge>`,
 
   props: [
     {
