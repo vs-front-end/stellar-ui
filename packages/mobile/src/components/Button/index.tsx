@@ -1,58 +1,58 @@
-import { TextClassContext } from '../Text';
 import { cn } from '@stellar-ui/shared';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { Platform, Pressable } from 'react-native';
+import { Text, TextClassContext } from '../Text';
 
 const buttonVariants = cva(
   cn(
-    'group shrink-0 flex-row items-center justify-center gap-2 rounded-md shadow-none',
+    'group shrink-0 flex-row items-center justify-center gap-2 rounded-md',
     Platform.select({
-      web: "focus-visible:border-border focus-visible:ring-border/50 aria-invalid:ring-error/20 aria-invalid:border-error whitespace-nowrap outline-none transition-all focus-visible:ring-[3px] disabled:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+      web: 'whitespace-nowrap outline-none transition-all focus-visible:border-border focus-visible:ring-border/50 focus-visible:ring-[3px] aria-invalid:ring-error/20 aria-invalid:border-error disabled:pointer-events-none [&_svg:not([class*="size-"])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0',
     })
   ),
   {
     variants: {
       variant: {
         default: cn(
-          'bg-primary shadow-sm shadow-black/5',
+          'bg-primary active:bg-primary/90',
           Platform.select({ web: 'hover:opacity-90' })
         ),
         destructive: cn(
-          'bg-error active:bg-error/90 shadow-sm shadow-black/5',
+          'bg-error active:bg-error/90',
           Platform.select({
             web: 'hover:bg-error/90 focus-visible:ring-error/20',
           })
         ),
         outline: cn(
-          'border border-border bg-surface active:bg-surface/80 border shadow-sm shadow-black/5',
-          Platform.select({
-            web: 'hover:bg-surface/80',
-          })
+          'border border-border bg-surface text-foreground active:bg-surface/80',
+          Platform.select({ web: 'hover:bg-surface/80' })
         ),
         secondary: cn(
-          'bg-primary-soft active:bg-primary-soft/80 shadow-sm shadow-black/5',
+          'bg-primary-soft text-primary-text border border-secondary-text active:bg-primary-soft/80',
           Platform.select({ web: 'hover:bg-primary-soft/80' })
         ),
         ghost: cn(
-          'active:bg-surface',
+          'text-foreground active:bg-surface',
           Platform.select({ web: 'hover:bg-surface' })
         ),
         link: '',
       },
       size: {
         default: cn(
-          'h-10 px-4 py-2 sm:h-9',
+          'h-9 px-4 py-2',
           Platform.select({ web: 'has-[>svg]:px-3' })
         ),
         sm: cn(
-          'h-9 gap-1.5 rounded-md px-3 sm:h-8',
+          'h-8 gap-1.5 rounded-md px-3',
           Platform.select({ web: 'has-[>svg]:px-2.5' })
         ),
         lg: cn(
-          'h-11 rounded-md px-6 sm:h-10',
+          'h-10 rounded-md px-6',
           Platform.select({ web: 'has-[>svg]:px-4' })
         ),
-        icon: 'h-10 w-10 sm:h-9 sm:w-9',
+        icon: 'size-9',
+        'icon-sm': 'size-8',
+        'icon-lg': 'size-10',
       },
     },
     defaultVariants: {
@@ -64,7 +64,7 @@ const buttonVariants = cva(
 
 const buttonTextVariants = cva(
   cn(
-    'text-foreground text-sm font-medium',
+    'text-sm font-medium',
     Platform.select({ web: 'pointer-events-none transition-colors' })
   ),
   {
@@ -73,11 +73,14 @@ const buttonTextVariants = cva(
         default: 'text-white',
         destructive: 'text-white',
         outline: cn(
-          'group-active:text-foreground',
+          'text-foreground group-active:text-foreground',
           Platform.select({ web: 'group-hover:text-foreground' })
         ),
         secondary: 'text-primary-text',
-        ghost: 'group-active:text-foreground',
+        ghost: cn(
+          'text-foreground group-active:text-foreground',
+          Platform.select({ web: 'group-hover:text-foreground' })
+        ),
         link: cn(
           'text-primary group-active:underline',
           Platform.select({
@@ -90,6 +93,8 @@ const buttonTextVariants = cva(
         sm: '',
         lg: '',
         icon: '',
+        'icon-sm': '',
+        'icon-lg': '',
       },
     },
     defaultVariants: {
@@ -103,7 +108,14 @@ type ButtonProps = React.ComponentProps<typeof Pressable> &
   React.RefAttributes<typeof Pressable> &
   VariantProps<typeof buttonVariants>;
 
-function Button({ className, variant, size, ...props }: ButtonProps) {
+function Button({ className, variant, size, children, ...props }: ButtonProps) {
+  const content =
+    typeof children === 'function' ? (
+      children
+    ) : (
+      <Text variant="default">{children}</Text>
+    );
+
   return (
     <TextClassContext.Provider value={buttonTextVariants({ variant, size })}>
       <Pressable
@@ -114,7 +126,9 @@ function Button({ className, variant, size, ...props }: ButtonProps) {
         )}
         role="button"
         {...props}
-      />
+      >
+        {content}
+      </Pressable>
     </TextClassContext.Provider>
   );
 }
