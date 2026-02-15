@@ -70,9 +70,9 @@
     "@rn-primitives/switch": "*",
     "@rn-primitives/tabs": "*",
     "lucide-react-native": "*",
-    "react": "^18.0.0",
-    "react-native": "^0.76.0",
-    "react-native-safe-area-context": "^4.12.0",
-    "react-native-svg": "^15.0.0"
+    "react": ">=18.0.0",
+    "react-native": ">=0.76.0",
+    "react-native-safe-area-context": ">=4.12.0",
+    "react-native-svg": ">=15.0.0"
   }
 }
