@@ -16,6 +16,16 @@ export default defineConfig({
     'lucide-react-native',
     'nativewind',
     '@rn-primitives/slot',
+    '@rn-primitives/alert-dialog',
+    '@rn-primitives/avatar',
+    '@rn-primitives/checkbox',
+    '@rn-primitives/label',
+    '@rn-primitives/progress',
+    '@rn-primitives/radio-group',
+    '@rn-primitives/select',
+    '@rn-primitives/separator',
+    '@rn-primitives/switch',
+    '@rn-primitives/tabs',
   ],
   esbuildOptions(options) {
     options.jsx = 'automatic';

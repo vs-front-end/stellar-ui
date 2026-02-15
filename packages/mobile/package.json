@@ -59,6 +59,17 @@
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
+    "@rn-primitives/alert-dialog": "*",
+    "@rn-primitives/avatar": "*",
+    "@rn-primitives/checkbox": "*",
+    "@rn-primitives/label": "*",
+    "@rn-primitives/progress": "*",
+    "@rn-primitives/radio-group": "*",
+    "@rn-primitives/select": "*",
+    "@rn-primitives/separator": "*",
+    "@rn-primitives/switch": "*",
+    "@rn-primitives/tabs": "*",
+    "lucide-react-native": "*",
     "react": "^18.0.0",
     "react-native": "^0.76.0",
     "react-native-safe-area-context": "^4.12.0",
