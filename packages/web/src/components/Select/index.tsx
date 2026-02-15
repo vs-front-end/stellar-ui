@@ -125,7 +125,6 @@ function SelectItem({
         'focus:bg-primary-soft focus:text-primary',
         'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
         '[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4',
-        '[&_svg]:text-muted',
         'hover:[&_svg]:text-primary focus:[&_svg]:text-primary',
         '*:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2',
         className
