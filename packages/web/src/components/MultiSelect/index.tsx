@@ -611,7 +611,7 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                 getAllOptions().length
               } options selected. ${placeholder}`}
               className={cn(
-                'flex p-1 rounded-md border min-h-10 h-auto items-center justify-between bg-inherit hover:bg-inherit [&_svg]:pointer-events-auto',
+                'flex p-1 rounded-md border border-border min-h-10 h-auto items-center justify-between bg-inherit hover:bg-inherit [&_svg]:pointer-events-auto',
                 autoSize ? 'w-auto' : 'w-full',
                 responsiveSettings.compactMode && 'min-h-8 text-sm',
                 screenSize === 'mobile' && 'min-h-12 text-base',
@@ -793,7 +793,7 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                       className="flex min-h-6 h-full"
                     />
                     <ChevronDown
-                      className="h-4 mx-2 cursor-pointer text-muted"
+                      className="h-4 mx-2 cursor-pointer text-border"
                       aria-hidden="true"
                     />
                   </div>
@@ -801,7 +801,7 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
               ) : (
                 <div className="flex items-center justify-between w-full mx-auto">
                   <span className="text-sm text-muted mx-3">{placeholder}</span>
-                  <ChevronDown className="h-4 cursor-pointer text-muted mx-2" />
+                  <ChevronDown className="h-4 cursor-pointer text-border mx-2" />
                 </div>
               )}
             </Button>
@@ -868,16 +868,16 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                       aria-label={`Select all ${
                         getAllOptions().length
                       } options`}
-                      className="cursor-pointer"
+                      className="group cursor-pointer"
                     >
                       <div
                         className={cn(
-                          'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                          'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border',
                           selectedValues.length ===
                             getAllOptions().filter((opt) => !opt.disabled)
                               .length
-                            ? 'bg-primary text-white'
-                            : 'opacity-50 [&_svg]:invisible'
+                            ? 'border-primary bg-primary text-white'
+                            : 'border-foreground group-hover:border-primary-text [&_svg]:invisible'
                         )}
                         aria-hidden="true"
                       >
@@ -911,17 +911,17 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                               isSelected ? ', selected' : ', not selected'
                             }${option.disabled ? ', disabled' : ''}`}
                             className={cn(
-                              'cursor-pointer',
+                              'group cursor-pointer',
                               option.disabled && 'opacity-50 cursor-not-allowed'
                             )}
                             disabled={option.disabled}
                           >
                             <div
                               className={cn(
-                                'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                                'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border',
                                 isSelected
-                                  ? 'bg-primary text-white'
-                                  : 'opacity-50 [&_svg]:invisible'
+                                  ? 'border-primary bg-primary text-white'
+                                  : 'border-foreground group-hover:border-primary-text [&_svg]:invisible'
                               )}
                               aria-hidden="true"
                             >
@@ -954,17 +954,17 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                             isSelected ? ', selected' : ', not selected'
                           }${option.disabled ? ', disabled' : ''}`}
                           className={cn(
-                            'cursor-pointer',
+                            'group cursor-pointer',
                             option.disabled && 'opacity-50 cursor-not-allowed'
                           )}
                           disabled={option.disabled}
                         >
                           <div
                             className={cn(
-                              'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                              'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border',
                               isSelected
-                                ? 'bg-primary text-white'
-                                : 'opacity-50 [&_svg]:invisible'
+                                ? 'border-primary bg-primary text-white'
+                                : 'border-foreground group-hover:border-primary-text [&_svg]:invisible'
                             )}
                             aria-hidden="true"
                           >
