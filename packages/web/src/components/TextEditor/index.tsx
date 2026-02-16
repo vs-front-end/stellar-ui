@@ -212,8 +212,8 @@ export const TextEditor = React.forwardRef<TextEditorRef, TextEditorProps>(
             error && 'border-error'
           )}
         >
-          <div className="flex items-center gap-1 p-2 border-b border-border">
-            <div className="flex items-center gap-1">
+          <div className="flex flex-wrap items-center gap-1 p-2 border-b border-border min-w-0">
+            <div className="flex items-center gap-1 shrink-0">
               <ToolbarButton
                 onClick={() => editor.chain().focus().toggleBold().run()}
                 isActive={editor.isActive('bold')}
@@ -234,9 +234,9 @@ export const TextEditor = React.forwardRef<TextEditorRef, TextEditorProps>(
               />
             </div>
 
-            <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1 shrink-0 hidden sm:block" />
 
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 shrink-0">
               <ToolbarButton
                 onClick={() =>
                   editor.chain().focus().setTextAlign('left').run()
@@ -263,9 +263,9 @@ export const TextEditor = React.forwardRef<TextEditorRef, TextEditorProps>(
               />
             </div>
 
-            <Separator orientation="vertical" className="h-6 mx-1" />
+            <Separator orientation="vertical" className="h-6 mx-1 shrink-0 hidden sm:block" />
 
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 shrink-0">
               <ToolbarButton
                 onClick={() => editor.chain().focus().toggleBulletList().run()}
                 isActive={editor.isActive('bulletList')}
@@ -293,8 +293,8 @@ export const TextEditor = React.forwardRef<TextEditorRef, TextEditorProps>(
 
             {editable && (
               <>
-                <Separator orientation="vertical" className="h-6 mx-1" />
-                <div className="flex items-center gap-1 ml-auto">
+                <Separator orientation="vertical" className="h-6 mx-1 shrink-0 hidden sm:block" />
+                <div className="flex items-center gap-1 shrink-0 sm:ml-auto">
                   <ToolbarButton
                     onClick={() => editor.chain().focus().clearContent().run()}
                     ariaLabel="Clear content"
