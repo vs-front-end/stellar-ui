@@ -36,6 +36,7 @@ export default defineConfig({
     '@radix-ui/react-tooltip',
     '@tiptap/react',
     '@tiptap/starter-kit',
+    '@tiptap/extension-image',
     '@tiptap/extension-link',
     '@tiptap/extension-placeholder',
     '@tiptap/extension-text-align',

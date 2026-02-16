@@ -38,19 +38,37 @@ export const TextEditorDocs: IComponentUsage = {
       description: 'The label for the editor.',
     },
     {
+      name: 'error',
+      type: 'string',
+      description: 'Error message shown below the editor.',
+    },
+    {
       name: 'placeholder',
       type: 'string',
-      description: 'Placeholder text.',
+      default: "'Type here...'",
+      description: 'Placeholder text when empty.',
     },
     {
       name: 'value',
       type: 'string',
-      description: 'The controlled HTML content.',
+      description: 'Controlled HTML content.',
     },
     {
       name: 'onChange',
       type: '(html: string) => void',
-      description: 'Callback fired when the content changes.',
+      description: 'Callback when content changes (returns HTML string).',
+    },
+    {
+      name: 'editable',
+      type: 'boolean',
+      default: 'true',
+      description: 'When false, content is read-only and the toolbar is hidden.',
+    },
+    {
+      name: 'onUploadImage',
+      type: '(file: File) => Promise<string>',
+      description:
+        'Optional. Called when user pastes or drops an image. Return the image URL; if not provided, images are embedded as data URLs.',
     },
   ],
 };

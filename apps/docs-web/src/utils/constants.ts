@@ -317,7 +317,8 @@ export const components: INavComponent[] = [
   },
   {
     name: 'TextEditor',
-    description: 'A rich text editor component for formatted text input.',
+    description:
+      'Rich text editor with headings (P/H1–H4), bold/italic/underline, lists, code block, blockquote, link, horizontal rule, alignment, and image paste/drop (optional upload).',
     importName: 'TextEditor',
     slug: 'text-editor',
   },
