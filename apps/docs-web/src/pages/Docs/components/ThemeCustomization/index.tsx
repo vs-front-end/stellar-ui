@@ -222,7 +222,11 @@ export default function App() {
         <Text as="p" className="text-muted">
           <strong>Web:</strong> override colors with inline styles or Tailwind
           className. <strong>Mobile:</strong> use Tailwind/NativeWind classes
-          (e.g. <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">className="bg-[#custom]"</code>) or style prop.
+          (e.g.{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            className="bg-[#custom]"
+          </code>
+          ) or style prop.
         </Text>
         <CodeBlock
           code={`// Web

@@ -100,6 +100,7 @@ npm run format
 2. Create `index.tsx` (use Radix UI primitives and `cn` from `@stellar-ui/shared` as in existing components).
 
 3. Export from `packages/web/src/components/index.ts`:
+
    ```tsx
    export * from './ComponentName';
    ```
@@ -113,6 +114,7 @@ npm run format
 2. Create `index.tsx` (use NativeWind, `cn` from `@stellar-ui/shared`, and @rn-primitives where applicable).
 
 3. Export from `packages/mobile/src/components/index.ts`:
+
    ```tsx
    export * from './ComponentName';
    ```

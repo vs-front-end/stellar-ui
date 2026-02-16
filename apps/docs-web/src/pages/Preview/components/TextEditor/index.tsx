@@ -62,7 +62,8 @@ export const TextEditorDocs: IComponentUsage = {
       name: 'editable',
       type: 'boolean',
       default: 'true',
-      description: 'When false, content is read-only and the toolbar is hidden.',
+      description:
+        'When false, content is read-only and the toolbar is hidden.',
     },
     {
       name: 'onUploadImage',

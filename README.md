@@ -29,11 +29,13 @@ npm install @stellar-ui/shared
 ### Peer Dependencies
 
 **Web:**
+
 ```bash
 npm install react react-dom
 ```
 
 **Mobile:**
+
 ```bash
 npm install react react-native react-native-safe-area-context react-native-svg
 # Plus @rn-primitives/* and lucide-react-native as required by @stellar-ui/mobile
