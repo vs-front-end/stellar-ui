@@ -1,6 +1,6 @@
 # @stellar-ui-kit/shared
 
-Shared design tokens, types, and utilities for Stellar UI - Platform agnostic.
+Shared design tokens, types, and utilities for Stellar UI – platform agnostic. [Published on npm](https://www.npmjs.com/package/@stellar-ui-kit/shared).
 
 [![npm version](https://img.shields.io/npm/v/@stellar-ui-kit/shared.svg)](https://www.npmjs.com/package/@stellar-ui-kit/shared)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)

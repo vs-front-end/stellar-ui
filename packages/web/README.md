@@ -1,6 +1,6 @@
 # @stellar-ui-kit/web
 
-A comprehensive React component library built with Radix UI and Tailwind CSS.
+A comprehensive React component library built with Radix UI and Tailwind CSS. [Published on npm](https://www.npmjs.com/package/@stellar-ui-kit/web).
 
 [![npm version](https://img.shields.io/npm/v/@stellar-ui-kit/web.svg)](https://www.npmjs.com/package/@stellar-ui-kit/web)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)

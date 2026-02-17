@@ -7,10 +7,10 @@ UI library for React (web) built with Turborepo.
 
 📖 **[Documentation](https://stellar-ui-one.vercel.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues)
 
-## Published Packages
+## Published Packages (npm)
 
-- **[@stellar-ui-kit/web](https://www.npmjs.com/package/@stellar-ui-kit/web)** - React DOM UI components (48 components)
-- **[@stellar-ui-kit/shared](https://www.npmjs.com/package/@stellar-ui-kit/shared)** - Design tokens, types, and utilities
+- **[@stellar-ui-kit/web](https://www.npmjs.com/package/@stellar-ui-kit/web)** – React DOM UI components (48 components)
+- **[@stellar-ui-kit/shared](https://www.npmjs.com/package/@stellar-ui-kit/shared)** – Design tokens, types, and utilities
 
 ## Installation
 
