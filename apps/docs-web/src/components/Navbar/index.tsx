@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { cn, ThemeVariant } from '@stellar-ui-kit/shared';
 import { useActiveSection } from '@/hooks';
-import { version } from '../../../package.json';
+import { version } from '../../../../../packages/web/package.json';
 import { ThemeSelector, SocialLinks } from '@/components';
 import { components, docsNav } from '@/utils/constants';
 
