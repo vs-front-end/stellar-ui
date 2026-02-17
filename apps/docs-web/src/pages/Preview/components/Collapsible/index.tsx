@@ -6,7 +6,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { ChevronsUpDownIcon } from 'lucide-react';
 
 export const CollapsibleExample = () => {
@@ -63,7 +63,7 @@ export const CollapsibleDocs: IComponentUsage = {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Collapsible>
   <CollapsibleTrigger>Toggle</CollapsibleTrigger>
@@ -76,7 +76,7 @@ export const CollapsibleDocs: IComponentUsage = {
   CollapsibleContent,
   CollapsibleTrigger,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { ChevronsUpDownIcon } from 'lucide-react';
 
 function Example() {

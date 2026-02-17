@@ -8,7 +8,7 @@ import {
   WandSparkles,
 } from 'lucide-react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Separator } from '../Separator';
 import { Button } from '../Button';
 import { Badge } from '../Badge';

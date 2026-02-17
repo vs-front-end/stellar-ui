@@ -1,4 +1,4 @@
-import { Text } from '@stellar-ui/web';
+import { Text } from '@stellar-ui-kit/web';
 import { VariantItem } from '@/components/VariantItem';
 
 interface IVariantsSection {

@@ -1,5 +1,10 @@
 import type { IComponentUsage } from '@/types';
-import { InputOTP, InputOTPGroup, InputOTPSlot, Label } from '@stellar-ui/web';
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+  Label,
+} from '@stellar-ui-kit/web';
 
 export const InputOTPExample = () => (
   <div className="flex flex-col gap-2">
@@ -22,7 +27,7 @@ export const InputOTPDocs: IComponentUsage = {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<InputOTP maxLength={6}>
   <InputOTPGroup>
@@ -36,7 +41,7 @@ export const InputOTPDocs: IComponentUsage = {
   InputOTPGroup,
   InputOTPSlot,
   Label,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-2">
   <Label>OTP Input (6 digits)</Label>

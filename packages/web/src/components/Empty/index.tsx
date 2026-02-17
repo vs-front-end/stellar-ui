@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 function Empty({ className, ...props }: React.ComponentProps<'div'>) {
   return (

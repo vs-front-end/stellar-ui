@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Avatar, AvatarFallback, AvatarImage } from '@stellar-ui/web';
+import { Avatar, AvatarFallback, AvatarImage } from '@stellar-ui-kit/web';
 
 export const AvatarExample = () => (
   <div className="flex items-center gap-4">
@@ -22,7 +22,7 @@ export const AvatarDocs: IComponentUsage = {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Avatar>
   <AvatarImage src="/path/to/image.png" alt="User" />
@@ -33,7 +33,7 @@ export const AvatarDocs: IComponentUsage = {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <div className="flex items-center gap-4">
   <Avatar>

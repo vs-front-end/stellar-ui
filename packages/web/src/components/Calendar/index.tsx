@@ -10,7 +10,7 @@ import {
   type DayButton,
 } from 'react-day-picker';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Button, buttonVariants } from '../Button';
 
 function Calendar({

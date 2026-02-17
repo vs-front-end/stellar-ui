@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Button, ButtonGroup } from '@stellar-ui/web';
+import { Button, ButtonGroup } from '@stellar-ui-kit/web';
 import { EllipsisIcon } from 'lucide-react';
 
 export const ButtonGroupExample = () => (
@@ -25,7 +25,7 @@ export const ButtonGroupDocs: IComponentUsage = {
   ButtonGroup,
   ButtonGroupSeparator,
   ButtonGroupText,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<ButtonGroup>
   <Button>One</Button>
@@ -38,7 +38,7 @@ export const ButtonGroupDocs: IComponentUsage = {
   ButtonGroup,
   ButtonGroupSeparator,
   ButtonGroupText,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <ButtonGroup>
   <Button className="hover:opacity-80" variant="outline">

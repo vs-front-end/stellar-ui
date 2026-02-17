@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Skeleton } from '@stellar-ui/web';
+import { Skeleton } from '@stellar-ui-kit/web';
 
 export const SkeletonExample = () => (
   <div className="flex items-center gap-4">
@@ -13,11 +13,11 @@ export const SkeletonExample = () => (
 );
 
 export const SkeletonDocs: IComponentUsage = {
-  importCode: `import { Skeleton } from '@stellar-ui/web';`,
+  importCode: `import { Skeleton } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Skeleton className="h-4 w-full" />`,
 
-  exampleCode: `import { Skeleton } from '@stellar-ui/web';
+  exampleCode: `import { Skeleton } from '@stellar-ui-kit/web';
 
 
 <div className="flex items-center gap-4">

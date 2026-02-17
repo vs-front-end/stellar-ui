@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const AccordionExample = () => (
   <Accordion type="single" collapsible className="w-full">
@@ -40,7 +40,7 @@ export const AccordionDocs: IComponentUsage = {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Accordion type="single" collapsible>
   <AccordionItem value="item-1">
@@ -54,7 +54,7 @@ export const AccordionDocs: IComponentUsage = {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Accordion type="single" collapsible className="w-full">
   <AccordionItem value="item-1">

@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Toggle } from '@stellar-ui/web';
+import { Toggle } from '@stellar-ui-kit/web';
 import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
 
 export const ToggleExample = () => (
@@ -20,13 +20,13 @@ export const ToggleExample = () => (
 );
 
 export const ToggleDocs: IComponentUsage = {
-  importCode: `import { Toggle } from '@stellar-ui/web';`,
+  importCode: `import { Toggle } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Toggle aria-label="Toggle">
   <Icon />
 </Toggle>`,
 
-  exampleCode: `import { Toggle } from '@stellar-ui/web';
+  exampleCode: `import { Toggle } from '@stellar-ui-kit/web';
 import { BoldIcon, ItalicIcon, UnderlineIcon } from 'lucide-react';
 
 <div className="flex items-center gap-2">

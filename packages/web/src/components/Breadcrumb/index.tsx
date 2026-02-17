@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { ChevronRight, MoreHorizontal } from 'lucide-react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
 
 function Breadcrumb({ ...props }: React.ComponentProps<'nav'>) {

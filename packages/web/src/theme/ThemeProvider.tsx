@@ -7,7 +7,7 @@ import {
   OCEAN_THEME,
   type ThemeVariant,
   type ThemeTokens,
-} from '@stellar-ui/shared';
+} from '@stellar-ui-kit/shared';
 
 export interface ThemeProviderProps {
   children: React.ReactNode;

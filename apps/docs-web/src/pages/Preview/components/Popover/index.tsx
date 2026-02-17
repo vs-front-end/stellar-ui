@@ -6,7 +6,7 @@ import {
   PopoverContent,
   PopoverTrigger,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const PopoverExample = () => (
   <Popover>
@@ -32,14 +32,14 @@ export const PopoverDocs: IComponentUsage = {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Popover>
   <PopoverTrigger>Open</PopoverTrigger>
   <PopoverContent>Content</PopoverContent>
 </Popover>`,
 
-  exampleCode: `import { Button, Popover, PopoverContent, PopoverTrigger, Text } from '@stellar-ui/web';
+  exampleCode: `import { Button, Popover, PopoverContent, PopoverTrigger, Text } from '@stellar-ui-kit/web';
 
 <Popover>
   <PopoverTrigger asChild>

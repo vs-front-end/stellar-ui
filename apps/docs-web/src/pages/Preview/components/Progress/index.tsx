@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Label, Progress } from '@stellar-ui/web';
+import { Label, Progress } from '@stellar-ui-kit/web';
 
 export const ProgressExample = () => (
   <div className="flex flex-col gap-2">
@@ -9,11 +9,11 @@ export const ProgressExample = () => (
 );
 
 export const ProgressDocs: IComponentUsage = {
-  importCode: `import { Progress } from '@stellar-ui/web';`,
+  importCode: `import { Progress } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Progress value={50} />`,
 
-  exampleCode: `import { Label, Progress } from '@stellar-ui/web';
+  exampleCode: `import { Label, Progress } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-2">
   <Label>Progress 25%</Label>

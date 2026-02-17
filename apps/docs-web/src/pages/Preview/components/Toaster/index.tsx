@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Button } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
 import { toast } from 'sonner';
 
 export const ToasterExample = () => (
@@ -130,7 +130,7 @@ toast('This toast will stay for 10 seconds', {
   duration: 10000,
 });`,
 
-  exampleCode: `import { Button } from '@stellar-ui/web';
+  exampleCode: `import { Button } from '@stellar-ui-kit/web';
 import { toast } from 'sonner';
 
 <div className="flex flex-col gap-4">

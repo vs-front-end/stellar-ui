@@ -3,7 +3,7 @@ import { LucideIcon } from 'lucide-react';
 
 import { Input } from '../Input';
 import { Label } from '../Label';
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 interface InputTextProps {
   label?: string;

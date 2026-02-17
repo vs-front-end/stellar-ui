@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-#### @stellar-ui/web
+#### @stellar-ui-kit/web
 
 - Initial release with 48 React components
 - Components: Accordion, Alert, Avatar, Badge, Breadcrumb, Button, ButtonGroup, Calendar, Card, Checkbox, CircularProgress, CodeBlock, Collapsible, Combobox, Command, ContextMenu, DatePicker, Dialog, Drawer, DropdownMenu, Empty, Input, InputCounter, InputOTP, InputPassword, InputSearch, InputText, Label, MultiSelect, PasswordStrength, Popover, Progress, RadioGroup, Rating, ScrollArea, Select, Separator, Skeleton, Slider, Spinner, Switch, Tabs, Text, TextArea, TextEditor, Toaster, Toggle, Tooltip
@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript types included
 - ESM and CJS exports
 
-#### @stellar-ui/shared
+#### @stellar-ui-kit/shared
 
 - Design tokens (colors, themes)
 - Platform-agnostic utilities (cn, theme helpers)

@@ -9,7 +9,7 @@
     "types": ["react", "react-dom"],
     "baseUrl": ".",
     "paths": {
-      "@stellar-ui/shared/*": ["../shared/src/*"]
+      "@stellar-ui-kit/shared/*": ["../shared/src/*"]
     }
   },
   "include": ["src/**/*"],

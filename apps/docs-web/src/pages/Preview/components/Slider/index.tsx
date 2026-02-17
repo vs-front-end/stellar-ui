@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Label, Slider } from '@stellar-ui/web';
+import { Label, Slider } from '@stellar-ui-kit/web';
 
 export const SliderExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -17,11 +17,11 @@ export const SliderExample = () => (
 );
 
 export const SliderDocs: IComponentUsage = {
-  importCode: `import { Slider } from '@stellar-ui/web';`,
+  importCode: `import { Slider } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Slider defaultValue={[50]} />`,
 
-  exampleCode: `import { Label, Slider } from '@stellar-ui/web';
+  exampleCode: `import { Label, Slider } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4 max-w-md">
   <div className="flex flex-col gap-2">

@@ -7,7 +7,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { docsNav } from '@/utils/constants';
 
 interface DocsNavigationProps {

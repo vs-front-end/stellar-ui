@@ -1,4 +1,4 @@
-import { Text } from '@stellar-ui/web';
+import { Text } from '@stellar-ui-kit/web';
 import type { IComponentProp } from '@/types';
 
 interface IPropsSectionProps {

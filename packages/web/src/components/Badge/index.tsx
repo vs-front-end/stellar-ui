@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 const badgeVariants = cva(
   'inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium leading-tight h-fit w-fit whitespace-nowrap shrink-0 [&>svg]:size-2.5 [&>svg]:shrink-0 [&>svg]:pointer-events-none [&>svg]:text-current gap-1 focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px] aria-invalid:ring-error/20 aria-invalid:border-error transition-[color,box-shadow] overflow-hidden',

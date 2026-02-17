@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Switch } from '@stellar-ui/web';
+import { Switch } from '@stellar-ui-kit/web';
 
 export const SwitchExample = () => (
   <div className="flex flex-col gap-4">
@@ -27,11 +27,11 @@ export const SwitchExample = () => (
 );
 
 export const SwitchDocs: IComponentUsage = {
-  importCode: `import { Switch } from '@stellar-ui/web';`,
+  importCode: `import { Switch } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Switch id="switch" />`,
 
-  exampleCode: `import { Switch } from '@stellar-ui/web';
+  exampleCode: `import { Switch } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4">
   <div className="flex items-center gap-2">

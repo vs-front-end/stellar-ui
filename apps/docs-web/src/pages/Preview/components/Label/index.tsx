@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Input, Label, Switch } from '@stellar-ui/web';
+import { Input, Label, Switch } from '@stellar-ui-kit/web';
 
 export const LabelExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -16,11 +16,11 @@ export const LabelExample = () => (
 );
 
 export const LabelDocs: IComponentUsage = {
-  importCode: `import { Label } from '@stellar-ui/web';`,
+  importCode: `import { Label } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Label htmlFor="input">Label</Label>`,
 
-  exampleCode: `import { Input, Label, Switch } from '@stellar-ui/web';
+  exampleCode: `import { Input, Label, Switch } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4 max-w-md">
   <div className="flex flex-col gap-2">

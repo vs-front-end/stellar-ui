@@ -7,7 +7,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { CalendarIcon, FileIcon, SettingsIcon } from 'lucide-react';
 
 export const CommandExample = () => (
@@ -45,7 +45,7 @@ export const CommandDocs: IComponentUsage = {
   CommandInput,
   CommandItem,
   CommandList,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Command>
   <CommandInput placeholder="Search..." />
@@ -61,7 +61,7 @@ export const CommandDocs: IComponentUsage = {
   CommandInput,
   CommandItem,
   CommandList,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { CalendarIcon, FileIcon, SettingsIcon } from 'lucide-react';
 
 <div className="rounded-lg border border-border bg-surface p-1 max-w-md">

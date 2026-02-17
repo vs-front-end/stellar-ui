@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Text } from '@stellar-ui/web';
+import { Text } from '@stellar-ui-kit/web';
 
 export const TextExample = () => (
   <div className="flex flex-col gap-2">
@@ -16,11 +16,11 @@ export const TextExample = () => (
 );
 
 export const TextDocs: IComponentUsage = {
-  importCode: `import { Text } from '@stellar-ui/web';`,
+  importCode: `import { Text } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Text as="p">Text content</Text>`,
 
-  exampleCode: `import { Text } from '@stellar-ui/web';
+  exampleCode: `import { Text } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-2">
   <Text as="h1" className="text-2xl font-bold">

@@ -1,4 +1,4 @@
-import { Text, CodeBlock } from '@stellar-ui/web';
+import { Text, CodeBlock } from '@stellar-ui-kit/web';
 
 export function GettingStarted() {
   return (
@@ -19,7 +19,7 @@ export function GettingStarted() {
             Install the package
           </Text>
           <CodeBlock
-            code="npm install @stellar-ui/web"
+            code="npm install @stellar-ui-kit/web"
             language="bash"
             copyable
           />
@@ -39,7 +39,7 @@ export function GettingStarted() {
           <CodeBlock
             code={`import type { Config } from 'tailwindcss';
 
-const stellarPreset = require('@stellar-ui/shared/tailwind-preset');
+const stellarPreset = require('@stellar-ui-kit/shared/tailwind-preset');
 
 const config: Config = {
   darkMode: ['class'],
@@ -64,7 +64,7 @@ export default config;`}
             Import the Stellar UI styles in your main entry file:
           </Text>
           <CodeBlock
-            code={`import '@stellar-ui/web/dist/styles.css';`}
+            code={`import '@stellar-ui-kit/web/dist/styles.css';`}
             language="typescript"
             copyable
           />
@@ -81,12 +81,12 @@ export default config;`}
             </code>{' '}
             from{' '}
             <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
-              @stellar-ui/web
+              @stellar-ui-kit/web
             </code>
             :
           </Text>
           <CodeBlock
-            code={`import { ThemeProvider } from '@stellar-ui/web';
+            code={`import { ThemeProvider } from '@stellar-ui-kit/web';
 
 function App() {
   return (
@@ -105,7 +105,7 @@ function App() {
             Use components
           </Text>
           <CodeBlock
-            code={`import { Button } from '@stellar-ui/web';
+            code={`import { Button } from '@stellar-ui-kit/web';
 
 function MyComponent() {
   return <Button>Click me</Button>;

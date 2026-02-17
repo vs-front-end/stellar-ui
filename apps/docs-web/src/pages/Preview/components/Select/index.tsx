@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const SelectExample = () => (
   <Select>
@@ -29,7 +29,7 @@ export const SelectDocs: IComponentUsage = {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Select>
   <SelectTrigger>
@@ -46,7 +46,7 @@ export const SelectDocs: IComponentUsage = {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Select>
   <SelectTrigger className="w-[180px]">

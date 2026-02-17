@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Separator } from '@stellar-ui/web';
+import { Separator } from '@stellar-ui-kit/web';
 
 export const SeparatorExample = () => (
   <div className="flex items-center gap-4 h-20">
@@ -10,11 +10,11 @@ export const SeparatorExample = () => (
 );
 
 export const SeparatorDocs: IComponentUsage = {
-  importCode: `import { Separator } from '@stellar-ui/web';`,
+  importCode: `import { Separator } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Separator />`,
 
-  exampleCode: `import { Separator } from '@stellar-ui/web';
+  exampleCode: `import { Separator } from '@stellar-ui-kit/web';
 
 <div className="flex items-center gap-4 h-20">
   <div className="text-sm text-foreground">Left</div>

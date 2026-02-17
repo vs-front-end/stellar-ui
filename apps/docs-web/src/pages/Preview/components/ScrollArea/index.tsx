@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { ScrollArea, Text } from '@stellar-ui/web';
+import { ScrollArea, Text } from '@stellar-ui-kit/web';
 
 export const ScrollAreaExample = () => (
   <div className="h-[200px] w-[350px] rounded-md border border-border">
@@ -21,13 +21,13 @@ export const ScrollAreaExample = () => (
 );
 
 export const ScrollAreaDocs: IComponentUsage = {
-  importCode: `import { ScrollArea } from '@stellar-ui/web';`,
+  importCode: `import { ScrollArea } from '@stellar-ui-kit/web';`,
 
   usageCode: `<ScrollArea className="h-[200px] w-[350px]">
   <div>Content</div>
 </ScrollArea>`,
 
-  exampleCode: `import { ScrollArea, Text } from '@stellar-ui/web';
+  exampleCode: `import { ScrollArea, Text } from '@stellar-ui-kit/web';
 
 <div className="h-[200px] w-[350px] rounded-md border border-border">
   <ScrollArea className="h-full w-full rounded-md">

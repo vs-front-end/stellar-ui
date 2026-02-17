@@ -1,6 +1,6 @@
-import { Text, CodeBlock } from '@stellar-ui/web';
+import { Text, CodeBlock } from '@stellar-ui-kit/web';
 
-const WEB_INSTALL = 'npm install @stellar-ui/web';
+const WEB_INSTALL = 'npm install @stellar-ui-kit/web';
 
 export const InstallationSection = () => {
   return (

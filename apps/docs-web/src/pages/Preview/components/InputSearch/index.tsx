@@ -1,16 +1,16 @@
 import type { IComponentUsage } from '@/types';
-import { InputSearch } from '@stellar-ui/web';
+import { InputSearch } from '@stellar-ui-kit/web';
 
 export const InputSearchExample = () => (
   <InputSearch label="Input search" placeholder="Type to search..." />
 );
 
 export const InputSearchDocs: IComponentUsage = {
-  importCode: `import { InputSearch } from '@stellar-ui/web';`,
+  importCode: `import { InputSearch } from '@stellar-ui-kit/web';`,
 
   usageCode: `<InputSearch placeholder="Search..." />`,
 
-  exampleCode: `import { InputSearch } from '@stellar-ui/web';
+  exampleCode: `import { InputSearch } from '@stellar-ui-kit/web';
 
 <InputSearch label="Input search" placeholder="Type to search..." />
 `,

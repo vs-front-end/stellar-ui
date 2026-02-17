@@ -7,7 +7,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const BreadcrumbExample = () => (
   <Breadcrumb>
@@ -38,7 +38,7 @@ export const BreadcrumbDocs: IComponentUsage = {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Breadcrumb>
   <BreadcrumbList>
@@ -63,7 +63,7 @@ export const BreadcrumbDocs: IComponentUsage = {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Breadcrumb>
   <BreadcrumbList>

@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { MultiSelect } from '@stellar-ui/web';
+import { MultiSelect } from '@stellar-ui-kit/web';
 
 export const MultiSelectExample = () => (
   <MultiSelect
@@ -16,7 +16,7 @@ export const MultiSelectExample = () => (
 );
 
 export const MultiSelectDocs: IComponentUsage = {
-  importCode: `import { MultiSelect } from '@stellar-ui/web';`,
+  importCode: `import { MultiSelect } from '@stellar-ui-kit/web';`,
 
   usageCode: `<MultiSelect
   options={[
@@ -26,7 +26,7 @@ export const MultiSelectDocs: IComponentUsage = {
   placeholder="Select..."
 />`,
 
-  exampleCode: `import { MultiSelect } from '@stellar-ui/web';
+  exampleCode: `import { MultiSelect } from '@stellar-ui-kit/web';
 
 <MultiSelect
   options={[

@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { CheckIcon, XIcon } from 'lucide-react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 interface Requirement {
   regex: RegExp;

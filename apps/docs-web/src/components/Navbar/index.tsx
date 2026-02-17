@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { cn, ThemeVariant } from '@stellar-ui/shared';
+import { cn, ThemeVariant } from '@stellar-ui-kit/shared';
 import { useActiveSection } from '@/hooks';
 import { version } from '../../../package.json';
 import { ThemeSelector, SocialLinks } from '@/components';
@@ -13,7 +13,7 @@ import {
   Empty,
   EmptyTitle,
   EmptyDescription,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 interface NavItem {
   title: string;

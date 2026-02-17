@@ -1,5 +1,5 @@
 {
-  "name": "@stellar-ui/web",
+  "name": "@stellar-ui-kit/web",
   "version": "1.0.0",
   "description": "React DOM UI components library - Stellar UI",
   "main": "./dist/index.js",
@@ -10,7 +10,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    }
+    },
+    "./dist/styles.css": "./dist/styles.css"
   },
   "files": [
     "dist"
@@ -44,6 +45,9 @@
   "bugs": {
     "url": "https://github.com/vs-front-end/stellar-ui/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-avatar": "^1.1.11",
@@ -67,7 +71,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "@radix-ui/react-toggle": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.8",
-    "@stellar-ui/shared": "*",
+    "@stellar-ui-kit/shared": "*",
     "@tiptap/extension-image": "^3.15.3",
     "@tiptap/extension-link": "^3.15.3",
     "@tiptap/extension-placeholder": "^3.15.3",

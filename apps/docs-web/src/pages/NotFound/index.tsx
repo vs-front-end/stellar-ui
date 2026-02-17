@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Button, Text } from '@stellar-ui/web';
+import { Button, Text } from '@stellar-ui-kit/web';
 import { ArrowLeftIcon, BookIcon } from 'lucide-react';
 
 export const NotFound = () => {

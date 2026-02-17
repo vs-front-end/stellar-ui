@@ -165,9 +165,9 @@ Tooltip,
 TooltipContent,
 TooltipProvider,
 TooltipTrigger,
-} from '@stellar-ui/web';
-import type { ThemeVariant } from '@stellar-ui/shared';
-import { cn } from '@stellar-ui/shared';
+} from '@stellar-ui-kit/web';
+import type { ThemeVariant } from '@stellar-ui-kit/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { useState } from 'react';
 import {
 AlertCircleIcon,

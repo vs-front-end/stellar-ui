@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StarIcon } from 'lucide-react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 interface RatingProps {
   value?: number;

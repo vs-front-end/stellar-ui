@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 interface TextareaProps extends React.ComponentProps<'textarea'> {
   error?: string;

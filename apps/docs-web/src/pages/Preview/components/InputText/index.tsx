@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { InputText } from '@stellar-ui/web';
+import { InputText } from '@stellar-ui-kit/web';
 import { MailIcon, UserIcon } from 'lucide-react';
 
 export const InputTextExample = () => (
@@ -22,14 +22,14 @@ export const InputTextExample = () => (
 );
 
 export const InputTextDocs: IComponentUsage = {
-  importCode: `import { InputText } from '@stellar-ui/web';`,
+  importCode: `import { InputText } from '@stellar-ui-kit/web';`,
 
   usageCode: `<InputText
   label="Label"
   placeholder="Enter text..."
 />`,
 
-  exampleCode: `import { InputText } from '@stellar-ui/web';
+  exampleCode: `import { InputText } from '@stellar-ui-kit/web';
 import { MailIcon, UserIcon } from 'lucide-react';
 
 <div className="flex flex-col gap-4 max-w-md">

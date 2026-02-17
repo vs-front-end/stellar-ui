@@ -5,7 +5,7 @@ import type { DateRange } from 'react-day-picker';
 import type { Locale } from 'date-fns/locale';
 import { enUS } from 'date-fns/locale';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Button } from '../Button';
 import { Calendar } from '../Calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '../Popover';

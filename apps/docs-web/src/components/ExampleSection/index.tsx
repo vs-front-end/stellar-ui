@@ -5,7 +5,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 interface IExampleSection {
   exampleComponent: () => JSX.Element;

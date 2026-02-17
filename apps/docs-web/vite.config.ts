@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [react(), nodePolyfills({ include: ['buffer'] })],
   resolve: {
     alias: {
-      '@stellar-ui/shared': path.resolve(
+      '@stellar-ui-kit/shared': path.resolve(
         __dirname,
         '../../packages/shared/src'
       ),
-      '@stellar-ui/web': path.resolve(__dirname, '../../packages/web/src'),
+      '@stellar-ui-kit/web': path.resolve(__dirname, '../../packages/web/src'),
       '@': path.resolve(__dirname, './src'),
       '@/components': path.resolve(__dirname, './src/components'),
       '@/hooks': path.resolve(__dirname, './src/hooks'),
@@ -32,7 +32,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-ui': ['@stellar-ui/web', '@stellar-ui/shared'],
+          'vendor-ui': ['@stellar-ui-kit/web', '@stellar-ui-kit/shared'],
         },
       },
     },

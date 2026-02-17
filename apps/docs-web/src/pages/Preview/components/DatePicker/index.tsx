@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { DatePicker, DatePickerRange, Label } from '@stellar-ui/web';
+import { DatePicker, DatePickerRange, Label } from '@stellar-ui-kit/web';
 
 export const DatePickerExample = () => (
   <div className="flex flex-col gap-4">
@@ -12,11 +12,11 @@ export const DatePickerExample = () => (
 );
 
 export const DatePickerDocs: IComponentUsage = {
-  importCode: `import { DatePicker, DatePickerRange } from '@stellar-ui/web';`,
+  importCode: `import { DatePicker, DatePickerRange } from '@stellar-ui-kit/web';`,
 
   usageCode: `<DatePicker placeholder="Select a date" />`,
 
-  exampleCode: `import { DatePicker, DatePickerRange } from '@stellar-ui/web';
+  exampleCode: `import { DatePicker, DatePickerRange } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4">
   <Label>Default Date Picker</Label>

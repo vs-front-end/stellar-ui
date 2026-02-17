@@ -1,7 +1,7 @@
 import { Sun, Moon, Waves } from 'lucide-react';
-import { cn } from '@stellar-ui/shared';
-import type { ThemeVariant } from '@stellar-ui/shared';
-import { Tooltip, TooltipTrigger, TooltipContent } from '@stellar-ui/web';
+import { cn } from '@stellar-ui-kit/shared';
+import type { ThemeVariant } from '@stellar-ui-kit/shared';
+import { Tooltip, TooltipTrigger, TooltipContent } from '@stellar-ui-kit/web';
 
 const themes = [
   { id: 'light' as const, icon: Sun, label: 'Light theme' },

@@ -6,7 +6,7 @@ import {
   ContextMenuItem,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const ContextMenuExample = () => (
   <ContextMenu>
@@ -39,7 +39,7 @@ export const ContextMenuDocs: IComponentUsage = {
   ContextMenuContent,
   ContextMenuItem,
   ContextMenuTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<ContextMenu>
   <ContextMenuTrigger>Right click</ContextMenuTrigger>
@@ -54,7 +54,7 @@ export const ContextMenuDocs: IComponentUsage = {
   ContextMenuItem,
   ContextMenuShortcut,
   ContextMenuTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <ContextMenu>
   <ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-border bg-surface text-sm">

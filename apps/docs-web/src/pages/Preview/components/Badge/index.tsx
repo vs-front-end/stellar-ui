@@ -1,5 +1,5 @@
 import type { IComponentUsage, IComponentVariant } from '@/types';
-import { Badge } from '@stellar-ui/web';
+import { Badge } from '@stellar-ui-kit/web';
 
 import {
   CheckIcon,
@@ -102,11 +102,11 @@ export const BadgeVariants: IComponentVariant[] = [
 export const BadgeExample = BadgeVariants[0].component;
 
 export const BadgeDocs: IComponentUsage = {
-  importCode: `import { Badge } from '@stellar-ui/web';`,
+  importCode: `import { Badge } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Badge>Default</Badge>`,
 
-  exampleCode: `import { Badge } from '@stellar-ui/web';
+  exampleCode: `import { Badge } from '@stellar-ui-kit/web';
 
 <div className="flex flex-wrap items-baseline gap-2">
   <Badge>Default</Badge>

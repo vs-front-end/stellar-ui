@@ -1,4 +1,4 @@
-import { Text, CodeBlock, Button } from '@stellar-ui/web';
+import { Text, CodeBlock, Button } from '@stellar-ui-kit/web';
 
 import {
   Home,
@@ -45,7 +45,7 @@ export function Icons() {
         <Text as="p" className="text-muted">
           Lucide React is included in{' '}
           <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
-            @stellar-ui/web
+            @stellar-ui-kit/web
           </code>
           . Import the icons you need:
         </Text>

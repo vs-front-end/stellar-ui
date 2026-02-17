@@ -10,7 +10,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const DrawerExample = () => (
   <Drawer direction="left">
@@ -43,7 +43,7 @@ export const DrawerDocs: IComponentUsage = {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Drawer direction="Left">
   <DrawerTrigger>Open</DrawerTrigger>
@@ -69,7 +69,7 @@ export const DrawerDocs: IComponentUsage = {
   DrawerTitle,
   DrawerTrigger,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Drawer direction="left">
   <DrawerTrigger asChild>

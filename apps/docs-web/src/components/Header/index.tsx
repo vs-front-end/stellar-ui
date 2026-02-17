@@ -1,6 +1,6 @@
 import { Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Button } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
 import webPackageJson from '../../../package.json';
 
 interface IHeader {

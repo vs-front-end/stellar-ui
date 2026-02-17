@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from 'react';
 import * as AllComponents from '@/pages/Preview/components';
-import { Text } from '@stellar-ui/web';
+import { Text } from '@stellar-ui-kit/web';
 
 import { components } from '@/utils/constants';
 import { useParams, Navigate } from 'react-router-dom';

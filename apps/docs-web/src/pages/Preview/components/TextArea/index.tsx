@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Label, TextArea } from '@stellar-ui/web';
+import { Label, TextArea } from '@stellar-ui-kit/web';
 
 export const TextAreaExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -22,14 +22,14 @@ export const TextAreaExample = () => (
 );
 
 export const TextAreaDocs: IComponentUsage = {
-  importCode: `import { Label, TextArea } from '@stellar-ui/web';`,
+  importCode: `import { Label, TextArea } from '@stellar-ui-kit/web';`,
 
   usageCode: `<div className="flex flex-col gap-2">
   <Label htmlFor="textarea">Label</Label>
   <TextArea id="textarea" placeholder="Enter text..." />
 </div>`,
 
-  exampleCode: `import { Label, TextArea } from '@stellar-ui/web';
+  exampleCode: `import { Label, TextArea } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4 max-w-md">
   <div className="flex flex-col gap-2">

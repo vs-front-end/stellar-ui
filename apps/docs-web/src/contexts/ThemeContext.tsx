@@ -1,5 +1,8 @@
-import type { ThemeVariant } from '@stellar-ui/shared';
-import { ThemeProvider as WebThemeProvider, Toaster } from '@stellar-ui/web';
+import type { ThemeVariant } from '@stellar-ui-kit/shared';
+import {
+  ThemeProvider as WebThemeProvider,
+  Toaster,
+} from '@stellar-ui-kit/web';
 import { useState, createContext, ReactNode, useMemo, useEffect } from 'react';
 
 interface IThemeContext {

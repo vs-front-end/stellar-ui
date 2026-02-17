@@ -1,8 +1,8 @@
-# @stellar-ui/shared
+# @stellar-ui-kit/shared
 
 Shared design tokens, types, and utilities for Stellar UI - Platform agnostic.
 
-[![npm version](https://img.shields.io/npm/v/@stellar-ui/shared.svg)](https://www.npmjs.com/package/@stellar-ui/shared)
+[![npm version](https://img.shields.io/npm/v/@stellar-ui-kit/shared.svg)](https://www.npmjs.com/package/@stellar-ui-kit/shared)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -16,7 +16,7 @@ Shared design tokens, types, and utilities for Stellar UI - Platform agnostic.
 ## Installation
 
 ```bash
-npm install @stellar-ui/shared
+npm install @stellar-ui-kit/shared
 ```
 
 ## Exports
@@ -24,25 +24,25 @@ npm install @stellar-ui/shared
 ### Main Export
 
 ```typescript
-import { cn, colors, themes } from '@stellar-ui/shared';
+import { cn, colors, themes } from '@stellar-ui-kit/shared';
 ```
 
 ### Tokens
 
 ```typescript
-import { colors, themes } from '@stellar-ui/shared/tokens';
+import { colors, themes } from '@stellar-ui-kit/shared/tokens';
 ```
 
 ### Utils
 
 ```typescript
-import { cn, tokenize, getTheme } from '@stellar-ui/shared/utils';
+import { cn, tokenize, getTheme } from '@stellar-ui-kit/shared/utils';
 ```
 
 ### Tailwind Preset
 
 ```typescript
-import stellarPreset from '@stellar-ui/shared/tailwind-preset';
+import stellarPreset from '@stellar-ui-kit/shared/tailwind-preset';
 ```
 
 ## Usage
@@ -52,7 +52,7 @@ import stellarPreset from '@stellar-ui/shared/tailwind-preset';
 Merge Tailwind CSS classes with proper precedence:
 
 ```typescript
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 const className = cn(
   'px-4 py-2',
@@ -67,7 +67,7 @@ const className = cn(
 Access design tokens programmatically:
 
 ```typescript
-import { colors } from '@stellar-ui/shared/tokens';
+import { colors } from '@stellar-ui-kit/shared/tokens';
 
 console.log(colors.light.primary); // Primary color for light theme
 console.log(colors.dark.background); // Background color for dark theme
@@ -79,7 +79,7 @@ Add to your `tailwind.config.ts`:
 
 ```typescript
 import type { Config } from 'tailwindcss';
-import stellarPreset from '@stellar-ui/shared/tailwind-preset';
+import stellarPreset from '@stellar-ui-kit/shared/tailwind-preset';
 
 const config: Config = {
   darkMode: ['class'],
@@ -102,7 +102,7 @@ The preset includes:
 ### Theme System
 
 ```typescript
-import { themes } from '@stellar-ui/shared/tokens';
+import { themes } from '@stellar-ui-kit/shared/tokens';
 
 // Available themes
 const lightTheme = themes.light;
@@ -113,7 +113,7 @@ const oceanTheme = themes.ocean;
 ### TypeScript Types
 
 ```typescript
-import type { ColorScheme, ThemeVariant } from '@stellar-ui/shared';
+import type { ColorScheme, ThemeVariant } from '@stellar-ui-kit/shared';
 
 const scheme: ColorScheme = 'light' | 'dark';
 const variant: ThemeVariant = 'light' | 'dark' | 'ocean';
@@ -165,7 +165,7 @@ console.log(theme.primary); // Dark theme primary color
 ## Using with React
 
 ```tsx
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 function Button({ className, variant }) {
   return (
@@ -190,4 +190,4 @@ MIT © Stellar UI
 
 ## Related Packages
 
-- [@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web) - React web components
+- [@stellar-ui-kit/web](https://www.npmjs.com/package/@stellar-ui-kit/web) - React web components

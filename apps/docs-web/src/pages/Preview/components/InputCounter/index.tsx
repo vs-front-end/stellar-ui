@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { InputCounter } from '@stellar-ui/web';
+import { InputCounter } from '@stellar-ui-kit/web';
 
 export const InputCounterExample = () => (
   <div className="flex flex-col gap-4">
@@ -20,7 +20,7 @@ export const InputCounterExample = () => (
 );
 
 export const InputCounterDocs: IComponentUsage = {
-  importCode: `import { InputCounter } from '@stellar-ui/web';`,
+  importCode: `import { InputCounter } from '@stellar-ui-kit/web';`,
 
   usageCode: `<InputCounter
   label="Counter"
@@ -29,7 +29,7 @@ export const InputCounterDocs: IComponentUsage = {
   max={100}
 />`,
 
-  exampleCode: `import { InputCounter } from '@stellar-ui/web';
+  exampleCode: `import { InputCounter } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4">
   <InputCounter

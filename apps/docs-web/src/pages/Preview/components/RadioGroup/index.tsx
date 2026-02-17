@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui/web';
+import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui-kit/web';
 
 export const RadioGroupExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -27,7 +27,7 @@ export const RadioGroupExample = () => (
 );
 
 export const RadioGroupDocs: IComponentUsage = {
-  importCode: `import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui/web';`,
+  importCode: `import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui-kit/web';`,
 
   usageCode: `<RadioGroup defaultValue="option1">
   <div className="flex items-center gap-2">
@@ -36,7 +36,7 @@ export const RadioGroupDocs: IComponentUsage = {
   </div>
 </RadioGroup>`,
 
-  exampleCode: `import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui/web';
+  exampleCode: `import { Label, RadioGroup, RadioGroupItem } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4 max-w-md">
   <div className="flex flex-col gap-2">

@@ -1,5 +1,5 @@
-import { cn } from '@stellar-ui/shared';
-import { Tooltip, TooltipTrigger, TooltipContent } from '@stellar-ui/web';
+import { cn } from '@stellar-ui-kit/shared';
+import { Tooltip, TooltipTrigger, TooltipContent } from '@stellar-ui-kit/web';
 
 interface ISocialLink {
   href: string;

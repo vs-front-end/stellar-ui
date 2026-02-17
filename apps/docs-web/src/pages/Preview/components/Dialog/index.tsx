@@ -10,7 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const DialogExample = () => (
   <Dialog>
@@ -47,7 +47,7 @@ export const DialogDocs: IComponentUsage = {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Dialog>
   <DialogTrigger>Open</DialogTrigger>
@@ -72,7 +72,7 @@ export const DialogDocs: IComponentUsage = {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Dialog>
   <DialogTrigger asChild>

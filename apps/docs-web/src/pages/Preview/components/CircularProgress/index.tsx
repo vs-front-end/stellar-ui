@@ -1,17 +1,17 @@
 import type { IComponentUsage } from '@/types';
 
-import { CircularProgress } from '@stellar-ui/web';
+import { CircularProgress } from '@stellar-ui-kit/web';
 
 export const CircularProgressExample = () => (
   <CircularProgress value={50} showValue />
 );
 
 export const CircularProgressDocs: IComponentUsage = {
-  importCode: `import { CircularProgress } from '@stellar-ui/web';`,
+  importCode: `import { CircularProgress } from '@stellar-ui-kit/web';`,
 
   usageCode: `<CircularProgress value={50} showValue />`,
 
-  exampleCode: `import { CircularProgress } from '@stellar-ui/web';
+  exampleCode: `import { CircularProgress } from '@stellar-ui-kit/web';
 
 <CircularProgress value={50} showValue />`,
 

@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { TextEditor } from '@stellar-ui/web';
+import { TextEditor } from '@stellar-ui-kit/web';
 
 export const TextEditorExample = () => (
   <div className="flex flex-col gap-4 max-w-2xl">
@@ -13,7 +13,7 @@ export const TextEditorExample = () => (
 );
 
 export const TextEditorDocs: IComponentUsage = {
-  importCode: `import { TextEditor } from '@stellar-ui/web';`,
+  importCode: `import { TextEditor } from '@stellar-ui-kit/web';`,
 
   usageCode: `<TextEditor
   label="Editor"
@@ -21,7 +21,7 @@ export const TextEditorDocs: IComponentUsage = {
   onChange={(html) => console.warn(html)}
 />`,
 
-  exampleCode: `import { TextEditor } from '@stellar-ui/web';
+  exampleCode: `import { TextEditor } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4 max-w-2xl">
   <TextEditor

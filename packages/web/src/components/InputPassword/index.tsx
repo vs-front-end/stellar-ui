@@ -4,7 +4,7 @@ import { EyeIcon, EyeOffIcon, type LucideIcon } from 'lucide-react';
 import { Button } from '../Button';
 import { Input } from '../Input';
 import { Label } from '../Label';
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 interface InputPasswordProps {
   label?: string;

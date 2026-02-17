@@ -8,7 +8,7 @@ import { mergeAttributes } from '@tiptap/core';
 import Placeholder from '@tiptap/extension-placeholder';
 import TextAlign from '@tiptap/extension-text-align';
 import Underline from '@tiptap/extension-underline';
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Button } from '../Button';
 import { Input } from '../Input';
 import { Label } from '../Label';

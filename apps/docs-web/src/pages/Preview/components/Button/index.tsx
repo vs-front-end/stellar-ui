@@ -1,5 +1,5 @@
 import type { IComponentUsage, IComponentVariant } from '@/types';
-import { Button } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
 
 type ButtonVariant =
   | 'default'
@@ -74,11 +74,11 @@ export const ButtonVariants: IComponentVariant[] = [
 export const ButtonExample = ButtonVariants[0].component;
 
 export const ButtonDocs: IComponentUsage = {
-  importCode: `import { Button } from '@stellar-ui/web';`,
+  importCode: `import { Button } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Button>Click me</Button>`,
 
-  exampleCode: `import { Button } from '@stellar-ui/web';
+  exampleCode: `import { Button } from '@stellar-ui-kit/web';
 
 <Button>Default</Button>
 

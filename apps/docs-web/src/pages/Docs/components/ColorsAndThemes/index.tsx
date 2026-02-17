@@ -1,11 +1,11 @@
-import { Text, CodeBlock } from '@stellar-ui/web';
+import { Text, CodeBlock } from '@stellar-ui-kit/web';
 
 import {
   COMMON_THEME,
   LIGHT_THEME,
   DARK_THEME,
   OCEAN_THEME,
-} from '@stellar-ui/shared';
+} from '@stellar-ui-kit/shared';
 
 export function ColorsAndThemes() {
   const themes = [

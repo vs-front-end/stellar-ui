@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { IComponentUsage } from '@/types';
-import { InputPassword, PasswordStrength } from '@stellar-ui/web';
+import { InputPassword, PasswordStrength } from '@stellar-ui-kit/web';
 
 export const InputPasswordExample = () => {
   const [password, setPassword] = useState('');
@@ -19,14 +19,14 @@ export const InputPasswordExample = () => {
 };
 
 export const InputPasswordDocs: IComponentUsage = {
-  importCode: `import { InputPassword, PasswordStrength } from '@stellar-ui/web';`,
+  importCode: `import { InputPassword, PasswordStrength } from '@stellar-ui-kit/web';`,
 
   usageCode: `<InputPassword
   label="Password"
   placeholder="Enter password"
 />`,
 
-  exampleCode: `import { InputPassword, PasswordStrength } from '@stellar-ui/web';
+  exampleCode: `import { InputPassword, PasswordStrength } from '@stellar-ui-kit/web';
 import { useState } from 'react';
 
 function Example() {

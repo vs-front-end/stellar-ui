@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import type { ThemeVariant } from '@stellar-ui/shared';
+import type { ThemeVariant } from '@stellar-ui-kit/shared';
 
 interface IStar {
   x: number;

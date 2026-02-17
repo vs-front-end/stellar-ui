@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'blockquote' | 'li' | 'span';
 type StyleVariant = 'lead' | 'muted';

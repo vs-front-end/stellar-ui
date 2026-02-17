@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const CardExample = () => (
   <Card className="w-full max-w-sm">
@@ -37,7 +37,7 @@ export const CardDocs: IComponentUsage = {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Card className="w-full max-w-sm">
   <CardHeader>
@@ -64,7 +64,7 @@ export const CardDocs: IComponentUsage = {
   CardHeader,
   CardTitle,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Card className="w-full max-w-sm">
   <CardHeader>

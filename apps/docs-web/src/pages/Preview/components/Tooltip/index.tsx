@@ -5,7 +5,7 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const TooltipExample = () => (
   <div className="flex items-center gap-4 flex-wrap">
@@ -56,7 +56,7 @@ export const TooltipDocs: IComponentUsage = {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Tooltip>
   <TooltipTrigger>Hover me</TooltipTrigger>
@@ -70,7 +70,7 @@ export const TooltipDocs: IComponentUsage = {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <div className="flex items-center gap-4 flex-wrap">
   <Tooltip>

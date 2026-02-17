@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Rating } from '@stellar-ui/web';
+import { Rating } from '@stellar-ui-kit/web';
 
 export const RatingExample = () => (
   <div className="flex flex-col gap-4">
@@ -10,11 +10,11 @@ export const RatingExample = () => (
 );
 
 export const RatingDocs: IComponentUsage = {
-  importCode: `import { Rating } from '@stellar-ui/web';`,
+  importCode: `import { Rating } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Rating defaultValue={0} aria-label="Rating" />`,
 
-  exampleCode: `import { Rating } from '@stellar-ui/web';
+  exampleCode: `import { Rating } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4">
   <Rating defaultValue={0} aria-label="Product rating" />

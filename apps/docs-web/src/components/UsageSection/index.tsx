@@ -1,4 +1,4 @@
-import { Text, CodeBlock } from '@stellar-ui/web';
+import { Text, CodeBlock } from '@stellar-ui-kit/web';
 
 interface IUsageSection {
   importCode: string;

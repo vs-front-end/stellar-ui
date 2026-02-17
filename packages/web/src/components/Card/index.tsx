@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 function Card({ className, ...props }: React.ComponentProps<'div'>) {
   return (

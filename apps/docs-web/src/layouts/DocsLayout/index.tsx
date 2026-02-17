@@ -1,6 +1,6 @@
 import { useMobileMenu, useAppTheme } from '@/hooks';
 import { Outlet, useNavigate } from 'react-router-dom';
-import { Drawer, DrawerContent } from '@stellar-ui/web';
+import { Drawer, DrawerContent } from '@stellar-ui-kit/web';
 import { Header, Navbar, ParticlesBackground } from '@/components';
 
 export const DocsLayout = () => {

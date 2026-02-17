@@ -92,7 +92,7 @@ npm run format
 
 1. Create a new directory in `packages/web/src/components/ComponentName/`
 
-2. Create `index.tsx` (use Radix UI primitives and `cn` from `@stellar-ui/shared` as in existing components).
+2. Create `index.tsx` (use Radix UI primitives and `cn` from `@stellar-ui-kit/shared` as in existing components).
 
 3. Export from `packages/web/src/components/index.ts`:
 

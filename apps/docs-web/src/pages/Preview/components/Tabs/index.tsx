@@ -6,7 +6,7 @@ import {
   TabsList,
   TabsTrigger,
   Text,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const TabsExample = () => (
   <Tabs defaultValue="account" className="w-[400px]">
@@ -33,7 +33,7 @@ export const TabsDocs: IComponentUsage = {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Tabs defaultValue="tab1">
   <TabsList>
@@ -42,7 +42,7 @@ export const TabsDocs: IComponentUsage = {
   <TabsContent value="tab1">Content</TabsContent>
 </Tabs>`,
 
-  exampleCode: `import { Tabs, TabsContent, TabsList, TabsTrigger, Text } from '@stellar-ui/web';
+  exampleCode: `import { Tabs, TabsContent, TabsList, TabsTrigger, Text } from '@stellar-ui-kit/web';
 
 <Tabs defaultValue="account" className="w-[400px]">
   <TabsList>

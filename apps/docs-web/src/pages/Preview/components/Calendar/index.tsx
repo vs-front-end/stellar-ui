@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Calendar, Label } from '@stellar-ui/web';
+import { Calendar, Label } from '@stellar-ui-kit/web';
 
 export const CalendarExample = () => (
   <div className="flex gap-8">
@@ -17,11 +17,11 @@ export const CalendarExample = () => (
 );
 
 export const CalendarDocs: IComponentUsage = {
-  importCode: `import { Calendar } from '@stellar-ui/web';`,
+  importCode: `import { Calendar } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Calendar />`,
 
-  exampleCode: `import { Calendar } from '@stellar-ui/web';
+  exampleCode: `import { Calendar } from '@stellar-ui-kit/web';
 
 <div className="flex gap-8">
   <div className="flex flex-col gap-4">

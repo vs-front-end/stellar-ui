@@ -1,5 +1,5 @@
 import { Info, XCircle, CheckCircle, AlertCircle } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@stellar-ui/web';
+import { Alert, AlertDescription, AlertTitle } from '@stellar-ui-kit/web';
 import type { IComponentUsage, IComponentVariant } from '@/types';
 
 type AlertVariant =
@@ -97,7 +97,7 @@ export const AlertDocs: IComponentUsage = {
   Alert,
   AlertDescription,
   AlertTitle,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Alert variant="default">
   <AlertTitle>Alert Title</AlertTitle>
@@ -110,7 +110,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <Alert variant="default">
   <InfoIcon />

@@ -1,4 +1,4 @@
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 
 function Skeleton({ className, ...props }: React.ComponentProps<'div'>) {
   return (

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
-import { cn } from '@stellar-ui/shared';
+import { cn } from '@stellar-ui-kit/shared';
 import { Button } from '../Button';
 
 import {

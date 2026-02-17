@@ -1,4 +1,4 @@
-import { Text, CodeBlock } from '@stellar-ui/web';
+import { Text, CodeBlock } from '@stellar-ui-kit/web';
 
 export function ThemeCustomization() {
   return (
@@ -23,12 +23,12 @@ export function ThemeCustomization() {
           </code>{' '}
           prop on the ThemeProvider from{' '}
           <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
-            @stellar-ui/web
+            @stellar-ui-kit/web
           </code>
           :
         </Text>
         <CodeBlock
-          code={`import { ThemeProvider } from '@stellar-ui/web';
+          code={`import { ThemeProvider } from '@stellar-ui-kit/web';
 
 function App() {
   return (
@@ -51,7 +51,7 @@ function App() {
         </Text>
         <CodeBlock
           code={`import { useState } from 'react';
-import { ThemeProvider } from '@stellar-ui/web';
+import { ThemeProvider } from '@stellar-ui-kit/web';
 
 type ThemeVariant = 'light' | 'dark' | 'ocean';
 
@@ -116,7 +116,7 @@ function App() {
         </Text>
         <CodeBlock
           code={`import { useEffect } from 'react';
-import { ThemeProvider } from '@stellar-ui/web';
+import { ThemeProvider } from '@stellar-ui-kit/web';
 
 function CustomThemeProvider({ children }) {
   useEffect(() => {
@@ -179,7 +179,7 @@ function CustomThemeProvider({ children }) {
           Override colors with inline styles or Tailwind className:
         </Text>
         <CodeBlock
-          code={`import { Button } from '@stellar-ui/web';
+          code={`import { Button } from '@stellar-ui-kit/web';
 
 function CustomButton() {
   return (

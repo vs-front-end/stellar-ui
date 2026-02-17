@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Combobox } from '@stellar-ui/web';
+import { Combobox } from '@stellar-ui-kit/web';
 
 export const ComboboxExample = () => (
   <Combobox
@@ -17,7 +17,7 @@ export const ComboboxExample = () => (
 );
 
 export const ComboboxDocs: IComponentUsage = {
-  importCode: `import { Combobox } from '@stellar-ui/web';`,
+  importCode: `import { Combobox } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Combobox
   options={[
@@ -27,7 +27,7 @@ export const ComboboxDocs: IComponentUsage = {
   placeholder="Select..."
 />`,
 
-  exampleCode: `import { Combobox } from '@stellar-ui/web';
+  exampleCode: `import { Combobox } from '@stellar-ui-kit/web';
 
 <Combobox
   options={[

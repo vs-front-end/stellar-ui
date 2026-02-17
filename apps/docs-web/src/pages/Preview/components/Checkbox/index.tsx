@@ -1,5 +1,5 @@
 import type { IComponentUsage } from '@/types';
-import { Checkbox, Label } from '@stellar-ui/web';
+import { Checkbox, Label } from '@stellar-ui-kit/web';
 
 export const CheckboxExample = () => (
   <div className="flex flex-col gap-4">
@@ -21,14 +21,14 @@ export const CheckboxExample = () => (
 );
 
 export const CheckboxDocs: IComponentUsage = {
-  importCode: `import { Checkbox, Label } from '@stellar-ui/web';`,
+  importCode: `import { Checkbox, Label } from '@stellar-ui-kit/web';`,
 
   usageCode: `<div className="flex items-center gap-2">
   <Checkbox id="checkbox" />
   <Label htmlFor="checkbox">Label</Label>
 </div>`,
 
-  exampleCode: `import { Checkbox, Label } from '@stellar-ui/web';
+  exampleCode: `import { Checkbox, Label } from '@stellar-ui-kit/web';
 
 <div className="flex flex-col gap-4">
   <div className="flex items-center gap-2">

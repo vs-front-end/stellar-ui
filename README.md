@@ -1,6 +1,6 @@
 # Stellar UI - Design System Monorepo
 
-[![npm version](https://img.shields.io/npm/v/@stellar-ui/web.svg)](https://www.npmjs.com/package/@stellar-ui/web)
+[![npm version](https://img.shields.io/npm/v/@stellar-ui-kit/web.svg)](https://www.npmjs.com/package/@stellar-ui-kit/web)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 UI library for React (web) built with Turborepo.
@@ -9,17 +9,17 @@ UI library for React (web) built with Turborepo.
 
 ## Published Packages
 
-- **[@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web)** - React DOM UI components (48 components)
-- **[@stellar-ui/shared](https://www.npmjs.com/package/@stellar-ui/shared)** - Design tokens, types, and utilities
+- **[@stellar-ui-kit/web](https://www.npmjs.com/package/@stellar-ui-kit/web)** - React DOM UI components (48 components)
+- **[@stellar-ui-kit/shared](https://www.npmjs.com/package/@stellar-ui-kit/shared)** - Design tokens, types, and utilities
 
 ## Installation
 
 ```bash
 # Install web components
-npm install @stellar-ui/web
+npm install @stellar-ui-kit/web
 
 # Install shared utilities (if needed)
-npm install @stellar-ui/shared
+npm install @stellar-ui-kit/shared
 ```
 
 ### Peer Dependencies

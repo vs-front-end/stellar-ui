@@ -6,7 +6,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { FileIcon } from 'lucide-react';
 
 export const EmptyExample = () => (
@@ -30,7 +30,7 @@ export const EmptyDocs: IComponentUsage = {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<Empty>
   <EmptyHeader>
@@ -48,7 +48,7 @@ export const EmptyDocs: IComponentUsage = {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 import { FileIcon } from 'lucide-react';
 
 <Empty>

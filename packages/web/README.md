@@ -1,8 +1,8 @@
-# @stellar-ui/web
+# @stellar-ui-kit/web
 
 A comprehensive React component library built with Radix UI and Tailwind CSS.
 
-[![npm version](https://img.shields.io/npm/v/@stellar-ui/web.svg)](https://www.npmjs.com/package/@stellar-ui/web)
+[![npm version](https://img.shields.io/npm/v/@stellar-ui-kit/web.svg)](https://www.npmjs.com/package/@stellar-ui-kit/web)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -18,7 +18,7 @@ A comprehensive React component library built with Radix UI and Tailwind CSS.
 ## Installation
 
 ```bash
-npm install @stellar-ui/web
+npm install @stellar-ui-kit/web
 ```
 
 ### Peer Dependencies
@@ -36,13 +36,13 @@ Add the Stellar UI preset to your `tailwind.config.ts`:
 ```typescript
 import type { Config } from 'tailwindcss';
 
-const stellarPreset = require('@stellar-ui/shared/tailwind-preset');
+const stellarPreset = require('@stellar-ui-kit/shared/tailwind-preset');
 
 const config: Config = {
   darkMode: ['class'],
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@stellar-ui/web/dist/**/*.{js,mjs}',
+    './node_modules/@stellar-ui-kit/web/dist/**/*.{js,mjs}',
   ],
   presets: [stellarPreset],
 };
@@ -55,7 +55,7 @@ export default config;
 Import the CSS in your main entry file:
 
 ```typescript
-import '@stellar-ui/web/dist/styles.css';
+import '@stellar-ui-kit/web/dist/styles.css';
 ```
 
 ### 3. Setup Theme Provider
@@ -63,7 +63,7 @@ import '@stellar-ui/web/dist/styles.css';
 Wrap your app with the ThemeProvider:
 
 ```tsx
-import { ThemeProvider } from '@stellar-ui/web';
+import { ThemeProvider } from '@stellar-ui-kit/web';
 
 function App() {
   return <ThemeProvider variant="light">{/* Your app */}</ThemeProvider>;
@@ -73,7 +73,7 @@ function App() {
 ### 4. Use Components
 
 ```tsx
-import { Button, Input, Card } from '@stellar-ui/web';
+import { Button, Input, Card } from '@stellar-ui-kit/web';
 
 function MyComponent() {
   return (
@@ -158,7 +158,7 @@ Visit our [documentation site](https://stellar-ui-one.vercel.app) for:
 ### Button with Variants
 
 ```tsx
-import { Button } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
 
 <Button variant="default">Primary</Button>
 <Button variant="secondary">Secondary</Button>
@@ -170,7 +170,7 @@ import { Button } from '@stellar-ui/web';
 ### Form with Validation
 
 ```tsx
-import { Input, Label, Button } from '@stellar-ui/web';
+import { Input, Label, Button } from '@stellar-ui-kit/web';
 
 <form>
   <div>
@@ -189,8 +189,8 @@ import { Input, Label, Button } from '@stellar-ui/web';
 ### Dark Mode Toggle
 
 ```tsx
-import { Button } from '@stellar-ui/web';
-import { useTheme } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
+import { useTheme } from '@stellar-ui-kit/web';
 
 function ThemeToggle() {
   const { variant, setVariant } = useTheme();
@@ -209,7 +209,7 @@ Lucide React is included as a dependency:
 
 ```tsx
 import { Search, Settings, User } from 'lucide-react';
-import { Button } from '@stellar-ui/web';
+import { Button } from '@stellar-ui-kit/web';
 
 <Button>
   <Search />
@@ -230,7 +230,7 @@ Components use Tailwind CSS classes and can be customized via className:
 Full TypeScript support with exported types:
 
 ```tsx
-import type { ButtonProps } from '@stellar-ui/web';
+import type { ButtonProps } from '@stellar-ui-kit/web';
 
 const MyButton: React.FC<ButtonProps> = (props) => {
   return <Button {...props} />;

@@ -1,8 +1,8 @@
 {
   "name": "stellar-ui-monorepo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Design System Monorepo - Cross-platform UI library for React.js and React Native",
+  "description": "Design System Monorepo - UI library for React (web)",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -16,7 +16,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,json,md}\"",
     "start": "turbo run dev --filter=docs",
     "preview": "cd apps/docs-web && npm run preview",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "publish:all": "npm run build && npm publish -w @stellar-ui-kit/shared && npm publish -w @stellar-ui-kit/web"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

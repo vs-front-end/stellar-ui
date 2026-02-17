@@ -1,6 +1,6 @@
 import type { IComponentUsage } from '@/types';
 
-import { Spinner, Text } from '@stellar-ui/web';
+import { Spinner, Text } from '@stellar-ui-kit/web';
 
 export const SpinnerExample = () => (
   <div className="flex items-center gap-4">
@@ -10,11 +10,11 @@ export const SpinnerExample = () => (
 );
 
 export const SpinnerDocs: IComponentUsage = {
-  importCode: `import { Spinner } from '@stellar-ui/web';`,
+  importCode: `import { Spinner } from '@stellar-ui-kit/web';`,
 
   usageCode: `<Spinner />`,
 
-  exampleCode: `import { Spinner, Text } from '@stellar-ui/web';
+  exampleCode: `import { Spinner, Text } from '@stellar-ui-kit/web';
 
 <div className="flex items-center gap-4">
   <Spinner />

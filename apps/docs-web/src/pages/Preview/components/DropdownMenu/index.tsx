@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 export const DropdownMenuExample = () => (
   <DropdownMenu>
@@ -54,7 +54,7 @@ export const DropdownMenuDocs: IComponentUsage = {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@stellar-ui/web';`,
+} from '@stellar-ui-kit/web';`,
 
   usageCode: `<DropdownMenu>
   <DropdownMenuTrigger>Open</DropdownMenuTrigger>
@@ -76,7 +76,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@stellar-ui/web';
+} from '@stellar-ui-kit/web';
 
 <DropdownMenu>
   <DropdownMenuTrigger asChild>
