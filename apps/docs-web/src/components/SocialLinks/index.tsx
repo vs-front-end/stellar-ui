@@ -21,6 +21,12 @@ const socialLinks: ISocialLink[] = [
     bgColor: 'bg-[#353535]',
     icon: '/icons/github.svg',
   },
+  {
+    href: 'https://www.npmjs.com/package/@stellar-ui-kit/web',
+    label: 'NPM',
+    bgColor: 'bg-[#BC2026]',
+    icon: '/icons/npm.svg',
+  },
 ];
 
 export const SocialLinks = () => {
