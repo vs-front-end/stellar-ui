@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss';
 
 const stellarPreset = require('@stellar-ui/shared/tailwind-preset');
-const nativewindPreset = require('nativewind/preset');
 
 const config: Config = {
   darkMode: ['class'],
@@ -10,9 +9,8 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx}',
     '../../packages/shared/src/**/*.{ts,tsx}',
     '../../packages/web/src/**/*.{ts,tsx}',
-    '../../packages/mobile/src/**/*.{ts,tsx}',
   ],
-  presets: [stellarPreset, nativewindPreset],
+  presets: [stellarPreset],
   theme: {
     extend: {
       fontFamily: {

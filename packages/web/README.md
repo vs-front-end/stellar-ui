@@ -145,8 +145,6 @@ function MyComponent() {
 
 ## Documentation
 
-The same design system is available for React Native via [@stellar-ui/mobile](https://www.npmjs.com/package/@stellar-ui/mobile). Documentation (web and mobile) is shared:
-
 Visit our [documentation site](https://stellar-ui-one.vercel.app) for:
 
 - Interactive component previews

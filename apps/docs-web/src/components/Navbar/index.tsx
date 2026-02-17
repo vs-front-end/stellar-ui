@@ -5,7 +5,6 @@ import { useActiveSection } from '@/hooks';
 import { version } from '../../../package.json';
 import { ThemeSelector, SocialLinks } from '@/components';
 import { components, docsNav } from '@/utils/constants';
-import type { DocPlatform } from '@/utils/constants';
 
 import {
   ScrollArea,
@@ -14,13 +13,11 @@ import {
   Empty,
   EmptyTitle,
   EmptyDescription,
-  Badge,
 } from '@stellar-ui/web';
 
 interface NavItem {
   title: string;
   href: string;
-  platforms?: DocPlatform[];
 }
 
 interface INavbarSection {
@@ -65,12 +62,6 @@ const NavbarSection = ({
               )}
             >
               <span className="min-w-0 truncate font-medium">{item.title}</span>
-
-              {item.platforms?.includes('mobile') && (
-                <Badge className="bg-[#026397] text-[10px] py-0 font-semibold">
-                  Web & Mobile
-                </Badge>
-              )}
             </Link>
           </li>
         ))}
@@ -115,7 +106,6 @@ export const Navbar = ({ theme, setTheme, onLinkClick }: INavbar) => {
     const componentsItems: NavItem[] = components.map((component) => ({
       title: component.name,
       href: `/preview/${component.slug}`,
-      platforms: component.platforms ?? ['web'],
     }));
 
     return filterNavItems(componentsItems, searchQuery);

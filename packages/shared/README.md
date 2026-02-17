@@ -180,23 +180,6 @@ function Button({ className, variant }) {
 }
 ```
 
-## Using with React Native
-
-```tsx
-import { colors } from '@stellar-ui/shared/tokens';
-
-function Button({ variant }) {
-  const backgroundColor =
-    variant === 'dark' ? colors.dark.primary : colors.light.primary;
-
-  return (
-    <View style={{ backgroundColor }}>
-      <Text>Button</Text>
-    </View>
-  );
-}
-```
-
 ## Peer Dependencies
 
 - React ^18.0.0 (for React-specific utilities)
@@ -208,4 +191,3 @@ MIT © Stellar UI
 ## Related Packages
 
 - [@stellar-ui/web](https://www.npmjs.com/package/@stellar-ui/web) - React web components
-- [@stellar-ui/mobile](https://www.npmjs.com/package/@stellar-ui/mobile) - React Native components

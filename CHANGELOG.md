@@ -26,19 +26,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tailwind CSS preset with design tokens
 - TypeScript interfaces and types
 
-#### @stellar-ui/mobile
-
-- React Native UI library (RN-Primitives + NativeWind v4)
-- Components: Alert, AlertDialog, Avatar, Badge, Button, Checkbox, Input, InputCounter, InputOTP, InputPassword, InputSearch, InputText, Label, PasswordStrength, Progress, RadioGroup, Select, Separator, Skeleton, Switch, Tabs, Text, TextArea
-- Theme support (ThemeProvider, useTheme)
-- Documentation app in `apps/docs-mobile`; shared docs at stellar-ui-one.vercel.app
-
 ### Infrastructure
 
 - Turborepo monorepo setup
 - TypeScript strict mode enabled
 - Prettier code formatting
 - Build pipeline with tsup (esbuild)
-- Web documentation (apps/docs-web) and mobile documentation (apps/docs-mobile) with shared doc site
+- Web documentation (apps/docs-web) with doc site at stellar-ui-one.vercel.app
 
 [0.1.0]: https://github.com/vs-front-end/stellar-ui/releases/tag/v0.1.0

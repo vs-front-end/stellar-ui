@@ -1,14 +1,8 @@
 import type { IComponentUsage } from '@/types';
-
 import { InputSearch } from '@stellar-ui/web';
-import { InputSearch as MobileInputSearch } from '@stellar-ui/mobile';
 
 export const InputSearchExample = () => (
   <InputSearch label="Input search" placeholder="Type to search..." />
-);
-
-export const InputSearchExampleMobile = () => (
-  <MobileInputSearch label="Input search" placeholder="Type to search..." />
 );
 
 export const InputSearchDocs: IComponentUsage = {
@@ -20,14 +14,6 @@ export const InputSearchDocs: IComponentUsage = {
 
 <InputSearch label="Input search" placeholder="Type to search..." />
 `,
-
-  importCodeMobile: `import { InputSearch } from '@stellar-ui/mobile';`,
-
-  usageCodeMobile: `<InputSearch placeholder="Search..." />`,
-
-  exampleCodeMobile: `import { InputSearch } from '@stellar-ui/mobile';
-
-<InputSearch label="Input search" placeholder="Type to search..." />`,
 
   props: [
     {

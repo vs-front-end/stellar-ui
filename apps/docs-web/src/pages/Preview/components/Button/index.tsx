@@ -1,6 +1,5 @@
 import type { IComponentUsage, IComponentVariant } from '@/types';
 import { Button } from '@stellar-ui/web';
-import { Button as MobileButton } from '@stellar-ui/mobile';
 
 type ButtonVariant =
   | 'default'
@@ -74,10 +73,6 @@ export const ButtonVariants: IComponentVariant[] = [
 
 export const ButtonExample = ButtonVariants[0].component;
 
-export const ButtonExampleMobile = () => (
-  <MobileButton variant="default">Default</MobileButton>
-);
-
 export const ButtonDocs: IComponentUsage = {
   importCode: `import { Button } from '@stellar-ui/web';`,
 
@@ -88,14 +83,6 @@ export const ButtonDocs: IComponentUsage = {
 <Button>Default</Button>
 
 `,
-
-  importCodeMobile: `import { Button } from '@stellar-ui/mobile';`,
-
-  usageCodeMobile: `<Button>Click me</Button>`,
-
-  exampleCodeMobile: `import { Button } from '@stellar-ui/mobile';
-
-<Button variant="default">Default</Button>`,
 
   props: [
     {

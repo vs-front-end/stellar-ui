@@ -1,9 +1,6 @@
 import type { IComponentUsage } from '@/types';
-
 import { InputText } from '@stellar-ui/web';
-import { InputText as MobileInputText } from '@stellar-ui/mobile';
 import { MailIcon, UserIcon } from 'lucide-react';
-import { Mail, User } from 'lucide-react-native';
 
 export const InputTextExample = () => (
   <div className="flex flex-col gap-4 max-w-md">
@@ -20,24 +17,6 @@ export const InputTextExample = () => (
       type="email"
       placeholder="Email address"
       endIcon={MailIcon}
-    />
-  </div>
-);
-
-export const InputTextExampleMobile = () => (
-  <div className="flex flex-col gap-4 max-w-md">
-    <MobileInputText label="Input Text" placeholder="Enter text..." />
-
-    <MobileInputText
-      label="Input with start icon"
-      placeholder="Username"
-      startIcon={User as any}
-    />
-
-    <MobileInputText
-      label="Input with end icon"
-      placeholder="Email address"
-      endIcon={Mail as any}
     />
   </div>
 );
@@ -67,32 +46,6 @@ import { MailIcon, UserIcon } from 'lucide-react';
     type="email"
     placeholder="Email address"
     endIcon={MailIcon}
-  />
-</div>`,
-
-  importCodeMobile: `import { InputText } from '@stellar-ui/mobile';`,
-
-  usageCodeMobile: `<InputText
-  label="Label"
-  placeholder="Enter text..."
-/>`,
-
-  exampleCodeMobile: `import { InputText } from '@stellar-ui/mobile';
-import { Mail, User } from 'lucide-react-native';
-
-<div className="flex flex-col gap-4 max-w-md">
-  <InputText label="Input Text" placeholder="Enter text..." />
-
-  <InputText
-    label="Input with start icon"
-    placeholder="Username"
-    startIcon={User}
-  />
-
-  <InputText
-    label="Input with end icon"
-    placeholder="Email address"
-    endIcon={Mail}
   />
 </div>`,
 

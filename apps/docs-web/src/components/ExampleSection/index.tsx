@@ -1,5 +1,3 @@
-import type { DocPlatform } from '@/utils/constants';
-
 import {
   Text,
   CodeBlock,
@@ -10,28 +8,16 @@ import {
 } from '@stellar-ui/web';
 
 interface IExampleSection {
-  platform: DocPlatform;
   exampleComponent: () => JSX.Element;
   exampleCode: string;
-  exampleComponentMobile?: () => JSX.Element;
-  exampleCodeMobile?: string;
 }
 
 export function ExampleSection({
-  platform,
   exampleComponent,
   exampleCode,
-  exampleComponentMobile,
-  exampleCodeMobile,
 }: IExampleSection) {
-  const isMobile = platform === 'mobile';
-  const hasMobileExample = !!exampleComponentMobile && !!exampleCodeMobile;
-
-  const useMobile = isMobile && hasMobileExample;
-  const code = useMobile ? exampleCodeMobile : exampleCode;
-  const ExampleRenderer = useMobile ? exampleComponentMobile : exampleComponent;
   const safeExampleRenderer =
-    typeof ExampleRenderer === 'function' ? ExampleRenderer : null;
+    typeof exampleComponent === 'function' ? exampleComponent : null;
 
   return (
     <section className="space-y-4">
@@ -55,10 +41,10 @@ export function ExampleSection({
 
         <TabsContent value="code">
           {CodeBlock ? (
-            <CodeBlock code={code ?? ''} language="tsx" copyable />
+            <CodeBlock code={exampleCode ?? ''} language="tsx" copyable />
           ) : (
             <pre className="overflow-x-auto rounded-lg bg-muted p-4 text-sm">
-              <code>{code ?? ''}</code>
+              <code>{exampleCode ?? ''}</code>
             </pre>
           )}
         </TabsContent>

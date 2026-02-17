@@ -1,7 +1,5 @@
 import type { IComponentUsage } from '@/types';
-
 import { Text } from '@stellar-ui/web';
-import { Text as MobileText } from '@stellar-ui/mobile';
 
 export const TextExample = () => (
   <div className="flex flex-col gap-2">
@@ -14,15 +12,6 @@ export const TextExample = () => (
     <Text as="span" className="text-sm">
       This is a span text.
     </Text>
-  </div>
-);
-
-export const TextExampleMobile = () => (
-  <div className="flex flex-col gap-2">
-    <MobileText variant="h1">Heading 1</MobileText>
-    <MobileText variant="p">This is a paragraph text.</MobileText>
-    <MobileText variant="muted">This is muted text.</MobileText>
-    <MobileText variant="small">This is small text.</MobileText>
   </div>
 );
 
@@ -43,19 +32,6 @@ export const TextDocs: IComponentUsage = {
   <Text as="span" className="text-sm">
     This is a span text.
   </Text>
-</div>`,
-
-  importCodeMobile: `import { Text } from '@stellar-ui/mobile';`,
-
-  usageCodeMobile: `<Text variant="p">Text content</Text>`,
-
-  exampleCodeMobile: `import { Text } from '@stellar-ui/mobile';
-
-<div className="flex flex-col gap-2">
-  <Text variant="h1">Heading 1</Text>
-  <Text variant="p">This is a paragraph text.</Text>
-  <Text variant="muted">This is muted text.</Text>
-  <Text variant="small">This is small text.</Text>
 </div>`,
 
   props: [

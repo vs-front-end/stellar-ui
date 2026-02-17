@@ -1,7 +1,5 @@
 import type { IComponentUsage } from '@/types';
-
 import { InputCounter } from '@stellar-ui/web';
-import { InputCounter as MobileInputCounter } from '@stellar-ui/mobile';
 
 export const InputCounterExample = () => (
   <div className="flex flex-col gap-4">
@@ -12,23 +10,6 @@ export const InputCounterExample = () => (
     />
 
     <InputCounter
-      label="Counter with limits"
-      defaultValue={5}
-      min={0}
-      max={10}
-      step={1}
-    />
-  </div>
-);
-
-export const InputCounterExampleMobile = () => (
-  <div className="flex flex-col gap-4">
-    <MobileInputCounter
-      label="Input with plus/minus buttons"
-      defaultValue={1024}
-      min={0}
-    />
-    <MobileInputCounter
       label="Counter with limits"
       defaultValue={5}
       min={0}
@@ -57,32 +38,6 @@ export const InputCounterDocs: IComponentUsage = {
     min={0}
   />
   
-  <InputCounter
-    label="Counter with limits"
-    defaultValue={5}
-    min={0}
-    max={10}
-    step={1}
-  />
-</div>`,
-
-  importCodeMobile: `import { InputCounter } from '@stellar-ui/mobile';`,
-
-  usageCodeMobile: `<InputCounter
-  label="Counter"
-  defaultValue={0}
-  min={0}
-  max={100}
-/>`,
-
-  exampleCodeMobile: `import { InputCounter } from '@stellar-ui/mobile';
-
-<div className="flex flex-col gap-4">
-  <InputCounter
-    label="Input with plus/minus buttons"
-    defaultValue={1024}
-    min={0}
-  />
   <InputCounter
     label="Counter with limits"
     defaultValue={5}

@@ -9,11 +9,6 @@ export interface IComponentUsage {
   exampleCode: string;
   importCode: string;
   usageCode: string;
-
-  exampleCodeMobile?: string;
-  importCodeMobile?: string;
-  usageCodeMobile?: string;
-
   props?: IComponentProp[];
 }
 

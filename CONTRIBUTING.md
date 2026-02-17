@@ -35,30 +35,27 @@ Thank you for considering contributing to Stellar UI! We welcome contributions f
    ```bash
    npm run start
    ```
-   For mobile documentation, run the dev script from `apps/docs-mobile`.
 
 ## Project Structure
 
 ```
 stellar-ui/
 ├── apps/
-│   ├── docs-web/        # Web documentation & playground (Vite + React)
-│   └── docs-mobile/     # Mobile documentation (React Native)
+│   └── docs-web/        # Web documentation & playground (Vite + React)
 ├── packages/
-│   ├── shared/          # Shared tokens and utilities
-│   ├── web/             # React web components
-│   └── mobile/          # React Native components
-└── turbo.json           # Monorepo configuration
+│   ├── shared/           # Shared tokens and utilities
+│   └── web/              # React web components
+└── turbo.json            # Monorepo configuration
 ```
 
 ## Development Workflow
 
 ### Working on Components
 
-1. Navigate to the appropriate package:
+1. Navigate to the web package:
 
    ```bash
-   cd packages/web  # or packages/mobile
+   cd packages/web
    ```
 
 2. Start development mode:
@@ -69,9 +66,7 @@ stellar-ui/
 
 3. Make your changes in `src/components/`
 
-4. Test in the docs app by importing your component:
-   - Web components: use `apps/docs-web`
-   - Mobile components: use `apps/docs-mobile`
+4. Test in the docs app by importing your component in `apps/docs-web`
 
 ### Code Quality
 
@@ -106,20 +101,6 @@ npm run format
    ```
 
 4. Add documentation in `apps/docs-web`.
-
-**Mobile (`packages/mobile`):**
-
-1. Create a new directory in `packages/mobile/src/components/ComponentName/`
-
-2. Create `index.tsx` (use NativeWind, `cn` from `@stellar-ui/shared`, and @rn-primitives where applicable).
-
-3. Export from `packages/mobile/src/components/index.ts`:
-
-   ```tsx
-   export * from './ComponentName';
-   ```
-
-4. Add documentation in `apps/docs-mobile`.
 
 ## Commit Guidelines
 
