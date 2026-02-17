@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss';
-
-const stellarPreset = require('@stellar-ui-kit/shared/tailwind-preset');
+import stellarPreset from '@stellar-ui-kit/shared/tailwind-preset';
 
 const config: Config = {
   darkMode: ['class'],

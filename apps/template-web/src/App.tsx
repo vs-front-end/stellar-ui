@@ -1,11 +1,11 @@
-import { Button, Text } from "@stellar-ui-kit/web";
+import { Button, Text } from '@stellar-ui-kit/web';
 
-type ThemeVariant = "light" | "dark" | "ocean";
+type ThemeVariant = 'light' | 'dark' | 'ocean';
 
 const THEMES: { value: ThemeVariant; label: string }[] = [
-  { value: "light", label: "Light" },
-  { value: "dark", label: "Dark" },
-  { value: "ocean", label: "Ocean" },
+  { value: 'light', label: 'Light' },
+  { value: 'dark', label: 'Dark' },
+  { value: 'ocean', label: 'Ocean' },
 ];
 
 interface AppProps {

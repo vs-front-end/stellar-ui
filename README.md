@@ -33,7 +33,8 @@ npm install react react-dom
 ```
 stellar-ui/
 ├── apps/
-│   └── docs-web/      # Vite + React (Documentation & Playground)
+│   ├── docs-web/      # Vite + React (Documentation & Playground)
+│   └── template-web/  # Starter template (Vite + React + Stellar UI, theme switcher)
 ├── packages/
 │   ├── shared/        # Design Tokens, Types, Utils (Platform Agnostic)
 │   └── web/           # React DOM Library (Radix UI + Tailwind)
@@ -58,8 +59,11 @@ npm install
 # Build all packages
 npm run build
 
-# Start documentation (web)
+# Start documentation site
 npm run start
+
+# Run template-web (Stellar UI starter)
+npm run dev --workspace=template-web
 
 # Type check
 npm run type-check
