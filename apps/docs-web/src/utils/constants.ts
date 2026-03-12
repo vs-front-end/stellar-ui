@@ -80,6 +80,13 @@ export const components: INavComponent[] = [
     slug: 'circular-progress',
   },
   {
+    name: 'CodeBlock',
+    description:
+      'Displays syntax-highlighted code with optional filename, line numbers, and copy button.',
+    importName: 'CodeBlock',
+    slug: 'code-block',
+  },
+  {
     name: 'Collapsible',
     description:
       'An interactive component which expands/collapses to show or hide content.',

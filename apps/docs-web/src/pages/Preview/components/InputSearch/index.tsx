@@ -2,7 +2,9 @@ import type { IComponentUsage } from '@/types';
 import { InputSearch } from '@stellar-ui-kit/web';
 
 export const InputSearchExample = () => (
-  <InputSearch label="Input search" placeholder="Type to search..." />
+  <div className="w-80">
+    <InputSearch label="Input search" placeholder="Type to search..." />
+  </div>
 );
 
 export const InputSearchDocs: IComponentUsage = {
@@ -35,6 +37,16 @@ export const InputSearchDocs: IComponentUsage = {
       name: 'onChange',
       type: '(value: string) => void',
       description: 'Callback fired when the value changes.',
+    },
+    {
+      name: 'isLoading',
+      type: 'boolean',
+      description: 'When true, shows a loading spinner on the right side.',
+    },
+    {
+      name: 'helperText',
+      type: 'string',
+      description: 'Helper text shown below the input.',
     },
   ],
 };

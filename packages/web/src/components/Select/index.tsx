@@ -37,8 +37,8 @@ function SelectTrigger({
       className={cn(
         'flex w-fit items-center justify-between gap-2 rounded-md border border-border bg-surface px-3 py-2 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow]',
         'data-[placeholder]:text-muted',
-        'focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px]',
-        'aria-invalid:ring-error/20 aria-invalid:border-error aria-invalid:focus-visible:border-error aria-invalid:focus-visible:ring-error/50',
+        'focus-visible:border-primary focus-visible:ring-primary focus-visible:ring-[3px]',
+        'aria-invalid:ring-error aria-invalid:border-error aria-invalid:focus-visible:border-error aria-invalid:focus-visible:ring-error',
         'disabled:cursor-not-allowed disabled:opacity-50',
         'data-[size=default]:h-9 data-[size=sm]:h-8',
         '*:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2',

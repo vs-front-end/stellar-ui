@@ -25,17 +25,20 @@ const getTheme = () => {
   return 'dark';
 };
 
+const { background: _darkPreBg, ...darkPreBase } = vscDarkPlus['pre[class*="language-"]'] as Record<string, unknown>;
+const { background: _darkCodeBg, ...darkCodeBase } = vscDarkPlus['code[class*="language-"]'] as Record<string, unknown>;
+
 const customDarkTheme = {
   ...vscDarkPlus,
   'pre[class*="language-"]': {
-    ...vscDarkPlus['pre[class*="language-"]'],
-    background: 'transparent',
+    ...darkPreBase,
+    backgroundColor: 'transparent',
     margin: 0,
     padding: 0,
   },
   'code[class*="language-"]': {
-    ...vscDarkPlus['code[class*="language-"]'],
-    background: 'transparent',
+    ...darkCodeBase,
+    backgroundColor: 'transparent',
     color: '#f1f5f9',
   },
   keyword: { color: '#6b9fff' },
@@ -49,17 +52,20 @@ const customDarkTheme = {
   property: { color: '#60a5fa' },
 };
 
+const { background: _lightPreBg, ...lightPreBase } = vs['pre[class*="language-"]'] as Record<string, unknown>;
+const { background: _lightCodeBg, ...lightCodeBase } = vs['code[class*="language-"]'] as Record<string, unknown>;
+
 const customLightTheme = {
   ...vs,
   'pre[class*="language-"]': {
-    ...vs['pre[class*="language-"]'],
-    background: 'transparent',
+    ...lightPreBase,
+    backgroundColor: 'transparent',
     margin: 0,
     padding: 0,
   },
   'code[class*="language-"]': {
-    ...vs['code[class*="language-"]'],
-    background: 'transparent',
+    ...lightCodeBase,
+    backgroundColor: 'transparent',
     color: '#000000',
   },
   keyword: { color: '#0033cc' },
@@ -76,14 +82,14 @@ const customLightTheme = {
 const customOceanTheme = {
   ...vscDarkPlus,
   'pre[class*="language-"]': {
-    ...vscDarkPlus['pre[class*="language-"]'],
-    background: 'transparent',
+    ...darkPreBase,
+    backgroundColor: 'transparent',
     margin: 0,
     padding: 0,
   },
   'code[class*="language-"]': {
-    ...vscDarkPlus['code[class*="language-"]'],
-    background: 'transparent',
+    ...darkCodeBase,
+    backgroundColor: 'transparent',
     color: '#f1f5f9',
   },
   keyword: { color: '#7dd3fc' },
@@ -145,7 +151,7 @@ export function CodeBlock({
 
   return (
     <div
-      className={`relative rounded-lg border border-border bg-background/80 overflow-hidden ${className}`}
+      className={`relative rounded-lg border border-border bg-background overflow-hidden ${className}`}
     >
       {(filename || language) && (
         <div
@@ -224,7 +230,7 @@ export function CodeBlock({
           customStyle={{
             margin: 0,
             padding: '1rem',
-            background: 'transparent',
+            backgroundColor: 'transparent',
             fontSize: '0.875rem',
             lineHeight: '1.5',
             border: 'none',

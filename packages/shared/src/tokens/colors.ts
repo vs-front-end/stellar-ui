@@ -22,7 +22,7 @@ export const COMMON_THEME = {
 
 export const LIGHT_THEME = {
   background: '#fafafa',
-  surface: '#ffffff',
+  surface: '#f8f8f8',
   border: '#CCCCCC',
   foreground: '#000000',
   muted: '#555555',

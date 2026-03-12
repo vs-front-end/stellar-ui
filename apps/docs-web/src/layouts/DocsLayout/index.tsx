@@ -17,7 +17,7 @@ export const DocsLayout = () => {
     <div className="flex min-h-screen bg-background relative overflow-x-hidden">
       <ParticlesBackground theme={theme} />
 
-      <aside className="hidden md:flex fixed inset-y-0 left-0 z-20 w-[285px] flex-col border-r border-dashed border-border bg-background/80">
+      <aside className="hidden md:flex fixed inset-y-0 left-0 z-20 w-[285px] flex-col border-r border-dashed border-border bg-background">
         <Navbar theme={theme} setTheme={setTheme} />
       </aside>
 
@@ -27,6 +27,7 @@ export const DocsLayout = () => {
         open={mobileMenu.isOpen}
         onOpenChange={mobileMenu.close}
         direction="left"
+        noBodyStyles
       >
         <DrawerContent className="!w-[285px] min-w-[250px] max-w-[285px] h-full rounded-none border-r flex flex-col">
           <Navbar

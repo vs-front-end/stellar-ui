@@ -73,7 +73,7 @@ function Calendar({
           defaultClassNames.dropdowns
         ),
         dropdown_root: cn(
-          'relative border border-border shadow-xs rounded-md has-focus:border-primary has-focus:ring-primary/50 has-focus:ring-[3px]',
+          'relative border border-border shadow-xs rounded-md has-focus:border-primary has-focus:ring-primary has-focus:ring-[3px]',
           defaultClassNames.dropdown_root
         ),
         dropdown: cn(
@@ -209,7 +209,7 @@ function CalendarDayButton({
         'data-[range-middle=true]:rounded-none',
         'data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md',
         'group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10',
-        'group-data-[focused=true]/day:border-primary group-data-[focused=true]/day:ring-primary/50 group-data-[focused=true]/day:ring-[3px]',
+        'group-data-[focused=true]/day:border-primary group-data-[focused=true]/day:ring-primary group-data-[focused=true]/day:ring-[3px]',
         defaultClassNames.day,
         className
       )}

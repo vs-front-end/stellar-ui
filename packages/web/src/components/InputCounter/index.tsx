@@ -93,9 +93,9 @@ function InputCounter({
         aria-invalid={hasError}
         className={cn(
           'relative inline-flex h-9 w-full min-w-0 items-center overflow-hidden rounded-md border border-border bg-surface shadow-xs transition-[color,box-shadow]',
-          'focus-within:border-primary focus-within:ring-primary/50 focus-within:ring-[3px]',
+          'focus-within:border-primary focus-within:ring-primary focus-within:ring-[3px]',
           hasError &&
-            'border-error focus-within:border-error focus-within:ring-error/50',
+            'border-error focus-within:border-error focus-within:ring-error',
           disabled && 'pointer-events-none cursor-not-allowed opacity-50',
           className
         )}

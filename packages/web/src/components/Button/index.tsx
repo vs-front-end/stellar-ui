@@ -5,17 +5,17 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@stellar-ui-kit/shared';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-border focus-visible:ring-border/50 focus-visible:ring-[3px] aria-invalid:ring-error/20 aria-invalid:border-error",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-border focus-visible:ring-border focus-visible:ring-[3px] aria-invalid:ring-error aria-invalid:border-error",
   {
     variants: {
       variant: {
         default: 'bg-primary text-white hover:opacity-90',
         destructive:
-          'bg-error text-white hover:bg-error/90 focus-visible:ring-error/20',
+          'bg-error text-white hover:opacity-90 focus-visible:ring-error',
         outline:
-          'border border-border bg-surface text-foreground hover:bg-surface/80',
+          'border border-border bg-surface text-foreground hover:opacity-90',
         secondary:
-          'bg-primary-soft text-primary-text hover:bg-primary-soft/80 border border-secondary-text',
+          'bg-primary-soft text-primary-text hover:opacity-90 border border-secondary-text',
         ghost: 'text-foreground hover:bg-surface',
       },
       size: {

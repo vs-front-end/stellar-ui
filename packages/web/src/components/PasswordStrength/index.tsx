@@ -8,6 +8,17 @@ interface Requirement {
   text: string;
 }
 
+type PasswordStrengthLabels = {
+  empty?: string;
+  weak?: string;
+  medium?: string;
+  strong?: string;
+  veryStrong?: string;
+  mustContain?: string;
+  requirementMet?: string;
+  requirementNotMet?: string;
+};
+
 const DEFAULT_REQUIREMENTS: Requirement[] = [
   { regex: /.{8,}/, text: 'At least 8 characters' },
   { regex: /[a-z]/, text: 'At least 1 lowercase letter' },
@@ -19,9 +30,21 @@ const DEFAULT_REQUIREMENTS: Requirement[] = [
   },
 ];
 
+const DEFAULT_LABELS: Required<PasswordStrengthLabels> = {
+  empty: 'Enter a password',
+  weak: 'Weak password',
+  medium: 'Medium password',
+  strong: 'Strong password',
+  veryStrong: 'Very strong password',
+  mustContain: 'Must contain:',
+  requirementMet: ' - Requirement met',
+  requirementNotMet: ' - Requirement not met',
+};
+
 interface PasswordStrengthProps {
   password: string;
   requirements?: Requirement[];
+  labels?: PasswordStrengthLabels;
   showIndicator?: boolean;
   showRequirements?: boolean;
   className?: string;
@@ -30,10 +53,13 @@ interface PasswordStrengthProps {
 function PasswordStrength({
   password,
   requirements = DEFAULT_REQUIREMENTS,
+  labels,
   showIndicator = true,
   showRequirements = true,
   className,
 }: PasswordStrengthProps) {
+  const resolvedLabels = { ...DEFAULT_LABELS, ...labels };
+
   const strength = useMemo(
     () =>
       requirements.map((req) => ({
@@ -58,12 +84,12 @@ function PasswordStrength({
   };
 
   const getText = (score: number) => {
-    if (score === 0) return 'Enter a password';
-    if (score <= 2) return 'Weak password';
-    if (score <= 3) return 'Medium password';
-    if (score === 4) return 'Strong password';
+    if (score === 0) return resolvedLabels.empty;
+    if (score <= 2) return resolvedLabels.weak;
+    if (score <= 3) return resolvedLabels.medium;
+    if (score === 4) return resolvedLabels.strong;
 
-    return 'Very strong password';
+    return resolvedLabels.veryStrong;
   };
 
   if (!password && !showRequirements) {
@@ -87,7 +113,8 @@ function PasswordStrength({
           </div>
 
           <p className="text-sm font-medium text-foreground">
-            {getText(strengthScore)}. {showRequirements && 'Must contain:'}
+            {getText(strengthScore)}.{' '}
+            {showRequirements && resolvedLabels.mustContain}
           </p>
         </>
       )}
@@ -109,7 +136,9 @@ function PasswordStrength({
               >
                 {req.text}
                 <span className="sr-only">
-                  {req.met ? ' - Requirement met' : ' - Requirement not met'}
+                  {req.met
+                    ? resolvedLabels.requirementMet
+                    : resolvedLabels.requirementNotMet}
                 </span>
               </span>
             </li>
@@ -120,4 +149,4 @@ function PasswordStrength({
   );
 }
 
-export { PasswordStrength };
+export { PasswordStrength, type PasswordStrengthLabels };

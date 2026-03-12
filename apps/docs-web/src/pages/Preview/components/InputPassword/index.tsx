@@ -67,6 +67,26 @@ function Example() {
       description: 'Callback fired when the value changes.',
     },
     {
+      name: 'startIcon',
+      type: 'LucideIcon',
+      description: 'Icon component to display at the start of the input.',
+    },
+    {
+      name: 'error',
+      type: 'string',
+      description: 'Error message shown below the input.',
+    },
+    {
+      name: 'helperText',
+      type: 'string',
+      description: 'Helper text shown below the input when there is no error.',
+    },
+    {
+      name: 'required',
+      type: 'boolean',
+      description: 'When true, shows a required indicator next to the label.',
+    },
+    {
       name: 'disabled',
       type: 'boolean',
       default: 'false',

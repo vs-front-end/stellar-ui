@@ -31,7 +31,8 @@ export const PropsSection = ({ props }: IPropsSectionProps) => {
                 </th>
               </tr>
             </thead>
-            <tbody>
+
+            <tbody className="bg-background">
               {props.map((prop, index) => (
                 <tr
                   key={prop.name}

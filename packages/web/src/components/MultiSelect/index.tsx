@@ -34,11 +34,11 @@ export interface AnimationConfig {
 const multiSelectVariants = cva('m-1 transition-all duration-300 ease-in-out', {
   variants: {
     variant: {
-      default: 'border-border text-foreground bg-surface hover:bg-surface/80',
+      default: 'border-border text-foreground bg-surface hover:opacity-90',
       secondary:
-        'border-border bg-secondary-soft text-secondary-text hover:bg-secondary-soft/80',
+        'border-border bg-secondary-soft text-secondary-text hover:opacity-90',
       destructive:
-        'border-transparent bg-error text-error-text hover:bg-error/80',
+        'border-transparent bg-error text-error-text hover:opacity-90',
       inverted: 'inverted',
     },
     badgeAnimation: {
@@ -721,7 +721,7 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                                 }
                               }}
                               aria-label={`Remove ${option.label} from selection`}
-                              className="ml-1 flex items-center justify-center h-4 w-4 min-h-4 min-w-4 cursor-pointer rounded-sm focus:outline-none focus:ring-1 focus:ring-white/50"
+                              className="ml-1 flex items-center justify-center h-4 w-4 min-h-4 min-w-4 cursor-pointer rounded-sm focus:outline-none focus:ring-1 focus:ring-white"
                             >
                               <XCircle
                                 className={cn(
@@ -737,7 +737,7 @@ export const MultiSelect = React.forwardRef<MultiSelectRef, MultiSelectProps>(
                     {selectedValues.length > responsiveSettings.maxCount && (
                       <Badge
                         className={cn(
-                          'bg-transparent text-foreground border-border/10 hover:bg-transparent',
+                          'bg-transparent text-foreground border-border hover:bg-transparent',
                           getBadgeAnimationClass(),
                           multiSelectVariants({ variant }),
                           responsiveSettings.compactMode &&

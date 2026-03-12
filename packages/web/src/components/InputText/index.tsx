@@ -15,6 +15,7 @@ interface InputTextProps {
   startIcon?: LucideIcon;
   endIcon?: LucideIcon;
   error?: string;
+  helperText?: string;
   disabled?: boolean;
   className?: string;
   containerClassName?: string;
@@ -34,6 +35,7 @@ function InputText({
   startIcon: StartIcon,
   endIcon: EndIcon,
   error,
+  helperText,
   disabled = false,
   className,
   containerClassName,
@@ -60,7 +62,7 @@ function InputText({
   };
 
   return (
-    <div className={cn('w-full max-w-xs space-y-2', containerClassName)}>
+    <div className={cn('w-full space-y-2', containerClassName)}>
       {label && (
         <Label htmlFor={id}>
           {label}
@@ -94,7 +96,7 @@ function InputText({
             StartIcon && 'pl-9',
             EndIcon && 'pr-9',
             hasError &&
-              'peer border-error focus-visible:border-error focus-visible:ring-error/50',
+              'peer border-error focus-visible:border-error focus-visible:ring-error',
             className
           )}
         />
@@ -110,6 +112,9 @@ function InputText({
         <p className="text-xs text-error" role="alert">
           {error}
         </p>
+      )}
+      {!error && helperText && (
+        <p className="text-xs text-muted">{helperText}</p>
       )}
     </div>
   );

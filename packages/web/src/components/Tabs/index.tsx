@@ -42,7 +42,7 @@ function TabsTrigger({
       className={cn(
         'inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-md bg-transparent px-2 py-1 text-sm font-medium text-muted',
         'data-[state=active]:bg-surface data-[state=active]:text-foreground data-[state=active]:border data-[state=active]:border-border',
-        'focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px] focus-visible:outline-1',
+        'focus-visible:border-primary focus-visible:ring-primary focus-visible:ring-[3px] focus-visible:outline-1',
         'disabled:pointer-events-none disabled:opacity-50',
         '[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*="size-"])]:size-4',
         className

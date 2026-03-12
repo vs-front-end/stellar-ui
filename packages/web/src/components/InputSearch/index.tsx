@@ -10,6 +10,7 @@ interface InputSearchProps {
   value?: string;
   onChange?: (value: string) => void;
   isLoading?: boolean;
+  helperText?: string;
   className?: string;
 }
 
@@ -19,6 +20,7 @@ function InputSearch({
   value: controlledValue,
   onChange,
   isLoading: controlledIsLoading,
+  helperText,
   className,
 }: InputSearchProps) {
   const [internalValue, setInternalValue] = useState('');
@@ -58,7 +60,7 @@ function InputSearch({
   };
 
   return (
-    <div className={`w-full max-w-xs space-y-2 ${className || ''}`}>
+    <div className={`w-full space-y-2 ${className || ''}`}>
       {label && <Label htmlFor={id}>{label}</Label>}
       <div className="relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center justify-center pl-3 text-muted peer-disabled:opacity-50">
@@ -82,6 +84,7 @@ function InputSearch({
           </div>
         )}
       </div>
+      {helperText && <p className="text-xs text-muted">{helperText}</p>}
     </div>
   );
 }

@@ -24,9 +24,9 @@ function TextArea({
       className={cn(
         'flex min-h-16 w-full rounded-md border border-border bg-surface px-3 py-2 text-base text-foreground shadow-xs transition-[color,box-shadow] outline-none',
         'placeholder:text-muted',
-        'focus-visible:border-primary focus-visible:ring-primary/50 focus-visible:ring-[3px]',
+        'focus-visible:border-primary focus-visible:ring-primary focus-visible:ring-[3px]',
         hasError &&
-          'border-error focus-visible:border-error focus-visible:ring-error/50',
+          'border-error focus-visible:border-error focus-visible:ring-error',
         'disabled:cursor-not-allowed disabled:opacity-50',
         'md:text-sm',
         'field-sizing-content',

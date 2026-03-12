@@ -77,9 +77,9 @@ function InputOTPSlot({
       className={cn(
         'relative flex h-9 w-9 items-center justify-center border-y border-r border-border bg-surface text-sm text-foreground shadow-xs transition-all outline-none',
         'first:rounded-l-md first:border-l last:rounded-r-md',
-        'data-[active=true]:z-10 data-[active=true]:border-primary data-[active=true]:ring-primary/50 data-[active=true]:ring-[3px]',
-        'aria-invalid:border-error aria-invalid:ring-error/20',
-        'data-[active=true]:aria-invalid:border-error data-[active=true]:aria-invalid:ring-error/50',
+        'data-[active=true]:z-10 data-[active=true]:border-primary data-[active=true]:ring-primary data-[active=true]:ring-[3px]',
+        'aria-invalid:border-error aria-invalid:ring-error',
+        'data-[active=true]:aria-invalid:border-error data-[active=true]:aria-invalid:ring-error',
         className
       )}
       {...props}

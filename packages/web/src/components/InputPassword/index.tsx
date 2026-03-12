@@ -14,6 +14,7 @@ interface InputPasswordProps {
   onChange?: (value: string) => void;
   startIcon?: LucideIcon;
   error?: string;
+  helperText?: string;
   disabled?: boolean;
   className?: string;
   containerClassName?: string;
@@ -31,6 +32,7 @@ function InputPassword({
   onChange,
   startIcon: StartIcon,
   error,
+  helperText,
   disabled = false,
   className,
   containerClassName,
@@ -60,7 +62,7 @@ function InputPassword({
   };
 
   return (
-    <div className={cn('w-full max-w-xs space-y-2', containerClassName)}>
+    <div className={cn('w-full space-y-2', containerClassName)}>
       {label && (
         <Label htmlFor={id}>
           {label}
@@ -88,7 +90,7 @@ function InputPassword({
             StartIcon && 'pl-9',
             'pr-9',
             hasError &&
-              'peer border-error focus-visible:border-error focus-visible:ring-error/50',
+              'peer border-error focus-visible:border-error focus-visible:ring-error',
             className
           )}
         />
@@ -99,7 +101,7 @@ function InputPassword({
           onClick={toggleVisibility}
           disabled={disabled}
           aria-label={isVisible ? 'Hide password' : 'Show password'}
-          className="text-muted focus-visible:ring-primary/50 absolute inset-y-0 right-0 rounded-l-none hover:bg-transparent"
+          className="text-muted focus-visible:ring-primary absolute inset-y-0 right-0 rounded-l-none hover:bg-transparent"
         >
           {isVisible ? (
             <EyeOffIcon className="size-4" />
@@ -115,6 +117,9 @@ function InputPassword({
         <p className="text-xs text-error" role="alert">
           {error}
         </p>
+      )}
+      {!error && helperText && (
+        <p className="text-xs text-muted">{helperText}</p>
       )}
     </div>
   );
