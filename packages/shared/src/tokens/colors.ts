@@ -21,7 +21,7 @@ export const COMMON_THEME = {
 } as const;
 
 export const LIGHT_THEME = {
-  background: '#fafafa',
+  background: '#f5f5f5',
   surface: '#f8f8f8',
   border: '#CCCCCC',
   foreground: '#000000',

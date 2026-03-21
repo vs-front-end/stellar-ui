@@ -89,8 +89,8 @@ function App() {
   --color-primary-soft: #dbf1ff;
   --color-primary-text: #0e415d;
   
-  --color-background: #fafafa;
-  --color-surface: #ffffff;
+  --color-background: #f5f5f5;
+  --color-surface: #f8f8f8;
   --color-border: #CCCCCC;
   --color-foreground: #000000;
   --color-muted: #555555;

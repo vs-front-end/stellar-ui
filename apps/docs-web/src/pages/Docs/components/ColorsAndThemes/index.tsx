@@ -212,8 +212,8 @@ export function ColorsAndThemes() {
         </Text>
         <CodeBlock
           code={`// Light Theme
-background: '#fafafa'
-surface: '#ffffff'
+background: '#f5f5f5'
+surface: '#f8f8f8'
 border: '#CCCCCC'
 foreground: '#000000'
 muted: '#555555'
