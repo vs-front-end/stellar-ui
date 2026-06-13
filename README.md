@@ -5,7 +5,7 @@
 
 UI library for React (web) built with Turborepo.
 
-📖 **[Documentation](https://stellar-ui-one.vercel.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues)
+📖 **[Documentation](https://stellar.vsdev.app)** | 🐛 [Report Bug](https://github.com/vs-front-end/stellar-ui/issues)
 
 ## Published Packages (npm)
 

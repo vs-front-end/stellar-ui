@@ -1,6 +1,6 @@
 # Stellar UI – Template Web
 
-Starter template to try [Stellar UI](https://stellar-ui-one.vercel.app) in a Vite + React app. Includes theme switching (light, dark, ocean) and example usage of components.
+Starter template to try [Stellar UI](https://stellar.vsdev.app) in a Vite + React app. Includes theme switching (light, dark, ocean) and example usage of components.
 
 ## Setup
 
@@ -26,4 +26,4 @@ npm run dev
 
 ## Docs
 
-Installation and configuration: [Getting Started](https://stellar-ui-one.vercel.app/docs/getting-started) in the Stellar UI docs.
+Installation and configuration: [Getting Started](https://stellar.vsdev.app/docs/getting-started) in the Stellar UI docs.

@@ -145,7 +145,7 @@ function MyComponent() {
 
 ## Documentation
 
-Visit our [documentation site](https://stellar-ui-one.vercel.app) for:
+Visit our [documentation site](https://stellar.vsdev.app) for:
 
 - Interactive component previews
 - API reference
@@ -254,5 +254,5 @@ Contributions are welcome! Please read our [contributing guide](https://github.c
 
 ## Support
 
-- 📖 [Documentation](https://stellar-ui-one.vercel.app)
+- 📖 [Documentation](https://stellar.vsdev.app)
 - 🐛 [Issue Tracker](https://github.com/vs-front-end/stellar-ui/issues)

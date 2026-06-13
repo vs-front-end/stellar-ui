@@ -41,7 +41,7 @@
     "url": "https://github.com/vs-front-end/stellar-ui.git",
     "directory": "packages/web"
   },
-  "homepage": "https://stellar-ui-one.vercel.app",
+  "homepage": "https://stellar.vsdev.app",
   "bugs": {
     "url": "https://github.com/vs-front-end/stellar-ui/issues"
   },

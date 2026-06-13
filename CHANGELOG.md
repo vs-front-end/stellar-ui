@@ -32,6 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript strict mode enabled
 - Prettier code formatting
 - Build pipeline with tsup (esbuild)
-- Web documentation (apps/docs-web) with doc site at stellar-ui-one.vercel.app
+- Web documentation (apps/docs-web) with doc site at stellar.vsdev.app
 
 [0.1.0]: https://github.com/vs-front-end/stellar-ui/releases/tag/v0.1.0
