@@ -10,7 +10,7 @@ interface ISocialLink {
 
 const socialLinks: ISocialLink[] = [
   {
-    href: 'https://www.linkedin.com/in/vitor-silva-front-end-dev/',
+    href: 'https://www.linkedin.com/in/vs-fullstack',
     label: 'LinkedIn',
     bgColor: 'bg-[#026397]',
     icon: '/icons/linkedin.svg',
