@@ -70,6 +70,8 @@ function App() {
 }
 ```
 
+The ThemeProvider covers the built-in themes (`light`, `dark`, `ocean`). It sets the `--color-*` variables as inline styles on `<html>`, so overriding them in CSS has no effect while it is mounted. For custom colors, skip the ThemeProvider and declare the variables in your global CSS (`:root`, plus `:root.dark` for a second theme). See **Theme Customization** in the docs.
+
 ### 4. Use Components
 
 ```tsx

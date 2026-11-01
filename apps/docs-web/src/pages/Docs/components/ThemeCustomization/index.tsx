@@ -77,67 +77,110 @@ function App() {
 
       <section className="space-y-4">
         <Text as="h2" className="text-2xl font-semibold">
-          Customizing Colors with CSS Variables
+          Custom Colors
         </Text>
         <Text as="p" className="text-muted">
-          You can override theme colors by setting CSS custom properties. The
-          ThemeProvider sets these variables on the document root:
+          The ThemeProvider writes the{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            --color-*
+          </code>{' '}
+          variables as inline styles on the document root. Inline styles always
+          win over your stylesheet, so overriding these variables in CSS has no
+          effect while the ThemeProvider is mounted.
+        </Text>
+        <Text as="p" className="text-muted">
+          For custom colors, skip the ThemeProvider and define the variables
+          yourself. Keep the Tailwind preset and point{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            content
+          </code>{' '}
+          to the library build so component classes are generated:
         </Text>
         <CodeBlock
-          code={`:root {
-  --color-primary: #3648ce;
-  --color-primary-soft: #dbf1ff;
-  --color-primary-text: #0e415d;
-  
-  --color-background: #f5f5f5;
-  --color-surface: #f8f8f8;
-  --color-border: #CCCCCC;
-  --color-foreground: #000000;
-  --color-muted: #555555;
+          code={`import type { Config } from 'tailwindcss';
+import stellarPreset from '@stellar-ui-kit/shared/tailwind-preset';
+
+const config: Config = {
+  darkMode: ['class'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@stellar-ui-kit/web/dist/**/*.{js,mjs}',
+  ],
+  presets: [stellarPreset],
+};
+
+export default config;`}
+          language="typescript"
+          copyable
+        />
+        <Text as="p" className="text-muted">
+          Then declare every variable in your global CSS. Use{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            :root
+          </code>{' '}
+          for the default theme and{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            :root.dark
+          </code>{' '}
+          for a second one:
+        </Text>
+        <CodeBlock
+          code={`@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #f1f4f8;
+  --color-surface: #ffffff;
+  --color-border: #e3e9f0;
+  --color-foreground: #14283d;
+  --color-muted: #5a6b7d;
+
+  --color-primary: #187a44;
+  --color-primary-soft: #e7f6ec;
+  --color-primary-text: #14713f;
+  /* secondary, success, warning, error: base, -soft and -text */
 }
 
-/* Override in your CSS */
-:root {
-  --color-primary: #your-color;
-  --color-primary-soft: #your-soft-color;
+:root.dark {
+  --color-background: #0d1620;
+  --color-surface: #14212f;
+  --color-border: #223449;
+  --color-foreground: #e6edf5;
+  --color-muted: #8a9bb0;
+  /* ...same keys as :root */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }`}
           language="css"
           copyable
         />
-      </section>
-
-      <section className="space-y-4">
-        <Text as="h2" className="text-2xl font-semibold">
-          Creating Custom Themes
-        </Text>
         <Text as="p" className="text-muted">
-          To create a completely custom theme, you can override all CSS
-          variables after the ThemeProvider initializes:
+          Switch themes by toggling the class on the document root:
         </Text>
         <CodeBlock
-          code={`import { useEffect } from 'react';
-import { ThemeProvider } from '@stellar-ui-kit/web';
-
-function CustomThemeProvider({ children }) {
-  useEffect(() => {
-    const root = document.documentElement;
-    
-    // Override theme variables
-    root.style.setProperty('--color-background', '#your-color');
-    root.style.setProperty('--color-surface', '#your-color');
-    root.style.setProperty('--color-primary', '#your-color');
-    // ... set all other variables
-  }, []);
-
-  return (
-    <ThemeProvider variant="light">
-      {children}
-    </ThemeProvider>
-  );
+          code={`function setTheme(theme: 'light' | 'dark') {
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+  localStorage.setItem('theme', theme);
 }`}
-          language="tsx"
+          language="typescript"
           copyable
         />
+        <Text as="p" className="text-muted">
+          With a single theme, only{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            :root
+          </code>{' '}
+          is needed and{' '}
+          <code className="px-1.5 py-0.5 rounded bg-primary-soft text-primary-text text-sm">
+            darkMode
+          </code>{' '}
+          can be left out.
+        </Text>
       </section>
 
       <section className="space-y-4">
@@ -146,7 +189,8 @@ function CustomThemeProvider({ children }) {
         </Text>
         <Text as="p" className="text-muted">
           The ThemeProvider adds theme classes (light, dark, ocean) to the
-          document root. You can use these for theme-specific styling:
+          document root. With custom colors, the class is the one you toggle.
+          You can use these for theme-specific styling:
         </Text>
         <CodeBlock
           code={`/* Theme-specific styles with custom CSS */
